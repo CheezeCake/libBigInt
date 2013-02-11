@@ -5,8 +5,6 @@
 #include <vector>
 #include <string>
 
-const unsigned int BASE = 0xffffffff1; //2^32
-
 class Entier
 {
 public:
