@@ -32,22 +32,22 @@ Entier::~Entier()
 {
 }
 
-void Entier::operator=(const Entier& b)
+Entier& Entier::operator=(const Entier& b)
 {
     valeur = b.valeur;
 }
 
-Entier &Entier::operator+=(const Entier& b)
+Entier& Entier::operator+=(const Entier& b)
 {
     return *this;
 }
 
-Entier &Entier::operator-=(const Entier& b)
+Entier& Entier::operator-=(const Entier& b)
 {
     return *this;
 }
 
-Entier &Entier::operator*=(const Entier& b)
+Entier& Entier::operator*=(const Entier& b)
 {
     return *this;
 }

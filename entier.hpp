@@ -17,8 +17,9 @@ public:
     ~Entier();
     //operateurs
     //
-    void operator=(const Entier&);
-    void operator=(const int);
+    
+    Entier& operator=(const Entier&);
+    Entier& operator=(const int);
     //ajout
     Entier& operator+=(const Entier&);
     //Entier &operator+=(const unsigned int);
