@@ -184,8 +184,6 @@ bool additionEstSur(unsigned int a, unsigned int b)
     //return !(c < a || c < b)
 }
 
-#include <iostream>
-
 bool retenue(unsigned int a, unsigned int b, unsigned int& reste)
 {
     unsigned long long int c = (unsigned long long int)a+b;
