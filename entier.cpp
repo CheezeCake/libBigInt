@@ -35,6 +35,7 @@ Entier::~Entier()
 Entier& Entier::operator=(const Entier& b)
 {
     valeur = b.valeur;
+	return *this;
 }
 
 Entier& Entier::operator+=(const Entier& b)
