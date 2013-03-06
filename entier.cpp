@@ -141,7 +141,7 @@ bool additionEstSur(unsigned int a, unsigned int b)
 bool retenue(unsigned int a, unsigned int b)
 {
 	long long int c = a+b;
-	const long long int MASK = 0x0000000100000000; //2^32
+	const long long int MASK = 0x0000000100000000; // 2^32
 
 	return (c & MASK == MASK);
 }
