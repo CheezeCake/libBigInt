@@ -5,7 +5,7 @@
 #include <vector>
 #include <string>
 
-const unsigned long long int BASE = 0x0000000100000000; //2^32
+const unsigned long long int BASE = 0x100000000; //2^32
 
 class Entier
 {
