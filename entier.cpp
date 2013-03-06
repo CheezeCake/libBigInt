@@ -35,11 +35,56 @@ Entier::~Entier()
 Entier& Entier::operator=(const Entier& b)
 {
     valeur = b.valeur;
-	return *this;
+    return *this;
+}
+
+Entier& Entier::operator=(const unsigned int b)
+{
+    valeur.clear(); //vider valeur
+    valeur.push_back(b);
 }
 
 Entier& Entier::operator+=(const Entier& b)
 {
+    bool _retenue = false;
+    unsigned int reste = 0;
+    int valeur_retenue = 0;
+
+    for(size_t i = 0; i < valeur.size(); i++)
+    {
+
+	_retenue = retenue(valeur[i], b.valeur[i], reste);
+
+	valeur[i] = reste;
+	valeur[i] += valeur_retenue;
+
+	if(_retenue)
+	    valeur_retenue = 1;
+	else
+	    valeur_retenue = 0;
+    }
+
+    if(b.valeur.size() > valeur.size())
+    {
+	for(size_t i = valeur.size(); i < b.valeur.size(); i++)
+	{
+	    valeur.push_back(b.valeur[i]);
+	    if(_retenue)
+	    {
+		_retenue = retenue(valeur[i], valeur_retenue, reste);
+		valeur[i] = reste;
+	    }
+	    else
+	    {
+		_retenue = false;
+		valeur_retenue = 0;
+	    }
+	}
+    }
+
+    if(_retenue)
+	valeur.push_back(valeur_retenue);
+
     return *this;
 }
 
@@ -93,32 +138,35 @@ bool operator>=(const Entier& a, const Entier& b)
 
 Entier operator+(const Entier& a, const Entier& b)
 {
-    Entier somme;
+    Entier somme(a);
+    somme += b;
 
     return somme;
 }
 
 Entier operator-(const Entier& a, const Entier& b)
 {
-    Entier soustraction;
+    Entier soustraction(a);
+    soustraction -= b;
 
     return soustraction;
 }
 
 Entier operator*(const Entier& a, const Entier& b)
 {
-    Entier produit;
+    Entier produit(a);
+    produit *= b;
 
     return produit;
 }
 
 ostream& operator<<(ostream& flux, const Entier& val)
 {
-    for(unsigned int i=val.valeur.size()-1; i!=0; i--)
+    for(int i = val.valeur.size()-1; i >= 0; i--)
     {
-        flux<<val.valeur[i]<<' ';
+        flux << val.valeur[i] << ' ';
     }
-
+    
     return flux;
 }
 
@@ -133,14 +181,15 @@ bool additionEstSur(unsigned int a, unsigned int b)
     if(c < a || c < b )
         return false;
     return true;
-    //return (c < a || c < b) ? false : true;
     //return !(c < a || c < b)
 }
 
-bool retenue(unsigned int a, unsigned int b)
-{
-    const unsigned long long int MASK = 0x0000000100000000; //2^32
-    unsigned long long int c = (unsigned long long int)a+b;
+#include <iostream>
 
-    return ((c & MASK) == MASK);
+bool retenue(unsigned int a, unsigned int b, unsigned int& reste)
+{
+    unsigned long long int c = (unsigned long long int)a+b;
+    reste = c%BASE;
+    
+    return ((c & BASE) == BASE);
 }
