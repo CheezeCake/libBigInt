@@ -5,6 +5,8 @@
 #include <vector>
 #include <string>
 
+const unsigned long long int BASE = 0x0000000100000000; //2^32
+
 class Entier
 {
 public:
@@ -19,7 +21,7 @@ public:
     //
     
     Entier& operator=(const Entier&);
-    Entier& operator=(const int);
+    Entier& operator=(const unsigned int);
     //ajout
     Entier& operator+=(const Entier&);
     //Entier &operator+=(const unsigned int);
@@ -54,7 +56,7 @@ bool operator!=(const Entier&, const Entier&);
 bool operator<=(const Entier&, const Entier&);
 bool operator>=(const Entier&, const Entier&);
 
-bool additionEstSur(unsigned int a, unsigned int b);
-bool retenue(unsigned int a, unsigned int b);
+bool additionEstSur(unsigned int, unsigned int);
+bool retenue(unsigned int, unsigned int, unsigned int&);
 
 #endif // ENTIER_HPP_INCLUDED
