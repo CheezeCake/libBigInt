@@ -1,5 +1,5 @@
 #include "entier.hpp"
-//test com
+
 using namespace std;
 
 Entier::Entier()
@@ -140,8 +140,8 @@ bool additionEstSur(unsigned int a, unsigned int b)
 
 bool retenue(unsigned int a, unsigned int b)
 {
-	long long int c = a+b;
-	const long long int MASK = 0x0000000100000000; // 2^32
-
-	return (c & MASK == MASK);
+	const unsigned long long int MASK = 0x0000000100000000; //2^32
+	unsigned long long int c = (unsigned long long int)a+b;
+		
+	return ((c & MASK) == MASK);
 }
