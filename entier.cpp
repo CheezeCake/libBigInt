@@ -124,7 +124,6 @@ ostream& operator<<(ostream& flux, const Entier& val)
 
 istream& operator>>(istream& flux, Entier& val)
 {
-    //...
     return flux;
 }
 
