@@ -141,6 +141,6 @@ bool retenue(unsigned int a, unsigned int b)
 {
 	const unsigned long long int MASK = 0x0000000100000000; //2^32
 	unsigned long long int c = (unsigned long long int)a+b;
-		
+	
 	return ((c & MASK) == MASK);
 }
