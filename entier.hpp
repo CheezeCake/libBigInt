@@ -31,6 +31,10 @@ public:
     //multiplier
     Entier& operator*=(const Entier&);
     //Entier &operator*=(const unsigned int);
+    //Incrementation
+    Entier& operator++();
+    //Decrementation
+    Entier& operator--();
     bool estEgal(const Entier&) const;
     //affichage
     friend std::ostream& operator<<(std::ostream&, const Entier&);
