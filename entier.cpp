@@ -52,38 +52,37 @@ Entier& Entier::operator+=(const Entier& b)
 
     for(size_t i = 0; i < valeur.size(); i++)
     {
+		_retenue = retenue(valeur[i], b.valeur[i], reste);
 
-	_retenue = retenue(valeur[i], b.valeur[i], reste);
+		valeur[i] = reste;
+		valeur[i] += valeur_retenue;
 
-	valeur[i] = reste;
-	valeur[i] += valeur_retenue;
-
-	if(_retenue)
-	    valeur_retenue = 1;
-	else
-	    valeur_retenue = 0;
+		if(_retenue)
+			valeur_retenue = 1;
+		else
+			valeur_retenue = 0;
     }
 
     if(b.valeur.size() > valeur.size())
     {
-	for(size_t i = valeur.size(); i < b.valeur.size(); i++)
-	{
-	    valeur.push_back(b.valeur[i]);
-	    if(_retenue)
-	    {
-		_retenue = retenue(valeur[i], valeur_retenue, reste);
-		valeur[i] = reste;
-	    }
-	    else
-	    {
-		_retenue = false;
-		valeur_retenue = 0;
-	    }
-	}
+		for(size_t i = valeur.size(); i < b.valeur.size(); i++)
+		{
+			valeur.push_back(b.valeur[i]);
+			if(_retenue)
+			{
+				_retenue = retenue(valeur[i], valeur_retenue, reste);
+				valeur[i] = reste;
+			}
+			else
+			{
+				_retenue = false;
+				valeur_retenue = 0;
+			}
+		}
     }
 
     if(_retenue)
-	valeur.push_back(valeur_retenue);
+		valeur.push_back(valeur_retenue);
 
     return *this;
 }
@@ -95,6 +94,18 @@ Entier& Entier::operator-=(const Entier& b)
 
 Entier& Entier::operator*=(const Entier& b)
 {
+    return *this;
+}
+
+Entier& Entier::operator++()
+{
+    *this += 1;
+    return *this;
+}
+
+Entier& Entier::operator--()
+{
+    *this -= 1;
     return *this;
 }
 
