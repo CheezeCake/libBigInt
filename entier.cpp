@@ -97,6 +97,41 @@ Entier& Entier::operator*=(const Entier& b)
     return *this;
 }
 
+void Entier::karatsuba(Entier& u, Entier& v, Entier& r)
+{
+    if(u.valeur.size() == 0)
+	r.valeur.push_back(u.valeur[0]*v.valeur[0]);
+    else
+    {
+	Entier ug, ud;
+	Entier vg, vd;
+
+	karatsuba_separer(u, ug, ud);
+	karatsuba_separer(v, vg, vd);
+
+	Entier s, t, p;
+	s = ug+ud;
+	t = vg+vd;
+
+	Entier g, d;
+	karatsuba(ug, vg, g);
+	karatsuba(ud, vd, d);
+	
+	karatsuba(s, t, p);
+	Entier c = p-g-d;
+
+	karatsuba_recomposer(g, c, d, r);
+    }
+}
+
+void karatsuba_separer(Entier& u, Entier& ug, Entier& ud)
+{
+}
+
+void karatsuba_recomposer(Entier& g, Entier& c, Entier& d, Entier& r)
+{
+}
+    
 Entier& Entier::operator++()
 {
     *this += 1;
