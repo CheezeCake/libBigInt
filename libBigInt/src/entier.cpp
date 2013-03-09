@@ -1,4 +1,4 @@
-#include "entier.hpp"
+#include "../include/entier.hpp"
 
 using namespace std;
 
@@ -97,7 +97,7 @@ Entier& Entier::operator*=(const Entier& b)
     return *this;
 }
 
-void Entier::karatsuba(Entier& u, Entier& v, Entier& r)
+/*void Entier::karatsuba(Entier& u, Entier& v, Entier& r)
 {
     if(u.valeur.size() == 0)
 	r.valeur.push_back(u.valeur[0]*v.valeur[0]);
@@ -116,7 +116,7 @@ void Entier::karatsuba(Entier& u, Entier& v, Entier& r)
 	Entier g, d;
 	karatsuba(ug, vg, g);
 	karatsuba(ud, vd, d);
-	
+
 	karatsuba(s, t, p);
 	Entier c = p-g-d;
 
@@ -130,8 +130,8 @@ void karatsuba_separer(Entier& u, Entier& ug, Entier& ud)
 
 void karatsuba_recomposer(Entier& g, Entier& c, Entier& d, Entier& r)
 {
-}
-    
+}*/
+
 Entier& Entier::operator++()
 {
     *this += 1;
@@ -144,19 +144,19 @@ Entier& Entier::operator--()
     return *this;
 }
 
-int Entier::intcmp(const Entier& b)
+int Entier::intcmp(const Entier& b) const
 {
 	if(valeur.size() < b.valeur.size()) return -1;
 	if(valeur.size() > b.valeur.size()) return 1;
-	
-	vector<unsigned int>::reverse_iterator rita = valeur.rbegin();
-	vector<unsigned int>::reverse_iterator ritb = b.valeur.rbegin();
-	
-	while(rita != valeur.end())
+
+	vector<unsigned int>::const_reverse_iterator rita = valeur.rbegin();
+	vector<unsigned int>::const_reverse_iterator ritb = b.valeur.rbegin();
+
+	while(rita != valeur.rend())
 	{
-		if(valeur[rita] < b.valeur[ritb]) return -1;
-		if(valeur[rita] > b.valeur[ritb]) return 1;
-		
+		if(*rita < *ritb) return -1;
+		if(*rita > *ritb) return 1;
+
 		++rita;
 		++ritb;
 	}
@@ -196,14 +196,12 @@ bool operator!=(const Entier& a, const Entier& b)
 
 bool operator<=(const Entier& a, const Entier& b)
 {
-    if(a.intcmp(b) == 1) return false;
-	return true;
+    return true;
 }
 
 bool operator>=(const Entier& a, const Entier& b)
 {
-    if(a.intcmp(b) == -1) return false;
-	return true;
+    return true;
 }
 
 Entier operator+(const Entier& a, const Entier& b)
@@ -236,7 +234,7 @@ ostream& operator<<(ostream& flux, const Entier& val)
     {
         flux << val.valeur[i] << ' ';
     }
-    
+
     return flux;
 }
 
@@ -258,6 +256,6 @@ bool retenue(unsigned int a, unsigned int b, unsigned int& reste)
 {
     unsigned long long int c = (unsigned long long int)a+b;
     reste = c%BASE;
-    
+
     return ((c & BASE) == BASE);
 }

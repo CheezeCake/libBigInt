@@ -19,7 +19,7 @@ public:
     ~Entier();
     //operateurs
     //
-    
+
     Entier& operator=(const Entier&);
     Entier& operator=(const unsigned int);
     //ajout
@@ -31,9 +31,9 @@ public:
     //multiplier
     Entier& operator*=(const Entier&);
     //Entier &operator*=(const unsigned int);
-    void karatsuba(Entier&, Entier&, Entier&);
-    void karatsuba_separer(Entier&, Entier&, Entier&);
-    void karatsuba_recomposer(Entier&, Entier&, Entier&, Entier&);
+    //void karatsuba(Entier&, Entier&, Entier&);
+    //void karatsuba_separer(Entier&, Entier&, Entier&);
+    //void karatsuba_recomposer(Entier&, Entier&, Entier&, Entier&);
 
     //Incrementation
     Entier& operator++();
@@ -45,7 +45,7 @@ public:
     //entrée
     friend std::istream& operator>>(std::istream&, Entier&);
 	//comparaison
-	int intcmp(const Entier& b);
+	int intcmp(const Entier& b) const;
 
 private:
     std::vector<unsigned int> valeur;
