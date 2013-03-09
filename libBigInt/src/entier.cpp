@@ -187,14 +187,12 @@ int Entier::intcmp(const Entier& b) const
 
 bool operator<(const Entier& a, const Entier& b)
 {
-    if(a.intcmp(b) == -1) return true;
-	return false;
+	return a.intcmp(b) == -1;
 }
 
 bool operator>(const Entier& a, const Entier &b)
 {
-    if(a.intcmp(b) == 1) return true;
-	return false;
+	return a.intcmp(b) == 1;
 }
 
 bool operator==(const Entier& a, const Entier& b)
@@ -204,26 +202,23 @@ bool operator==(const Entier& a, const Entier& b)
 
 bool operator!=(const Entier& a, const Entier& b)
 {
-    if (a == b)
-        return false;
-    return true;
+	return !(a == b);
 }
 
 bool operator<=(const Entier& a, const Entier& b)
 {
-    return true;
+    return !(a > b);
 }
 
 bool operator>=(const Entier& a, const Entier& b)
 {
-    return true;
+    return !(a < b);
 }
 
 Entier operator+(const Entier& a, const Entier& b)
 {
     Entier somme(a);
     somme += b;
-
     return somme;
 }
 
@@ -231,7 +226,6 @@ Entier operator-(const Entier& a, const Entier& b)
 {
     Entier soustraction(a);
     soustraction -= b;
-
     return soustraction;
 }
 
@@ -239,16 +233,13 @@ Entier operator*(const Entier& a, const Entier& b)
 {
     Entier produit(a);
     produit *= b;
-
     return produit;
 }
 
 ostream& operator<<(ostream& flux, const Entier& val)
 {
     for(int i = val.valeur.size()-1; i >= 0; i--)
-    {
         flux << val.valeur[i] << ' ';
-    }
 
     return flux;
 }
@@ -256,15 +247,6 @@ ostream& operator<<(ostream& flux, const Entier& val)
 istream& operator>>(istream& flux, Entier& val)
 {
     return flux;
-}
-
-bool additionEstSur(unsigned int a, unsigned int b)
-{
-    unsigned int c = a+b;
-    if(c < a || c < b )
-        return false;
-    return true;
-    //return !(c < a || c < b)
 }
 
 bool retenue(unsigned int a, unsigned int b, unsigned int& reste)

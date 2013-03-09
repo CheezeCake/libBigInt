@@ -66,7 +66,6 @@ bool operator!=(const Entier&, const Entier&);
 bool operator<=(const Entier&, const Entier&);
 bool operator>=(const Entier&, const Entier&);
 
-bool additionEstSur(unsigned int, unsigned int);
 bool retenue(unsigned int, unsigned int, unsigned int&);
 
 #endif // ENTIER_HPP_INCLUDED
