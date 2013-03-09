@@ -196,12 +196,14 @@ bool operator!=(const Entier& a, const Entier& b)
 
 bool operator<=(const Entier& a, const Entier& b)
 {
-    return true;
+    if(a.intcmp(b) == 1) return false;
+	return true;
 }
 
 bool operator>=(const Entier& a, const Entier& b)
 {
-    return true;
+    if(a.intcmp(b) == -1) return false;
+	return true;
 }
 
 Entier operator+(const Entier& a, const Entier& b)
