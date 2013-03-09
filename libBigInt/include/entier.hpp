@@ -31,9 +31,9 @@ public:
     //multiplier
     Entier& operator*=(const Entier&);
     //Entier &operator*=(const unsigned int);
-    //void karatsuba(Entier&, Entier&, Entier&);
-    //void karatsuba_separer(Entier&, Entier&, Entier&);
-    //void karatsuba_recomposer(Entier&, Entier&, Entier&, Entier&);
+	void karatsuba(Entier&, Entier&, Entier&);
+	void karatsuba_separer(Entier&, Entier&, Entier&);
+	void karatsuba_recomposer(Entier&, Entier&, Entier&, Entier&);
 
     //Incrementation
     Entier& operator++();

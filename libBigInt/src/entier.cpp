@@ -89,6 +89,21 @@ Entier& Entier::operator+=(const Entier& b)
 
 Entier& Entier::operator-=(const Entier& b)
 {
+	if(b==0) return *this;
+
+	Entier complement(b);
+	const unsigned int masque = 0xffffffff;
+
+	for(vector<unsigned int>::iterator it = complement.valeur.begin(); it != complement.valeur.end(); ++it)
+		*it ^= masque;
+
+	++complement;
+	Entier tmp(*this);
+	*this += complement;
+	unsigned int t = this->valeur.size() -1;
+	if(tmp < *this)
+		this->valeur[t]--;
+	if(this->valeur[t] == 0) this->valeur.erase(this->valeur.end()-1);
     return *this;
 }
 
@@ -97,7 +112,7 @@ Entier& Entier::operator*=(const Entier& b)
     return *this;
 }
 
-/*void Entier::karatsuba(Entier& u, Entier& v, Entier& r)
+void Entier::karatsuba(Entier& u, Entier& v, Entier& r)
 {
     if(u.valeur.size() == 0)
 	r.valeur.push_back(u.valeur[0]*v.valeur[0]);
@@ -124,13 +139,13 @@ Entier& Entier::operator*=(const Entier& b)
     }
 }
 
-void karatsuba_separer(Entier& u, Entier& ug, Entier& ud)
+void Entier::karatsuba_separer(Entier& u, Entier& ug, Entier& ud)
 {
 }
 
-void karatsuba_recomposer(Entier& g, Entier& c, Entier& d, Entier& r)
+void Entier::karatsuba_recomposer(Entier& g, Entier& c, Entier& d, Entier& r)
 {
-}*/
+}
 
 Entier& Entier::operator++()
 {
@@ -175,15 +190,9 @@ bool operator>(const Entier& a, const Entier &b)
 	return false;
 }
 
-bool Entier::estEgal(const Entier& b) const
-{
-    if(intcmp(b) == 0) return true;
-	return false;
-}
-
 bool operator==(const Entier& a, const Entier& b)
 {
-    return a.estEgal(b);
+    return a.intcmp(b) == 0;
 }
 
 bool operator!=(const Entier& a, const Entier& b)
@@ -191,7 +200,6 @@ bool operator!=(const Entier& a, const Entier& b)
     if (a == b)
         return false;
     return true;
-    //return !(a == b);
 }
 
 bool operator<=(const Entier& a, const Entier& b)

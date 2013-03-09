@@ -1,5 +1,5 @@
 CXX=g++
-CXXFLAGS=
+CXXFLAGS=-W -Wall -ansii -pedantics
 LDFLAGS=-lBigInt
 
 LIB_DIR=./libBigInt/lib/
