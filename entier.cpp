@@ -144,19 +144,41 @@ Entier& Entier::operator--()
     return *this;
 }
 
+int Entier::intcmp(const Entier& b)
+{
+	if(valeur.size() < b.valeur.size()) return -1;
+	if(valeur.size() > b.valeur.size()) return 1;
+	
+	vector<unsigned int>::reverse_iterator rita = valeur.rbegin();
+	vector<unsigned int>::reverse_iterator ritb = b.valeur.rbegin();
+	
+	while(rita != valeur.end())
+	{
+		if(valeur[rita] < b.valeur[ritb]) return -1;
+		if(valeur[rita] > b.valeur[ritb]) return 1;
+		
+		++rita;
+		++ritb;
+	}
+	return 0;
+}
+
 bool operator<(const Entier& a, const Entier& b)
 {
-    return true;
+    if(a.intcmp(b) == -1) return true;
+	return false;
 }
 
 bool operator>(const Entier& a, const Entier &b)
 {
-    return true;
+    if(a.intcmp(b) == 1) return true;
+	return false;
 }
 
 bool Entier::estEgal(const Entier& b) const
 {
-    return true;
+    if(intcmp(b) == 0) return true;
+	return false;
 }
 
 bool operator==(const Entier& a, const Entier& b)

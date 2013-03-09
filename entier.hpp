@@ -44,6 +44,8 @@ public:
     friend std::ostream& operator<<(std::ostream&, const Entier&);
     //entrée
     friend std::istream& operator>>(std::istream&, Entier&);
+	//comparaison
+	int intcmp(const Entier& b);
 
 private:
     std::vector<unsigned int> valeur;
