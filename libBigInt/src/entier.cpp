@@ -11,16 +11,9 @@ Entier::Entier(unsigned int val)
     valeur.push_back(val);
 }
 
-Entier::Entier(const string& val)
+Entier::Entier(const string& nombre, unsigned int base)
 {
-    valeur.push_back(0);
-
-    /*const unsigned int BASE=10;
-    for(unsigned int i = 0; i < val.size(); i++)
-    {
-        valeur*=BASE;
-        valeur+=val[i] - '0';
-    }*/
+	set(nombre);
 }
 
 Entier::Entier(const Entier& val)
@@ -30,6 +23,20 @@ Entier::Entier(const Entier& val)
 
 Entier::~Entier()
 {
+}
+
+bool Entier::set(const string& nombre, unsigned int base)
+{
+	valeur.clear();
+	valeur.push_back(0);
+	
+	for(unsigned int i = 0; i < nombre.size(); ++i)
+	{
+		*this *= base;
+		*this += nombre[i] - '0';
+	}
+
+	return true;
 }
 
 Entier& Entier::operator=(const Entier& b)
@@ -100,10 +107,10 @@ Entier& Entier::operator-=(const Entier& b)
 	++complement;
 	Entier tmp(*this);
 	*this += complement;
-	unsigned int t = this->valeur.size() -1;
+	unsigned int t = valeur.size() -1;
 	if(tmp < *this)
-		this->valeur[t]--;
-	if(this->valeur[t] == 0) this->valeur.erase(this->valeur.end()-1);
+		valeur[t]--;
+	if(valeur[t] == 0) valeur.erase(valeur.end()-1);
     return *this;
 }
 

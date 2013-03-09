@@ -13,13 +13,13 @@ public:
     //constructeurs
     Entier();
     Entier(unsigned int);
-    Entier(const std::string&);
+    Entier(const std::string&, unsigned int base = 10);
     Entier(const Entier&);
     //destructeur
     ~Entier();
+	//modulateurs
+	bool set(const std::string&, unsigned int base = 10);
     //operateurs
-    //
-
     Entier& operator=(const Entier&);
     Entier& operator=(const unsigned int);
     //ajout
