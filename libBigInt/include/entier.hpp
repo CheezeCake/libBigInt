@@ -31,6 +31,8 @@ public:
     //multiplier
     Entier& operator*=(const Entier&);
     //Entier &operator*=(const unsigned int);
+	Entier& operator/=(const Entier&);
+	Entier& operator%=(const Entier&);
 	void karatsuba(Entier&, Entier&, Entier&);
 	void karatsuba_separer(Entier&, Entier&, Entier&);
 	void karatsuba_recomposer(Entier&, Entier&, Entier&, Entier&);
@@ -58,6 +60,8 @@ Entier operator-(const Entier&, const Entier&);
 //Entier operator-(const Entier&, const unsigned int);
 Entier operator*(const Entier&, const Entier&);
 //Entier operator*(const Entier&, const unsigned int);
+Entier operator/(const Entier&, const Entier&);
+Entier operator%(const Entier&, const Entier&);
 //comparaisons
 bool operator<(const Entier&, const Entier&);
 bool operator>(const Entier&, const Entier&);

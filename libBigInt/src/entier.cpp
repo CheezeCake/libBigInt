@@ -154,6 +154,17 @@ void Entier::karatsuba_recomposer(Entier& g, Entier& c, Entier& d, Entier& r)
 {
 }
 
+Entier& Entier::operator/=(const Entier& b)
+{
+
+	return *this;
+}
+
+Entier& Entier::operator%=(const Entier &b)
+{
+	return *this;
+}
+
 Entier& Entier::operator++()
 {
     *this += 1;
@@ -234,6 +245,20 @@ Entier operator*(const Entier& a, const Entier& b)
     Entier produit(a);
     produit *= b;
     return produit;
+}
+
+Entier operator/(const Entier& a, const Entier& b)
+{
+	Entier quotient(a);
+	quotient /= b;
+	return quotient;
+}
+
+Entier operator%(const Entier& a, const Entier& b)
+{
+	Entier reste(a);
+	reste %= b;
+	return reste;
 }
 
 ostream& operator<<(ostream& flux, const Entier& val)
