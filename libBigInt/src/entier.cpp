@@ -246,6 +246,9 @@ ostream& operator<<(ostream& flux, const Entier& val)
 
 istream& operator>>(istream& flux, Entier& val)
 {
+	string nombre;
+	flux>>nombre;
+	val.set(nombre,10);
     return flux;
 }
 
