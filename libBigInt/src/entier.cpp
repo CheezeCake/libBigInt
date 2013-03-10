@@ -263,8 +263,9 @@ Entier operator%(const Entier& a, const Entier& b)
 
 ostream& operator<<(ostream& flux, const Entier& val)
 {
-    for(int i = val.valeur.size()-1; i >= 0; i--)
-        flux << val.valeur[i] << ' ';
+    for(int i = val.valeur.size()-1; i > 0; i--)
+        flux << val.valeur[i] << '.';
+	flux << val.valeur[0];
 
     return flux;
 }
