@@ -59,37 +59,37 @@ Entier& Entier::operator+=(const Entier& b)
 
     for(size_t i = 0; i < valeur.size(); i++)
     {
-	_retenue = retenue(valeur[i], b.valeur[i], reste);
+		_retenue = retenue(valeur[i], b.valeur[i], reste);
 
-	valeur[i] = reste;
-	valeur[i] += valeur_retenue;
+		valeur[i] = reste;
+		valeur[i] += valeur_retenue;
 
-	if(_retenue)
-	    valeur_retenue = 1;
-	else
-	    valeur_retenue = 0;
+		if(_retenue)
+			valeur_retenue = 1;
+		else
+			valeur_retenue = 0;
     }
 
     if(b.valeur.size() > valeur.size())
     {
-	for(size_t i = valeur.size(); i < b.valeur.size(); i++)
-	{
-	    valeur.push_back(b.valeur[i]);
-	    if(_retenue)
-	    {
-		_retenue = retenue(valeur[i], valeur_retenue, reste);
-		valeur[i] = reste;
-	    }
-	    else
-	    {
-		_retenue = false;
-		valeur_retenue = 0;
-	    }
-	}
+		for(size_t i = valeur.size(); i < b.valeur.size(); i++)
+		{
+			valeur.push_back(b.valeur[i]);
+			if(_retenue)
+			{
+				_retenue = retenue(valeur[i], valeur_retenue, reste);
+				valeur[i] = reste;
+			}
+			else
+			{
+				_retenue = false;
+				valeur_retenue = 0;
+			}
+		}
     }
 
     if(_retenue)
-	valeur.push_back(valeur_retenue);
+		valeur.push_back(valeur_retenue);
 
     return *this;
 }
@@ -111,47 +111,71 @@ Entier& Entier::operator-=(const Entier& b)
 	if(tmp < *this)
 		valeur[t]--;
 	if(valeur[t] == 0) valeur.erase(valeur.end()-1);
-    return *this;
+		return *this;
 }
 
 Entier& Entier::operator*=(const Entier& b)
 {
+	Entier u = *this, v = b, r;
+	karatsuba(u, v, r);
+	this->valeur = r.valeur;
+
     return *this;
 }
 
 void Entier::karatsuba(Entier& u, Entier& v, Entier& r)
 {
-    if(u.valeur.size() == 0)
-	r.valeur.push_back(u.valeur[0]*v.valeur[0]);
+    if(u.valeur.size() == 1)
+		r.valeur.push_back(u.valeur[0]*v.valeur[0]);
     else
     {
-	Entier ug, ud;
-	Entier vg, vd;
+		Entier ug, ud;
+		Entier vg, vd;
+			
+		//U et V doivent être de même degré
+		if(u.valeur.size() > v.valeur.size())
+			v.valeur.insert(v.valeur.end(), u.valeur.size()-v.valeur.size(), 0);
+		else
+			u.valeur.insert(u.valeur.end(), v.valeur.size()-u.valeur.size(), 0);
 
-	karatsuba_separer(u, ug, ud);
-	karatsuba_separer(v, vg, vd);
+		karatsuba_separer(u, ug, ud);
+		karatsuba_separer(v, vg, vd);
 
-	Entier s, t, p;
-	s = ug+ud;
-	t = vg+vd;
+		Entier s, t, p;
+		s = ug+ud;
+		t = vg+vd;
 
-	Entier g, d;
-	karatsuba(ug, vg, g);
-	karatsuba(ud, vd, d);
+		Entier g, d;
+		karatsuba(ug, vg, g);
+		karatsuba(ud, vd, d);
 
-	karatsuba(s, t, p);
-	Entier c = p-g-d;
+		karatsuba(s, t, p);
+		Entier c = p-g-d;
 
-	karatsuba_recomposer(g, c, d, r);
+		karatsuba_recomposer(g, c, d, r, u.valeur.size());
     }
 }
 
 void Entier::karatsuba_separer(Entier& u, Entier& ug, Entier& ud)
 {
+	int k = u.valeur.size()/2;
+	for(int i = 0; i < k; i++)
+		ug.valeur.push_back(u.valeur[i]);
+	
+	for(int i = k; i < 2*k; i++)
+		ud.valeur.ushg_back(u.valeur[i]);
 }
 
-void Entier::karatsuba_recomposer(Entier& g, Entier& c, Entier& d, Entier& r)
+void Entier::karatsuba_recomposer(Entier& g, Entier& c, Entier& d, Entier& r, int k)
 {
+	//UV = g + c*BASE^k + d*BASE^2k
+	
+	//c*BASE^k
+	c.valeur.insert(c.valeur.begin(), k, 0);
+	//d*BASE^2k
+	d.valeur.insert(d.valeur;begin(), 2*k, 0);
+
+	r = g+c+d;
 }
 
 Entier& Entier::operator/=(const Entier& b)
