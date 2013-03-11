@@ -1,11 +1,11 @@
 int main()
 {
-	onche();
-	int a;
-	for(;;)
-	{
-		int b;
-	}
+    onche();
+    int a;
+    for(;;)
+    {
+	int b;
+    }
 
-	return 0;
+    return 0;
 }
