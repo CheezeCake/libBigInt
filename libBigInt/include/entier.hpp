@@ -35,7 +35,7 @@ public:
 	Entier& operator%=(const Entier&);
 	void karatsuba(Entier&, Entier&, Entier&);
 	void karatsuba_separer(Entier&, Entier&, Entier&);
-	void karatsuba_recomposer(Entier&, Entier&, Entier&, Entier&);
+	void karatsuba_recomposer(Entier&, Entier&, Entier&, Entier&, int);
 
     //Incrementation
     Entier& operator++();
