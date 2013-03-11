@@ -17,8 +17,8 @@ public:
     Entier(const Entier&);
     //destructeur
     ~Entier();
-	//modulateurs
-	bool set(const std::string&, unsigned int base = 10);
+    //modulateurs
+    bool set(const std::string&, unsigned int base = 10);
     //operateurs
     Entier& operator=(const Entier&);
     Entier& operator=(const unsigned int);
@@ -31,11 +31,11 @@ public:
     //multiplier
     Entier& operator*=(const Entier&);
     //Entier &operator*=(const unsigned int);
-	Entier& operator/=(const Entier&);
-	Entier& operator%=(const Entier&);
-	void karatsuba(Entier&, Entier&, Entier&);
-	void karatsuba_separer(Entier&, Entier&, Entier&);
-	void karatsuba_recomposer(Entier&, Entier&, Entier&, Entier&, int);
+    Entier& operator/=(const Entier&);
+    Entier& operator%=(const Entier&);
+    void karatsuba(Entier&, Entier&, Entier&);
+    void karatsuba_separer(Entier&, Entier&, Entier&);
+    void karatsuba_recomposer(Entier&, Entier&, Entier&, Entier&, int);
 
     //Incrementation
     Entier& operator++();
@@ -46,8 +46,8 @@ public:
     friend std::ostream& operator<<(std::ostream&, const Entier&);
     //entrée
     friend std::istream& operator>>(std::istream&, Entier&);
-	//comparaison
-	int intcmp(const Entier& b) const;
+    //comparaison
+    int intcmp(const Entier& b) const;
 
 private:
     std::vector<unsigned int> valeur;
