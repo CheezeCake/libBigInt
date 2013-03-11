@@ -163,7 +163,7 @@ void Entier::karatsuba_separer(Entier& u, Entier& ug, Entier& ud)
 		ug.valeur.push_back(u.valeur[i]);
 	
 	for(int i = k; i < 2*k; i++)
-		ud.valeur.ushg_back(u.valeur[i]);
+		ud.valeur.push_back(u.valeur[i]);
 }
 
 void Entier::karatsuba_recomposer(Entier& g, Entier& c, Entier& d, Entier& r, int k)
@@ -173,7 +173,7 @@ void Entier::karatsuba_recomposer(Entier& g, Entier& c, Entier& d, Entier& r, in
 	//c*BASE^k
 	c.valeur.insert(c.valeur.begin(), k, 0);
 	//d*BASE^2k
-	d.valeur.insert(d.valeur;begin(), 2*k, 0);
+	d.valeur.insert(d.valeur.begin(), 2*k, 0);
 
 	r = g+c+d;
 }
