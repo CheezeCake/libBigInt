@@ -137,17 +137,22 @@ void Entier::mul(long long unsigned int a, long long unsigned int b, unsigned in
 
 void Entier::karatsuba(Entier& u, Entier& v, Entier& r)
 {
+
+    cout << u.valeur.size() << endl;
+    cout << v.valeur.size() << endl;
     if(u.valeur.size() == 1)
-	{
-		unsigned int a;
-		unsigned int b;
-		mul(u.valeur[0], v.valeur[0], a, b);
-		r.valeur.push_back(b);
-		if(a!=0)
-			r.valeur.push_back(a);
+    {
+	/*
+	unsigned int a;
+	unsigned int b;
+	mul(u.valeur[0], v.valeur[0], a, b);
+	r.valeur.push_back(b);
+	if(a!=0)
+	    r.valeur.push_back(a);
+	*/
 	r.valeur.push_back(u.valeur[0]*v.valeur[0]);
 
-	}
+    }
     else
     {
 	Entier ug, ud;
