@@ -131,7 +131,7 @@ void Entier::mul(long long unsigned int a, long long unsigned int b, unsigned in
 	a*=b;
 
 	retenue = a ^ masqueRetenue;
-	retenue >>= 32;
+	retenue = retenue >> 32;
 	reste = a ^ masqueReste;
 
 } 
