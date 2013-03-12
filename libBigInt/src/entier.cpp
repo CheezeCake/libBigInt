@@ -138,17 +138,20 @@ void Entier::mul(long long unsigned int a, long long unsigned int b, unsigned in
 
 void Entier::karatsuba(Entier& u, Entier& v, Entier& r)
 {
-    if(u.valeur.size() == 0)
-	{
-		unsigned int a;
-		unsigned int b;
-		mul(u.valeur[0], v.valeur[0], a, b);
-		r.valeur.push_back(b);
-		if(a!=0)
-			r.valeur.push_back(a);
-	//r.valeur.push_back(u.valeur[0]*v.valeur[0]);
 
-	}
+    cout << u.valeur.size() << endl;
+    cout << v.valeur.size() << endl;
+    if(u.valeur.size() == 1)
+    {
+	unsigned int a;
+	unsigned int b;
+	mul(u.valeur[0], v.valeur[0], a, b);
+	r.valeur.push_back(a);
+	if(a!=0)
+	    r.valeur.push_back(b);
+	
+	//r.valeur.push_back(u.valeur[0]*v.valeur[0]);
+    }
     else
     {
 	Entier ug, ud;
@@ -180,24 +183,24 @@ void Entier::karatsuba(Entier& u, Entier& v, Entier& r)
 
 void Entier::karatsuba_separer(Entier& u, Entier& ug, Entier& ud)
 {
-    /*int k = u.valeur.size()/2;
+    int k = u.valeur.size()/2;
     for(int i = 0; i < k; i++)
 	ug.valeur.push_back(u.valeur[i]);
 	
     for(int i = k; i < 2*k; i++)
-	ud.valeur.push_back(u.valeur[i]);*/
+	ud.valeur.push_back(u.valeur[i]);
 }
 
 void Entier::karatsuba_recomposer(Entier& g, Entier& c, Entier& d, Entier& r, int k)
 {
-    /*//UV = g + c*BASE^k + d*BASE^2k
+    //UV = g + c*BASE^k + d*BASE^2k
 	
     //c*BASE^k
     c.valeur.insert(c.valeur.begin(), k, 0);
     //d*BASE^2k
     d.valeur.insert(d.valeur.begin(), 2*k, 0);
 
-    r = g+c+d;*/
+    r = g+c+d;
 }
 
 Entier& Entier::operator/=(const Entier& b)
