@@ -51,6 +51,7 @@ public:
 
 private:
     std::vector<unsigned int> valeur;
+	void mul(long long unsigned int a, long long unsigned int b, unsigned int& retenue, unsigned int& reste);
 };
 
 //operateurs

@@ -124,10 +124,30 @@ Entier& Entier::operator*=(const Entier& b)
     return *this;
 }
 
+void Entier::mul(long long unsigned int a, long long unsigned int b, unsigned int& retenue, unsigned int& reste)
+{
+	long long unsigned int masqueRetenue = 0xffffffff0000000;
+	long long unsigned int masqueReste = 0x00000000ffffffff;
+	a*=b;
+
+	retenue = a ^ masqueRetenue;
+	reste = a ^ masqueReste;
+
+} 
+
 void Entier::karatsuba(Entier& u, Entier& v, Entier& r)
 {
     if(u.valeur.size() == 1)
+	{
+		unsigned int a;
+		unsigned int b;
+		mul(u.valeur[0], v.valeur[0], a, b);
+		r.valeur.push_back(b);
+		if(a!=0)
+			r.valeur.push_back(a);
 	r.valeur.push_back(u.valeur[0]*v.valeur[0]);
+
+	}
     else
     {
 	Entier ug, ud;
