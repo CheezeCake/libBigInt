@@ -35,7 +35,8 @@ int main()
 	Entier op1;
 	Entier op2;
 	unsigned char operateur;
-	
+
+		
 	do
 	{
 	cout<<"Entrez une ou plusieurs expressions arithmetiques à partir d'un: "<<endl;
@@ -48,7 +49,13 @@ int main()
 		cin>>op1;
 		cin>>operateur;
 		cin>>op2;
-		cout<<op1<<' '<<operateur<<' '<<op2<<" = "<<calcul(op1, op2, operateur)<<endl;
+		//cout<<op1<<' '<<operateur<<' '<<op2<<" = "<<calcul(op1, op2, operateur)<<endl;
+		if(op1 < op2)
+			cout<<"op1 est inferieur a op2"<<endl;
+		else
+			cout<<"op2 est inferieur a op1"<<endl;
+		cout<<op1<<endl;
+		cout<<op2<<endl;
 
 	}
 	else
