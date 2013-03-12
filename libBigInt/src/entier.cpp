@@ -32,7 +32,7 @@ bool Entier::set(const string& nombre, unsigned int base)
 	
     for(unsigned int i = 0; i < nombre.size(); ++i)
     {
-	*this *= base;
+//	*this *= base;
 	*this += nombre[i] - '0';
     }
 
@@ -126,18 +126,19 @@ Entier& Entier::operator*=(const Entier& b)
 
 void Entier::mul(long long unsigned int a, long long unsigned int b, unsigned int& retenue, unsigned int& reste)
 {
-	long long unsigned int masqueRetenue = 0xffffffff0000000;
+	long long unsigned int masqueRetenue = 0xffffffff00000000;
 	long long unsigned int masqueReste = 0x00000000ffffffff;
 	a*=b;
 
 	retenue = a ^ masqueRetenue;
+	retenue >>= 32;
 	reste = a ^ masqueReste;
 
 } 
 
 void Entier::karatsuba(Entier& u, Entier& v, Entier& r)
 {
-    if(u.valeur.size() == 1)
+    if(u.valeur.size() == 0)
 	{
 		unsigned int a;
 		unsigned int b;
@@ -145,7 +146,7 @@ void Entier::karatsuba(Entier& u, Entier& v, Entier& r)
 		r.valeur.push_back(b);
 		if(a!=0)
 			r.valeur.push_back(a);
-	r.valeur.push_back(u.valeur[0]*v.valeur[0]);
+	//r.valeur.push_back(u.valeur[0]*v.valeur[0]);
 
 	}
     else
@@ -179,24 +180,24 @@ void Entier::karatsuba(Entier& u, Entier& v, Entier& r)
 
 void Entier::karatsuba_separer(Entier& u, Entier& ug, Entier& ud)
 {
-    int k = u.valeur.size()/2;
+    /*int k = u.valeur.size()/2;
     for(int i = 0; i < k; i++)
 	ug.valeur.push_back(u.valeur[i]);
 	
     for(int i = k; i < 2*k; i++)
-	ud.valeur.push_back(u.valeur[i]);
+	ud.valeur.push_back(u.valeur[i]);*/
 }
 
 void Entier::karatsuba_recomposer(Entier& g, Entier& c, Entier& d, Entier& r, int k)
 {
-    //UV = g + c*BASE^k + d*BASE^2k
+    /*//UV = g + c*BASE^k + d*BASE^2k
 	
     //c*BASE^k
     c.valeur.insert(c.valeur.begin(), k, 0);
     //d*BASE^2k
     d.valeur.insert(d.valeur.begin(), 2*k, 0);
 
-    r = g+c+d;
+    r = g+c+d;*/
 }
 
 Entier& Entier::operator/=(const Entier& b)
