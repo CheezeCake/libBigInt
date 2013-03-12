@@ -146,9 +146,9 @@ void Entier::karatsuba(Entier& u, Entier& v, Entier& r)
 	unsigned int a;
 	unsigned int b;
 	mul(u.valeur[0], v.valeur[0], a, b);
-	r.valeur.push_back(b);
+	r.valeur.push_back(a);
 	if(a!=0)
-	    r.valeur.push_back(a);
+	    r.valeur.push_back(b);
 	
 	//r.valeur.push_back(u.valeur[0]*v.valeur[0]);
     }
