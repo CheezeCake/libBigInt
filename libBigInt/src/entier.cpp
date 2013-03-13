@@ -1,5 +1,4 @@
 #include "../include/entier.hpp"
-#include <list>
 
 using namespace std;
 
@@ -121,26 +120,31 @@ Entier& Entier::operator*=(const Entier& b)
     /*Entier u = *this, v = b, r;
     karatsuba(u, v, r);
     this->valeur = r.valeur;
-
     return *this;*/
-
-    list<Entier> nbASommer;
-
-    for(vector<unsigned int>::iterator iti = valeur.begin(); iti != valeur.end(); ++iti)
+    
+    Entier *nbASommer = new Entier[b.valeur.size()];
+    for(size_t i = 0; i < b.valeur.size(); i++)
     {
-	nbASommer.push_back(0);
-	for(vector<unsigned int>::const_iterator  itj = b.valeur.begin(); itj != b.valeur.end(); ++itj)
+	nbASommer[i] = 0;
+	for(size_t j = 0; j < valeur.size(); j++)
 	{
 	    unsigned int reste;
 	    unsigned int retenue;
 
-	    mul(iti, itj, reste, retenue);
+	    //cout<<"valeur[i] = "<<valeur[i]<<", b.valeur[j] = "<<b.valeur[j]<<'\n';
+	    mul(valeur[i], b.valeur[j], reste, retenue);
+	    //cout<<"reste = "<<reste<<", retenue = "<<retenue<<endl;
 
-
-
+	    nbASommer[i].valeur[j] = 0;
+	    nbASommer[i].valeur[j] += retenue;
+	    nbASommer[i].valeur[j] += reste;
 	}
     }
+    
+    *this = 0;
 
+    for(size_t i = 0; i < b.valeur.size(); i++)
+	*this += nbASommer[i];
     return *this;
 
 }
@@ -151,9 +155,9 @@ void Entier::mul(long long unsigned int a, long long unsigned int b, unsigned in
 	long long unsigned int masqueReste = 0x00000000ffffffff;
 	a*=b;
 
-	retenue = a ^ masqueRetenue;
+	retenue = a & masqueRetenue;
 	retenue = retenue >> 32;
-	reste = a ^ masqueReste;
+	reste = a & masqueReste;
 }
 
 void Entier::karatsuba(Entier& u, Entier& v, Entier& r)
