@@ -1,4 +1,5 @@
 #include "../include/entier.hpp"
+#include <list>
 
 using namespace std;
 
@@ -30,9 +31,9 @@ bool Entier::set(const string& nombre, unsigned int base)
     valeur.clear();
     valeur.push_back(0);
 	
-    for(unsigned int i = 0; i < nombre.size(); ++i)
+    for(size_t i = 0; i < nombre.size(); ++i)
     {
-//	*this *= base;
+	//*this *= base;
 	*this += nombre[i] - '0';
     }
 
@@ -117,11 +118,31 @@ Entier& Entier::operator-=(const Entier& b)
 
 Entier& Entier::operator*=(const Entier& b)
 {
-    Entier u = *this, v = b, r;
+    /*Entier u = *this, v = b, r;
     karatsuba(u, v, r);
     this->valeur = r.valeur;
 
+    return *this;*/
+
+    list<Entier> nbASommer;
+
+    for(vector<unsigned int>::iterator iti = valeur.begin(); iti != valeur.end(); ++iti)
+    {
+	nbASommer.push_back(0);
+	for(vector<unsigned int>::const_iterator  itj = b.valeur.begin(); itj != b.valeur.end(); ++itj)
+	{
+	    unsigned int reste;
+	    unsigned int retenue;
+
+	    mul(iti, itj, reste, retenue);
+
+
+
+	}
+    }
+
     return *this;
+
 }
 
 void Entier::mul(long long unsigned int a, long long unsigned int b, unsigned int& retenue, unsigned int& reste)
@@ -133,22 +154,19 @@ void Entier::mul(long long unsigned int a, long long unsigned int b, unsigned in
 	retenue = a ^ masqueRetenue;
 	retenue = retenue >> 32;
 	reste = a ^ masqueReste;
-
-} 
+}
 
 void Entier::karatsuba(Entier& u, Entier& v, Entier& r)
 {
 
-    cout << u.valeur.size() << endl;
-    cout << v.valeur.size() << endl;
     if(u.valeur.size() == 1)
     {
 	unsigned int a;
 	unsigned int b;
 	mul(u.valeur[0], v.valeur[0], a, b);
-	r.valeur.push_back(a);
+	r.valeur.push_back(b);
 	if(a!=0)
-	    r.valeur.push_back(b);
+	    r.valeur.push_back(a);
 	
 	//r.valeur.push_back(u.valeur[0]*v.valeur[0]);
     }

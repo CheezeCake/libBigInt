@@ -8,9 +8,9 @@ Entier calcul(const Entier& a, const Entier& b, unsigned char operateur)
 {
 	switch(operateur)
 	{
-		case '+':
-		return a+b;
-		break;
+	    case '+':
+	    return a+b;
+	    break;
 
 		case '-':
 		return a-b;
@@ -48,7 +48,11 @@ int main()
 	unsigned char operateur;
 	string fichier;
 
-	do
+	op1=1;
+	cout<<op1<<endl;
+	op1*=10;
+	cout<<op1<<endl;
+	/*do
 	{
 	cout<<"Entrez une ou plusieurs expressions arithmetiques à partir d'un: "<<endl;
 	cout<<"1) clavier		2) fichier"<<endl;
@@ -57,11 +61,12 @@ int main()
 
 	if(choix == 1)
 	{
-		cout << "Entrez la premiere operande :" << endl;
+		cout<<"Entrez une suite d'expression"<<endl;
+		//cout << "Entrez la premiere operande :" << endl;
 		cin>>op1;
-		cout << endl << "Entrez l'operateur :" << endl;
+		//cout << endl << "Entrez l'operateur :" << endl;
 		cin>>operateur;
-		cout << endl << "Entrez la seconde operande :" << endl;
+		//cout << endl << "Entrez la seconde operande :" << endl;
 		cin>>op2;
 		cout << endl <<op1<<' '<<operateur<<' '<<op2<<" = "<<calcul(op1, op2, operateur)<<endl;
 
@@ -86,7 +91,7 @@ int main()
 		    source.close();
 
 		//}
-	}
+	}*/
 
 	/*cin >> op1;
 	cin >> operateur;
@@ -95,7 +100,6 @@ int main()
 	cout << op1 << ' ' << operateur << ' ' << op2 << endl;
 	if(comparer(op1, op2, operateur)) cout << "OUI";
 	else cout << "NON" << endl;*/
-
 
     return 0;
 }
