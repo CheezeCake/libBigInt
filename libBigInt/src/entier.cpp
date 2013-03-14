@@ -121,33 +121,6 @@ Entier& Entier::operator*=(const Entier& b)
     karatsuba(u, v, r);
     this->valeur = r.valeur;
     return *this;
-    
-    /*   
-    Entier *nbASommer = new Entier[b.valeur.size()];
-    for(size_t i = 0; i < b.valeur.size(); i++)
-    {
-	nbASommer[i] = 0;
-	for(size_t j = 0; j < valeur.size(); j++)
-	{
-	    unsigned int reste;
-	    unsigned int retenue;
-
-	    //cout<<"valeur[i] = "<<valeur[i]<<", b.valeur[j] = "<<b.valeur[j]<<'\n';
-	    mul(valeur[i], b.valeur[j], reste, retenue);
-	    //cout<<"reste = "<<reste<<", retenue = "<<retenue<<endl;
-
-	    nbASommer[i].valeur[j] = 0;
-	    nbASommer[i].valeur[j] += retenue;
-	    nbASommer[i].valeur[j] += reste;
-	}
-    }
-    
-    *this = 0;
-
-    for(size_t i = 0; i < b.valeur.size(); i++)
-	*this += nbASommer[i];
-    return *this;
-    */
 }
 
 void Entier::mul(long long unsigned int a, long long unsigned int b, unsigned int& retenue, unsigned int& reste)
@@ -156,8 +129,7 @@ void Entier::mul(long long unsigned int a, long long unsigned int b, unsigned in
 	long long unsigned int masqueReste = 0x00000000ffffffff;
 	a*=b;
 
-	retenue = a & masqueRetenue;
-	retenue = retenue >> 32;
+	retenue = (a & masqueRetenue) >> 32;
 	reste = a & masqueReste;
 }
 
