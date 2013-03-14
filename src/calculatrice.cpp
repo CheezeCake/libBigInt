@@ -48,11 +48,7 @@ int main()
 	unsigned char operateur;
 	string fichier;
 
-	op1=1;
-	cout<<op1<<endl;
-	op1*=10;
-	cout<<op1<<endl;
-	/*do
+	do
 	{
 	cout<<"Entrez une ou plusieurs expressions arithmetiques à partir d'un: "<<endl;
 	cout<<"1) clavier		2) fichier"<<endl;
@@ -91,7 +87,7 @@ int main()
 		    source.close();
 
 		//}
-	}*/
+	}
 
 	/*cin >> op1;
 	cin >> operateur;

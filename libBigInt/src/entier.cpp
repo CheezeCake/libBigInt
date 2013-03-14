@@ -32,7 +32,7 @@ bool Entier::set(const string& nombre, unsigned int base)
 	
     for(size_t i = 0; i < nombre.size(); ++i)
     {
-	//*this *= base;
+	*this *= base;
 	*this += nombre[i] - '0';
     }
 
