@@ -337,7 +337,7 @@ istream& operator>>(istream& flux, Entier& val)
 
 bool retenue(unsigned int a, unsigned int b, unsigned int& reste)
 {
-	unsigned long long int c = (unsigned long long int)a+b;
+    unsigned long long int c = (unsigned long long int)a+b;
     reste = c%BASE;
 
     return ((c & BASE) == BASE);
