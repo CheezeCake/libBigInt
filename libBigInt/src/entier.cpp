@@ -1,3 +1,11 @@
+/**
+   @file entier.cpp
+   @author Marc Pardo, Emmanuel Nicolet, Julien Alonso
+   @date 2013
+    
+*/
+
+
 #include "../include/entier.hpp"
 
 using namespace std;
@@ -96,7 +104,7 @@ Entier& Entier::operator+=(const Entier& b)
 
 Entier& Entier::operator-=(const Entier& b)
 {
-    if(b==0) return *this;
+    if(b == 0) return *this;
 
     Entier complement(b);
     const unsigned int masque = 0xffffffff;
@@ -127,7 +135,7 @@ void Entier::mul(long long unsigned int a, long long unsigned int b, unsigned in
 {
     long long unsigned int masqueRetenue = 0xffffffff00000000;
     long long unsigned int masqueReste = 0x00000000ffffffff;
-    a*=b;
+    a *= b;
 
     retenue = (a & masqueRetenue) >> 32;
     reste = a & masqueReste;
@@ -159,15 +167,15 @@ void Entier::karatsuba(Entier& u, Entier& v, Entier& r)
 	karatsuba_separer(v, vg, vd);
 
 	Entier s, t, p;
-	s = ug+ud;
-	t = vg+vd;
+	s = ug + ud;
+	t = vg + vd;
 
 	Entier g, d;
 	karatsuba(ug, vg, g);
 	karatsuba(ud, vd, d);
 
 	karatsuba(s, t, p);
-	Entier c = p-g-d;
+	Entier c = p - g - d;
 
 	g.shrink_to_fit();
 	c.shrink_to_fit();
@@ -197,7 +205,7 @@ void Entier::karatsuba_recomposer(Entier& g, Entier& c, Entier& d, Entier& r, in
     //d*BASE^2k
     d.valeur.insert(d.valeur.begin(), 2*k, 0);
 
-    r = g+c+d;
+    r = g + c + d;
 }
 
 //shrink_to_fit fait peter les zeros inutiles ajoutés pour
@@ -206,7 +214,8 @@ void Entier::shrink_to_fit()
 {
     for(int i = valeur.size()-1; i > 0; i--) // i>0 car garder premier element meme si 0
     {
-	if(valeur[i] != 0) return;
+	if(valeur[i] != 0)
+	return;
 	valeur.pop_back();
     }
 }
@@ -244,8 +253,10 @@ int Entier::intcmp(const Entier& b) const
 
     while(rita != valeur.rend())
     {
-	if(*rita < *ritb) return -1;
-	if(*rita > *ritb) return 1;
+	if(*rita < *ritb) 
+	return -1;
+	if(*rita > *ritb)
+	return 1;
 
 	++rita;
 	++ritb;
@@ -322,7 +333,7 @@ ostream& operator<<(ostream& flux, const Entier& val)
 {
     for(size_t i = val.valeur.size()-1; i > 0; i--)
 	flux << val.valeur[i] << '.';
-    flux << val.valeur[0];
+    	flux << val.valeur[0];
 
     return flux;
 }
@@ -337,8 +348,8 @@ istream& operator>>(istream& flux, Entier& val)
 
 bool retenue(unsigned int a, unsigned int b, unsigned int& reste)
 {
-    unsigned long long int c = (unsigned long long int)a+b;
-    reste = c%BASE;
+    unsigned long long int c = (unsigned long long int) a + b;
+    reste = c % BASE;
 
     return ((c & BASE) == BASE);
 }
