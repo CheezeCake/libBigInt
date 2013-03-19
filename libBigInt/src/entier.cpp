@@ -38,7 +38,7 @@ bool Entier::set(const string& nombre, unsigned int base)
     valeur.clear();
     valeur.push_back(0);
 
-    for(size_t i = 0; i < nombre.size(); ++i)
+    for (size_t i = 0; i < nombre.size(); ++i)
     {
 	*this *= base;
 	*this += nombre[i] - '0';
@@ -65,25 +65,25 @@ Entier& Entier::operator+=(const Entier& b)
     unsigned int reste = 0;
     int valeur_retenue = 0;
 
-    for(size_t i = 0; i < valeur.size(); i++)
+    for (size_t i = 0; i < valeur.size(); i++)
     {
 	_retenue = retenue(valeur[i], b.valeur[i], reste);
 
 	valeur[i] = reste;
 	valeur[i] += valeur_retenue;
 
-	if(_retenue)
+	if (_retenue)
 	    valeur_retenue = 1;
 	else
 	    valeur_retenue = 0;
     }
 
-    if(b.valeur.size() > valeur.size())
+    if (b.valeur.size() > valeur.size())
     {
-	for(size_t i = valeur.size(); i < b.valeur.size(); i++)
+	for (size_t i = valeur.size(); i < b.valeur.size(); i++)
 	{
 	    valeur.push_back(b.valeur[i]);
-	    if(_retenue)
+	    if (_retenue)
 	    {
 		_retenue = retenue(valeur[i], valeur_retenue, reste);
 		valeur[i] = reste;
@@ -96,7 +96,7 @@ Entier& Entier::operator+=(const Entier& b)
 	}
     }
 
-    if(_retenue)
+    if (_retenue)
 	valeur.push_back(valeur_retenue);
 
     return *this;
@@ -104,22 +104,22 @@ Entier& Entier::operator+=(const Entier& b)
 
 Entier& Entier::operator-=(const Entier& b)
 {
-    if(b == 0) return *this;
+    if (b == 0) return *this;
 
     Entier complement(b);
     const unsigned int masque = 0xffffffff;
 
     vector<unsigned int>::iterator it;
-    for(it = complement.valeur.begin(); it != complement.valeur.end(); ++it)
+    for (it = complement.valeur.begin(); it != complement.valeur.end(); ++it)
 	*it ^= masque;
 
     ++complement;
     Entier tmp(*this);
     *this += complement;
     unsigned int t = valeur.size() -1;
-    if(tmp < *this)
+    if (tmp < *this)
 	valeur[t]--;
-    if(valeur[t] == 0) valeur.erase(valeur.end()-1);
+    if (valeur[t] == 0) valeur.erase(valeur.end()-1);
     return *this;
 }
 
@@ -145,18 +145,18 @@ void Entier::mul(long long unsigned int a, long long unsigned int b, unsigned in
 void Entier::karatsuba(Entier& u, Entier& v, Entier& r)
 {
     //U et V doivent être de même degré
-    if(u.valeur.size() > v.valeur.size())
-	v.valeur.insert(v.valeur.end(), u.valeur.size()-v.valeur.size(), 0);
+    if (u.valeur.size() > v.valeur.size())
+	v.valeur.insert(v.valeur.end(), u.valeur.size() - v.valeur.size(), 0);
     else
-	u.valeur.insert(u.valeur.end(), v.valeur.size()-u.valeur.size(), 0);
+	u.valeur.insert(u.valeur.end(), v.valeur.size() - u.valeur.size(), 0);
 
-    if(u.valeur.size() == 1)
+    if (u.valeur.size() == 1)
     {
 	unsigned int a;
 	unsigned int b;
 	mul(u.valeur[0], v.valeur[0], a, b);
 	r.valeur.push_back(b);
-	if(a != 0)
+	if (a != 0)
 	    r.valeur.push_back(a);
     }
     else
@@ -195,10 +195,10 @@ void Entier::karatsuba(Entier& u, Entier& v, Entier& r)
 void Entier::karatsuba_separer(Entier& u, Entier& ug, Entier& ud)
 {
     int k = u.valeur.size()/2;
-    for(int i = 0; i < k; i++)
+    for (int i = 0; i < k; i++)
 	ug.valeur.push_back(u.valeur[i]);
 
-    for(int i = k; i < u.valeur.size(); i++)
+    for (int i = k; i < u.valeur.size(); i++)
 	ud.valeur.push_back(u.valeur[i]);
 }
 
@@ -218,9 +218,9 @@ void Entier::karatsuba_recomposer(Entier& g, Entier& c, Entier& d, Entier& r, in
 //que les polynômes soient de même degré
 void Entier::shrink_to_fit()
 {
-    for(int i = valeur.size()-1; i > 0; i--) // i>0 car garder premier element meme si 0
+    for (int i = valeur.size()-1; i > 0; i--) // i>0 car garder premier element meme si 0
     {
-	if(valeur[i] != 0) return;
+	if (valeur[i] != 0) return;
 	valeur.pop_back();
     }
 }
@@ -250,16 +250,16 @@ Entier& Entier::operator--()
 
 int Entier::intcmp(const Entier& b) const
 {
-    if(valeur.size() < b.valeur.size()) return -1;
-    if(valeur.size() > b.valeur.size()) return 1;
+    if (valeur.size() < b.valeur.size()) return -1;
+    if (valeur.size() > b.valeur.size()) return 1;
 
     vector<unsigned int>::const_reverse_iterator rita = valeur.rbegin();
     vector<unsigned int>::const_reverse_iterator ritb = b.valeur.rbegin();
 
-    while(rita != valeur.rend())
+    while (rita != valeur.rend())
     {
-	if(*rita < *ritb) return -1;
-	if(*rita > *ritb) return 1;
+	if (*rita < *ritb) return -1;
+	if (*rita > *ritb) return 1;
 	++rita;
 	++ritb;
     }
@@ -333,7 +333,7 @@ Entier operator%(const Entier& a, const Entier& b)
 
 ostream& operator<<(ostream& flux, const Entier& val)
 {
-    for(size_t i = val.valeur.size()-1; i > 0; i--)
+    for (size_t i = val.valeur.size()-1; i > 0; i--)
 	flux << val.valeur[i] << '.';
     	flux << val.valeur[0];
 
@@ -343,7 +343,7 @@ ostream& operator<<(ostream& flux, const Entier& val)
 istream& operator>>(istream& flux, Entier& val)
 {
     string nombre;
-    flux>>nombre;
+    flux >> nombre;
     val.set(nombre,10);
     return flux;
 }
