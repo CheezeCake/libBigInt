@@ -126,7 +126,8 @@ Entier& Entier::operator-=(const Entier& b)
 Entier& Entier::operator*=(const Entier& b)
 {
     Entier u = *this;
-    v = b, r;
+    Entier v = b
+    Entier r;
     karatsuba(u, v, r);
     this->valeur = r.valeur;
     return *this;
