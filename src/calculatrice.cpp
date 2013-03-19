@@ -13,8 +13,6 @@ using namespace std;
 
 Entier calcul(const Entier& a, const Entier& b, unsigned char operateur)
 {
-    if (operateur ==)
-    {
 	if (operateur == '+')
 	    return a + b;
 	    
@@ -29,7 +27,6 @@ Entier calcul(const Entier& a, const Entier& b, unsigned char operateur)
 	    
 	else (operateur == '%')
 	    return a % b;	   
-    }
 }
 
 bool comparer(const Entier& a, const Entier& b, string operateur)
