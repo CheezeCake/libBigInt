@@ -1,9 +1,9 @@
- /**
+/**
     @file calculatrice.cpp
     @author Marc Pardo
     @date 2013
     
- */
+*/
 
 #include <iostream>
 #include <fstream>
