@@ -13,27 +13,22 @@ using namespace std;
 
 Entier calcul(const Entier& a, const Entier& b, unsigned char operateur)
 {
-    switch(operateur)
+    if (operateur ==)
     {
-	case '+':
+	if (operateur == '+')
 	    return a + b;
-	    break;
-
-	case '-':
+	    
+	else if (operateur == '-')
 	    return a - b;
-	    break;
-
-	case '*':
+	
+	else if (operateur == '*')
 	    return a * b;
-	    break;
-
-	case '/':
+	    
+	else if (operateur == '/')
 	    return a / b;
-	    break;
-
-	case '%':
-	    return a % b;
-	    break;
+	    
+	else (operateur == '%')
+	    return a % b;	   
     }
 }
 
