@@ -1,3 +1,11 @@
+/**
+    @file entier.hpp
+    @author Marc Pardo,Emmanuel Nicolet
+    @date 2013
+    
+*/
+
+
 #ifndef ENTIER_HPP_INCLUDED
 #define ENTIER_HPP_INCLUDED
 
