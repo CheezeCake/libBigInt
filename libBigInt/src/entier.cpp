@@ -125,7 +125,8 @@ Entier& Entier::operator-=(const Entier& b)
 
 Entier& Entier::operator*=(const Entier& b)
 {
-    Entier u = *this, v = b, r;
+    Entier u = *this;
+    v = b, r;
     karatsuba(u, v, r);
     this->valeur = r.valeur;
     return *this;
@@ -160,17 +161,22 @@ void Entier::karatsuba(Entier& u, Entier& v, Entier& r)
     }
     else
     {
-	Entier ug, ud;
-	Entier vg, vd;
+	Entier ug;
+	Entier ud;
+	Entier vg;
+	Entier vd;
 
 	karatsuba_separer(u, ug, ud);
 	karatsuba_separer(v, vg, vd);
 
-	Entier s, t, p;
+	Entier s;
+	Entier t;
+	Entier p;
 	s = ug + ud;
 	t = vg + vd;
 
-	Entier g, d;
+	Entier g;
+	Entier d;
 	karatsuba(ug, vg, g);
 	karatsuba(ud, vd, d);
 
@@ -214,8 +220,7 @@ void Entier::shrink_to_fit()
 {
     for(int i = valeur.size()-1; i > 0; i--) // i>0 car garder premier element meme si 0
     {
-	if(valeur[i] != 0)
-	return;
+	if(valeur[i] != 0) return;
 	valeur.pop_back();
     }
 }
@@ -253,11 +258,8 @@ int Entier::intcmp(const Entier& b) const
 
     while(rita != valeur.rend())
     {
-	if(*rita < *ritb) 
-	return -1;
-	if(*rita > *ritb)
-	return 1;
-
+	if(*rita < *ritb) return -1;
+	if(*rita > *ritb) return 1;
 	++rita;
 	++ritb;
     }
