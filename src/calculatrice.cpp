@@ -1,7 +1,7 @@
 /**
-    @file calculatrice.cpp
-    @author Marc Pardo
-    @date 2013
+   @file calculatrice.cpp
+   @author Marc Pardo, Emmanuel Nicolet, Julien Alonso, Julien Missichini
+   @date 2013
     
 */
 
