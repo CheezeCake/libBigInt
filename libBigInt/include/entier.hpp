@@ -1,4 +1,4 @@
-/**
+/*!
     \file entier.hpp
     \brief Librairie d'opérations sur grands entiers
     \author Marc Pardo, Emmanuel Nicolet, Alonso Jimenez Julien, Missichini Julien
@@ -16,9 +16,9 @@
 
 const unsigned long long int BASE = 0x100000000; //2^32
 
-/* \class Entier
+/*! \class Entier
  * \brief classe représentant le nombre
- * La classe gère un entier de grnade taille
+ * La classe gère un entier de grande taille
  */
  
 class Entier
