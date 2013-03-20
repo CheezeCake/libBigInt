@@ -1,7 +1,7 @@
-/**
+/*!
    \file calculatrice.cpp
    \brief Calculatrice test
-   \author Marc Pardo, Emmanuel Nicolet, Julien Alonso, Julien Missichini
+   \author Marc Pardo, Emmanuel Nicolet, Julien Alonso Jimenez, Julien Missichini
    \date Mars 2013
     
 */
@@ -12,6 +12,18 @@
 
 using namespace std;
 
+/*!
+ *  \brief Calcul
+ *
+ *  Methode qui effectue l'opération correspondante
+ *  à l'opérateur passé en paramètre et renvoie le
+ *	résultat
+ *
+ *  \param a : Premier Entier
+ *	\param b : Deuxième Entier
+ *	\param operateur : Opérateur
+ *  \return Résultat de l'opération d'Entiers
+ */
 Entier calcul(const Entier& a, const Entier& b, unsigned char operateur)
 {
     if (operateur == '+')
@@ -30,6 +42,19 @@ Entier calcul(const Entier& a, const Entier& b, unsigned char operateur)
 	return a % b;	   
 }
 
+/*!
+ *  \brief Comparer
+ *
+ *  Methode qui effectue une comparaison sur 2
+ *  2 Entiers à partir de l'opérateur passé
+ *	en paramètre et renvoie le résultat
+ *
+ *  \param a : Premier Entier
+ *	\param b : Deuxième Entier
+ *	\param operateur : Opérateur
+ *  \return true si la comparaison est vraie,
+ *	false sinon
+ */
 bool comparer(const Entier& a, const Entier& b, string operateur)
 {
     if(operateur == "<")
@@ -64,45 +89,33 @@ int main()
 
     if(choix == 1)
     {
-	cout <<"Entrez une suite d'expression"<< endl;
-	//cout << "Entrez la premiere operande :" << endl;
+	cout <<"Entrez une operation :"<< endl;
 	cin >> op1;
-	//cout << endl << "Entrez l'operateur :" << endl;
 	cin >> operateur;
-	//cout << endl << "Entrez la seconde operande :" << endl;
 	cin >> op2;
 	cout << endl << op1 <<' '<< operateur <<' '<< op2 <<" = "<< calcul(op1, op2, operateur) << endl;
 
     }
     else
     {
-	cout << "Entrez le nom du fichier contenant la (les) expression(s) :" << endl;
-	cin >> fichier;
-	cout <<  endl;
+		cout << "Entrez le nom du fichier contenant la (les) expression(s) :" << endl;
+		cin >> fichier;
+		cout <<  endl;
 
-	ifstream source(fichier.c_str(), ios::in);
-	//if (!source) cerr << "Error";
-	//else
-	//{
-	while(!source.eof())
-	{
-	    source >> op1;
-	    source >> operateur;
-	    source >> op2;
-	    cout << op1 << ' ' << operateur << ' ' << op2 << " = " << calcul(op1, op2, operateur) << endl;
-	}
-	source.close();
+		ifstream source(fichier.c_str(), ios::in);
+		if (!source) cerr << "Error";
+		else
+		{
+			while(!source.eof())
+			{
+	    	source >> op1;
+	    	source >> operateur;
+	    	source >> op2;
+	    	cout << op1 << ' ' << operateur << ' ' << op2 << " = " << calcul(op1, op2, operateur) << endl;
+			}
+		source.close();
 
-	//}
+		}
     }
-
-    /*cin >> op1;
-      cin >> operateur;
-      cin >> op2;
-
-      cout << op1 << ' ' << operateur << ' ' << op2 << endl;
-      if(comparer(op1, op2, operateur)) cout << "OUI";
-      else cout << "NON" << endl;*/
-
     return 0;
 }
