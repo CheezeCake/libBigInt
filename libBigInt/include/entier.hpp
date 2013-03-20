@@ -1,9 +1,8 @@
 /*!
-    \file entier.hpp
-    \brief Librairie d'opérations sur grands entiers
-    \author Marc Pardo, Emmanuel Nicolet, Alonso Jimenez Julien, Missichini Julien
-    \date Mars 2013
-    
+ * \file entier.hpp
+ * \brief Librairie d'opérations sur grands entiers
+ * \author Marc Pardo, Emmanuel Nicolet, Alonso Jimenez Julien, Missichini Julien
+ * \date Mars 2013  
 */
 
 
@@ -181,9 +180,12 @@ public:
      *  Methode qui permet d'extraire l'Entier
      *  courant dans un flux
      *
-     *  \return ?????
+     *	\param val : Entier qui va etre formate
+     *	et insere dans le flux
+     *
+     *  \return flux
      */
-    friend std::ostream& operator<<(std::ostream&, const Entier&);
+    friend std::ostream& operator<<(std::ostream& flux, const Entier& val);
     
     //entrée
     
@@ -193,9 +195,12 @@ public:
      *  Methode qui permet d'extraire l'Entier
      *  courant dans un flux
      *
-     *  \return ?????
+     *	\param val : Entier qui va contenir la
+     *	valeur extraite du flux
+     *
+     *  \return flux
      */
-    friend std::istream& operator>>(std::istream&, Entier&);
+    friend std::istream& operator>>(std::istream& flux, Entier& val);
     //comparaison
     
     /*!
