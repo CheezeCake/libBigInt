@@ -51,7 +51,7 @@ public:
      *
      *  \param val : Entier source
      */
-    Entier(const Entier&);
+    Entier(const Entier& val);
     
     
     //destructeur
@@ -76,7 +76,7 @@ public:
      *  \return true si la chaine est recevable,
      *  false sinon
      */
-    bool set(const std::string&, unsigned int base = 10);
+    bool set(const std::string& nombre, unsigned int base = 10);
     
     //operateurs
     /*!
@@ -111,7 +111,7 @@ public:
      *  \param b : Entier à ajouter
      *  \return L'Entier courant
      */
-    Entier& operator+=(const Entier&);
+    Entier& operator+=(const Entier& b);
     //Entier &operator+=(const unsigned int);
     
     //soustraire
@@ -125,7 +125,7 @@ public:
      *  \param b : Entier à retirer
      *  \return L'Entier courant
      */
-    Entier& operator-=(const Entier&);
+    Entier& operator-=(const Entier& b);
     //Entier &operator-=(const unsigned int);
     
     //multiplier
@@ -139,7 +139,7 @@ public:
      *  \param b : Entier à multiplier
      *  \return L'Entier courant
      */
-    Entier& operator*=(const Entier&);
+    Entier& operator*=(const Entier& b);
     //Entier &operator*=(const unsigned int);
     //Entier& operator/=(const Entier&);
     //Entier& operator%=(const Entier&);
@@ -250,7 +250,7 @@ private:
  *	\return Le résultat de l'addition
  */
  
-Entier operator+(const Entier&, const Entier&);
+Entier operator+(const Entier& a, const Entier& b);
 //Entier operator+(const Entier&, const unsgned int);
 
 /*!
@@ -264,7 +264,7 @@ Entier operator+(const Entier&, const Entier&);
  *	\return Le résultat de la soustraction
  */
  
-Entier operator-(const Entier&, const Entier&);
+Entier operator-(const Entier& a, const Entier& b);
 //Entier operator-(const Entier&, const unsigned int);
 
 /*!
@@ -278,7 +278,7 @@ Entier operator-(const Entier&, const Entier&);
  *	\return Le résultat de la multiplication
  */
  
-Entier operator*(const Entier&, const Entier&);
+Entier operator*(const Entier& a, const Entier& b);
 //Entier operator*(const Entier&, const unsigned int);
 
 
@@ -299,7 +299,7 @@ Entier operator*(const Entier&, const Entier&);
  *	\return true si a est inférieur à b,
  	false sinon
  */
-bool operator<(const Entier&, const Entier&);
+bool operator<(const Entier& a, const Entier& b);
 
 /*!
  *  \brief Superiorité
@@ -313,7 +313,7 @@ bool operator<(const Entier&, const Entier&);
  *	\return true si a est supérieur à b,
  	false sinon
  */
-bool operator>(const Entier&, const Entier&);
+bool operator>(const Entier& a, const Entier& b);
 
 /*!
  *  \brief Egalité
@@ -326,7 +326,7 @@ bool operator>(const Entier&, const Entier&);
  *	\return true si a est égal à b,
  	false sinon
  */
-bool operator==(const Entier&, const Entier&);
+bool operator==(const Entier& a, const Entier& b);
 
 /*!
  *  \brief Inégalité
@@ -339,7 +339,7 @@ bool operator==(const Entier&, const Entier&);
  *	\return true si a est différent de b,
  	false sinon
  */
-bool operator!=(const Entier&, const Entier&);
+bool operator!=(const Entier& a, const Entier& b);
 
 /*!
  *  \brief Infériorité ou égalité
@@ -353,7 +353,7 @@ bool operator!=(const Entier&, const Entier&);
  *	\return true si a est inférieur ou égal à b,
  	false sinon
  */
-bool operator<=(const Entier&, const Entier&);
+bool operator<=(const Entier& a, const Entier& b);
 
 /*!
  *  \brief Superiorité ou égalité
@@ -367,7 +367,7 @@ bool operator<=(const Entier&, const Entier&);
  *	\return true si a est superieur ou égal à b,
  	false sinon
  */
-bool operator>=(const Entier&, const Entier&);
+bool operator>=(const Entier& a, const Entier& b);
 
 
 /*!
@@ -383,6 +383,6 @@ bool operator>=(const Entier&, const Entier&);
  *	\return true si a * b donne une retenue,
  	false sinon
  */
-bool retenue(unsigned int, unsigned int, unsigned int&);
+bool retenue(unsigned int a, unsigned int b, unsigned int& reste);
 
 #endif // ENTIER_HPP_INCLUDED
