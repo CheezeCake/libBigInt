@@ -64,27 +64,92 @@ public:
     
     
     //modulateurs
+    
+    /*!
+     *  \brief Constructeur
+     *
+     *  Methode qui  crée un Entier à
+     *  partir d'un nombre en base 10
+     *
+     *  \param nombre : Nombre à entrer dans la classe
+     *  \param base : Base du nombre (10 par défault)
+     *  \return true si la chaine est recevable,
+     *  false sinon
+     */
     bool set(const std::string&, unsigned int base = 10);
+    
     //operateurs
-    Entier& operator=(const Entier&);
-    Entier& operator=(const unsigned int);
+    /*!
+     *  \brief Affectation
+     *
+     *  Methode qui permet d'affecter un Entier
+     *  à partir d'un autre Entier
+     *
+     *  \param b : Entier source
+     *  \return Instance de la classe Entier
+     */
+    Entier& operator=(const Entier& b);
+    /*!
+     *  \brief Affectation
+     *
+     *  Methode qui permet d'affecter un Entier
+     *  à partir d'un nombre en base 10
+     *
+     *  \param b : Entier source
+     *  \return Instance de la classe Entier
+     */
+    Entier& operator=(const unsigned int b);
+    
     //ajout
+    
+    /*!
+     *  \brief Incrémentation
+     *
+     *  Methode qui ajoute un Entier passé
+     *  en paramètre à l'entier courant
+     *
+     *  \param b : Entier à ajouter
+     *  \return L'Entier courant
+     */
     Entier& operator+=(const Entier&);
     //Entier &operator+=(const unsigned int);
+    
     //soustraire
+    
+    /*!
+     *  \brief Décrémentation
+     *
+     *  Methode qui retire un Entier passé
+     *  en paramètre à l'entier courant
+     *
+     *  \param b : Entier à retirer
+     *  \return L'Entier courant
+     */
     Entier& operator-=(const Entier&);
     //Entier &operator-=(const unsigned int);
+    
     //multiplier
+    
+    /*!
+     *  \brief Produit
+     *
+     *  Methode qui multiplie l'entier courant
+     *  par un Entier passé en paramètre
+     *
+     *  \param b : Entier à multiplier
+     *  \return L'Entier courant
+     */
     Entier& operator*=(const Entier&);
     //Entier &operator*=(const unsigned int);
-    Entier& operator/=(const Entier&);
-    Entier& operator%=(const Entier&);
+    //Entier& operator/=(const Entier&);
+    //Entier& operator%=(const Entier&);
     void karatsuba(Entier&, Entier&, Entier&);
     void karatsuba_separer(Entier&, Entier&, Entier&);
     void karatsuba_recomposer(Entier&, Entier&, Entier&, Entier&, int);
 
     //Incrementation
     Entier& operator++();
+    
     //Decrementation
     Entier& operator--();
     bool estEgal(const Entier&) const;
