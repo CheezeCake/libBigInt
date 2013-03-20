@@ -1,7 +1,8 @@
 /**
-   @file calculatrice.cpp
-   @author Marc Pardo, Emmanuel Nicolet, Julien Alonso, Julien Missichini
-   @date 2013
+   \file calculatrice.cpp
+   \brief Calculatrice test
+   \author Marc Pardo, Emmanuel Nicolet, Julien Alonso, Julien Missichini
+   \date Mars 2013
     
 */
 
