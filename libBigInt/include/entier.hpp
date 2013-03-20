@@ -348,6 +348,20 @@ bool operator<=(const Entier&, const Entier&);
  */
 bool operator>=(const Entier&, const Entier&);
 
+
+/*!
+ *  \brief Présence de retenue
+ *
+ *  Methode qui multiplie 2 nombres
+ *  et renvoie vrai si l'opération
+ *	entraine une retenue
+ *
+ *  \param a : Premier nombre
+ *	\param b : Second nombre
+ *	\param reste : adresse du reste de l'opération
+ *	\return true si a * b donne une retenue,
+ 	false sinon
+ */
 bool retenue(unsigned int, unsigned int, unsigned int&);
 
 #endif // ENTIER_HPP_INCLUDED
