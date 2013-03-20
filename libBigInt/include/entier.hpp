@@ -218,20 +218,134 @@ private:
 };
 
 //operateurs
+/*!
+ *  \brief Addition
+ *
+ *  Methode qui ajoute 2 Entiers
+ *  et renvoie le résultat
+ *
+ *  \param a : Premier Entier
+ *	\param b : Second Entier
+ *	\return Le résultat de l'addition
+ */
+ 
 Entier operator+(const Entier&, const Entier&);
 //Entier operator+(const Entier&, const unsgned int);
+
+/*!
+ *  \brief Soustraction
+ *
+ *  Methode qui soustrait 2 Entiers
+ *  et renvoie le résultat
+ *
+ *  \param a : Premier Entier
+ *	\param b : Second Entier
+ *	\return Le résultat de la soustraction
+ */
+ 
 Entier operator-(const Entier&, const Entier&);
 //Entier operator-(const Entier&, const unsigned int);
+
+/*!
+ *  \brief Multiplication
+ *
+ *  Methode qui multiplie 2 Entiers
+ *  et renvoie le résultat
+ *
+ *  \param a : Premier Entier
+ *	\param b : Second Entier
+ *	\return Le résultat de la multiplication
+ */
+ 
 Entier operator*(const Entier&, const Entier&);
 //Entier operator*(const Entier&, const unsigned int);
-Entier operator/(const Entier&, const Entier&);
-Entier operator%(const Entier&, const Entier&);
+
+
+//Entier operator/(const Entier&, const Entier&);
+//Entier operator%(const Entier&, const Entier&);
+
 //comparaisons
+
+/*!
+ *  \brief Infériorité
+ *
+ *  Methode qui compare 2 Entiers
+ *  pour savoir si le premier est
+ *	plus petit que le second
+ *
+ *  \param a : Premier Entier
+ *	\param b : Second Entier
+ *	\return true si a est inférieur à b,
+ 	false sinon
+ */
 bool operator<(const Entier&, const Entier&);
+
+/*!
+ *  \brief Superiorité
+ *
+ *  Methode qui compare 2 Entiers
+ *  pour savoir si le premier est
+ *	plus grand que le second
+ *
+ *  \param a : Premier Entier
+ *	\param b : Second Entier
+ *	\return true si a est supérieur à b,
+ 	false sinon
+ */
 bool operator>(const Entier&, const Entier&);
+
+/*!
+ *  \brief Egalité
+ *
+ *  Methode qui compare 2 Entiers
+ *  pour savoir si ils sont égaux
+ *
+ *  \param a : Premier Entier
+ *	\param b : Second Entier
+ *	\return true si a est égal à b,
+ 	false sinon
+ */
 bool operator==(const Entier&, const Entier&);
+
+/*!
+ *  \brief Inégalité
+ *
+ *  Methode qui compare 2 Entiers
+ *  pour savoir si ils sont différents
+ *
+ *  \param a : Premier Entier
+ *	\param b : Second Entier
+ *	\return true si a est différent de b,
+ 	false sinon
+ */
 bool operator!=(const Entier&, const Entier&);
+
+/*!
+ *  \brief Infériorité ou égalité
+ *
+ *  Methode qui compare 2 Entiers
+ *  pour savoir si le premier est
+ *	inférieur ou égal au second
+ *
+ *  \param a : Premier Entier
+ *	\param b : Second Entier
+ *	\return true si a est inférieur ou égal à b,
+ 	false sinon
+ */
 bool operator<=(const Entier&, const Entier&);
+
+/*!
+ *  \brief Superiorité ou égalité
+ *
+ *  Methode qui compare 2 Entiers
+ *  pour savoir si le premier est
+ *	superieur ou égal au second
+ *
+ *  \param a : Premier Entier
+ *	\param b : Second Entier
+ *	\return true si a est superieur ou égal à b,
+ 	false sinon
+ */
 bool operator>=(const Entier&, const Entier&);
 
 bool retenue(unsigned int, unsigned int, unsigned int&);
