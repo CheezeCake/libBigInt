@@ -148,22 +148,72 @@ public:
     void karatsuba_recomposer(Entier&, Entier&, Entier&, Entier&, int);
 
     //Incrementation
+    
+    /*!
+     *  \brief Incrémentation
+     *
+     *  Methode qui ajoute 1 à l'Entier
+     *  courant
+     *
+     *  \return L'Entier courant
+     */
     Entier& operator++();
     
     //Decrementation
+    
+    /*!
+     *  \brief Décrémentation
+     *
+     *  Methode qui retire 1 à l'Entier
+     *  courant
+     *
+     *  \return L'Entier courant
+     */
     Entier& operator--();
-    bool estEgal(const Entier&) const;
+    
     //affichage
     friend std::ostream& operator<<(std::ostream&, const Entier&);
     //entrée
     friend std::istream& operator>>(std::istream&, Entier&);
     //comparaison
+    
+    /*!
+     *  \brief Comparaison
+     *
+     *  Methode qui teste l'égalité entre
+     *  l'Entier courant et celui donné en paramètre
+     *
+     *  \param b : Entier à comparer
+     *	\return 0 si les 2 Entiers sont égaux,
+     *	-1 si b est supérieur à l'Entier courant,
+     *	1 sinon
+     */
     int intcmp(const Entier& b) const;
 
+
+	/*!
+     *  \brief Simplicfication
+     *
+     *  Methode qui supprime les zéros inutiles
+     *  dans l'expression de l'Entier
+     *
+     */
     void shrink_to_fit();
 
 private:
     std::vector<unsigned int> valeur; /*!< Nombre décomposé en valeurs de base 2^32*/
+    /*!
+     *  \brief Multiplication
+     *
+     *  Methode qui multiplie 2 unsigned int
+     *  et renvoie le reste et la retenue
+     *	par ses paramètres
+     *
+     *  \param a : Premier nombre
+     *	\param b : Second nombre
+     *	\param retenue : adresse de la retenue de l'opération
+     *	\param reste : adresse du reste de l'opération
+     */
 	void mul(long long unsigned int a, long long unsigned int b, unsigned int& retenue, unsigned int& reste);
 };
 
