@@ -143,6 +143,8 @@ public:
     //Entier &operator*=(const unsigned int);
     //Entier& operator/=(const Entier&);
     //Entier& operator%=(const Entier&);
+    
+    
     void karatsuba(Entier&, Entier&, Entier&);
     void karatsuba_separer(Entier&, Entier&, Entier&);
     void karatsuba_recomposer(Entier&, Entier&, Entier&, Entier&, int);
@@ -172,8 +174,27 @@ public:
     Entier& operator--();
     
     //affichage
+    
+    /*!
+     *  \brief Affichage
+     *
+     *  Methode qui permet d'extraire l'Entier
+     *  courant dans un flux
+     *
+     *  \return ?????
+     */
     friend std::ostream& operator<<(std::ostream&, const Entier&);
+    
     //entrée
+    
+    /*!
+     *  \brief Insertion
+     *
+     *  Methode qui permet d'extraire l'Entier
+     *  courant dans un flux
+     *
+     *  \return ?????
+     */
     friend std::istream& operator>>(std::istream&, Entier&);
     //comparaison
     
