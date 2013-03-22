@@ -109,7 +109,17 @@ public:
      *  \return L'Entier courant
      */
     Entier& operator+=(const Entier& b);
-    //Entier &operator+=(const unsigned int);
+    
+    /*!
+     *  \brief Incrémentation
+     *
+     *  Methode qui ajoute un nombre passé
+     *  en paramètre à l'entier courant
+     *
+     *  \param b : nombre à ajouter
+     *  \return L'Entier courant
+     */
+    Entier &operator+=(const unsigned int);
     
     //soustraire
     
@@ -123,7 +133,17 @@ public:
      *  \return L'Entier courant
      */
     Entier& operator-=(const Entier& b);
-    //Entier &operator-=(const unsigned int);
+    
+    /*!
+     *  \brief Décrémentation
+     *
+     *  Methode qui retire un nombre passé
+     *  en paramètre à l'entier courant
+     *
+     *  \param b : nombre à retirer
+     *  \return L'Entier courant
+     */
+    Entier &operator-=(const unsigned int);
     
     //multiplier
     
@@ -137,7 +157,17 @@ public:
      *  \return L'Entier courant
      */
     Entier& operator*=(const Entier& b);
-    //Entier &operator*=(const unsigned int val);
+    
+    /*!
+     *  \brief Produit
+     *
+     *  Methode qui multiplie l'entier courant
+     *  par un nombre passé en paramètre
+     *
+     *  \param b : nombre à multiplier
+     *  \return L'Entier courant
+     */
+    Entier &operator*=(const unsigned int val);
     
 
     //Incrementation
@@ -315,10 +345,6 @@ Entier operator-(const Entier& a, const Entier& b);
  
 Entier operator*(const Entier& a, const Entier& b);
 //Entier operator*(const Entier&, const unsigned int);
-
-
-//Entier operator/(const Entier&, const Entier&);
-//Entier operator%(const Entier&, const Entier&);
 
 //comparaisons
 
