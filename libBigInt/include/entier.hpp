@@ -327,7 +327,7 @@ Entier operator+(const Entier& a, const Entier& b);
  *  \param b : nombre
  *	\return Le résultat de l'addition
  */
-Entier operator+(const Entier& a, const unsgned int b);
+Entier operator+(const Entier& a, const unsigned int b);
 
 /*!
  *  \brief Soustraction
