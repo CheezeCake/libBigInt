@@ -132,7 +132,7 @@ Entier& Entier::operator-=(const Entier& b)
     return *this;
 }
 
-Entier& Entier::operateur-=(const unsigned int b)
+Entier& Entier::operator-=(const unsigned int b)
 {
     Entier ent(b);
     *this -= ent;
