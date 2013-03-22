@@ -251,7 +251,7 @@ public:
 private:
     std::vector<unsigned int> valeur; /*!< Nombre décomposé en valeurs de base 2^32*/
     
-        /*!
+    /*!
      *
      *  \brief karastuba
      *
@@ -316,7 +316,18 @@ private:
  */
  
 Entier operator+(const Entier& a, const Entier& b);
-//Entier operator+(const Entier&, const unsgned int);
+
+/*!
+ *  \brief Addition
+ *
+ *  Methode qui ajoute 1 Entier à
+ *  un nombre et renvoie le résultat
+ *
+ *  \param a : Entier
+ *  \param b : nombre
+ *	\return Le résultat de l'addition
+ */
+Entier operator+(const Entier& a, const unsgned int b);
 
 /*!
  *  \brief Soustraction
@@ -328,9 +339,19 @@ Entier operator+(const Entier& a, const Entier& b);
  *	\param b : Second Entier
  *	\return Le résultat de la soustraction
  */
- 
 Entier operator-(const Entier& a, const Entier& b);
-//Entier operator-(const Entier&, const unsigned int);
+
+/*!
+ *  \brief Soustraction
+ *
+ *  Methode qui soustrait 1 nombre à un 
+ *  Entier et renvoie le résultat
+ *
+ *  \param a : Entier
+ *  \param b : nombre
+ *	\return Le résultat de la soustraction
+ */
+Entier operator-(const Entier&, const unsigned int);
 
 /*!
  *  \brief Multiplication
@@ -342,9 +363,19 @@ Entier operator-(const Entier& a, const Entier& b);
  *	\param b : Second Entier
  *	\return Le résultat de la multiplication
  */
- 
 Entier operator*(const Entier& a, const Entier& b);
-//Entier operator*(const Entier&, const unsigned int);
+
+/*!
+ *  \brief Multiplication
+ *
+ *  Methode qui multiplie 1 Entier à
+ *  un nombre et renvoie le résultat
+ *
+ *  \param a : Entier
+ *  \param b : nombre
+ *	\return Le résultat de la multiplication
+ */
+Entier operator*(const Entier&, const unsigned int);
 
 //comparaisons
 
