@@ -143,10 +143,15 @@ public:
     //Entier& operator/=(const Entier&);
     //Entier& operator%=(const Entier&);
     
-    
-    void karatsuba(Entier&, Entier&, Entier&);
+    /*!
+     *
+     *  \brief karastuba
+     *
+     *  
+     */
+    Entier karatsuba(Entier&, Entier&);
     void karatsuba_separer(Entier&, Entier&, Entier&);
-    void karatsuba_recomposer(Entier&, Entier&, Entier&, Entier&, int);
+    Entier karatsuba_recomposer(Entier&, Entier&, Entier&, int);
 
     //Incrementation
     
@@ -220,11 +225,11 @@ public:
 	/*!
      *  \brief Simplicfication
      *
-     *  Methode qui supprime les zéros inutiles
+     *  Methode qui supprime les zéros terminaux inutiles
      *  dans l'expression de l'Entier
      *
      */
-    void shrink_to_fit();
+    void racourcir();
 
 private:
     std::vector<unsigned int> valeur; /*!< Nombre décomposé en valeurs de base 2^32*/

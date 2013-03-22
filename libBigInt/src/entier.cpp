@@ -119,7 +119,9 @@ Entier& Entier::operator-=(const Entier& b)
     unsigned int t = valeur.size() -1;
     if (tmp < *this)
         valeur[t]--;
-    if (valeur[t] == 0) valeur.erase(valeur.end()-1);
+    if (valeur[t] == 0) 
+        valeur.erase(valeur.end()-1);
+    
     return *this;
 }
 
@@ -127,9 +129,9 @@ Entier& Entier::operator*=(const Entier& b)
 {
     Entier u = *this;
     Entier v = b;
-    Entier r;
-    karatsuba(u, v, r);
-    this->valeur = r.valeur;
+
+    *this = karatsuba(u, v);
+
     return *this;
 }
 
@@ -143,13 +145,15 @@ void Entier::mul(long long unsigned int a, long long unsigned int b, unsigned in
     reste = a & masqueReste;
 }
 
-void Entier::karatsuba(Entier& u, Entier& v, Entier& r)
+Entier Entier::karatsuba(Entier& u, Entier& v)
 {
     //U et V doivent être de même degré
     if (u.valeur.size() > v.valeur.size())
         v.valeur.insert(v.valeur.end(), u.valeur.size() - v.valeur.size(), 0);
     else
         u.valeur.insert(u.valeur.end(), v.valeur.size() - u.valeur.size(), 0);
+    
+    Entier r;
 
     if (u.valeur.size() == 1)
     {
@@ -178,24 +182,27 @@ void Entier::karatsuba(Entier& u, Entier& v, Entier& r)
 
         Entier g;
         Entier d;
-        karatsuba(ug, vg, g);
-        karatsuba(ud, vd, d);
+        g = karatsuba(ug, vg);
+        d = karatsuba(ud, vd);
 
-        karatsuba(s, t, p);
-        Entier c = p - g - d;
+        p = karatsuba(s, t);
+        Entier c;
+        c = p - g - d;
 
-        g.shrink_to_fit();
-        c.shrink_to_fit();
-        d.shrink_to_fit();
+        g.racourcir();
+        c.racourcir();
+        d.racourcir();
 
-        karatsuba_recomposer(g, c, d, r, u.valeur.size()/2);
-        r.shrink_to_fit();
+        r = karatsuba_recomposer(g, c, d, u.valeur.size() / 2);
+        r.racourcir();
     }
+
+    return r;
 }
 
 void Entier::karatsuba_separer(Entier& u, Entier& ug, Entier& ud)
 {
-    int k = u.valeur.size()/2;
+    int k = u.valeur.size() / 2;
     for (int i = 0; i < k; i++)
         ug.valeur.push_back(u.valeur[i]);
 
@@ -203,21 +210,24 @@ void Entier::karatsuba_separer(Entier& u, Entier& ug, Entier& ud)
         ud.valeur.push_back(u.valeur[i]);
 }
 
-void Entier::karatsuba_recomposer(Entier& g, Entier& c, Entier& d, Entier& r, int k)
+Entier Entier::karatsuba_recomposer(Entier& g, Entier& c, Entier& d, int k)
 {
     //UV = g + c*BASE^k + d*BASE^2k
 
     //c*BASE^k
     c.valeur.insert(c.valeur.begin(), k, 0);
     //d*BASE^2k
-    d.valeur.insert(d.valeur.begin(), 2*k, 0);
+    d.valeur.insert(d.valeur.begin(), 2 * k, 0);
 
+    Entier r;
     r = g + c + d;
+    
+    return r;
 }
 
-//shrink_to_fit fait peter les zeros inutiles ajoutés pour
+//racourcir fait peter les zeros inutiles ajoutés pour
 //que les polynômes soient de même degré
-void Entier::shrink_to_fit()
+void Entier::racourcir()
 {
     for (int i = valeur.size()-1; i > 0; i--) // i>0 car garder premier element meme si 0
     {
@@ -258,17 +268,17 @@ int Entier::intcmp(const Entier& b) const
 
 bool operator<(const Entier& a, const Entier& b)
 {
-    return a.intcmp(b) == -1;
+    return (a.intcmp(b) == -1);
 }
 
 bool operator>(const Entier& a, const Entier &b)
 {
-    return a.intcmp(b) == 1;
+    return (a.intcmp(b) == 1);
 }
 
 bool operator==(const Entier& a, const Entier& b)
 {
-    return a.intcmp(b) == 0;
+    return (a.intcmp(b) == 0);
 }
 
 bool operator!=(const Entier& a, const Entier& b)
