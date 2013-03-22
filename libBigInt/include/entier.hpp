@@ -147,11 +147,38 @@ public:
      *
      *  \brief karastuba
      *
-     *  
+     *  Implementation de l'algorithme de multiplication
+     *  rapide de Karatsuba.
+     *
+     *  \param u : Entier à multiplier
+     *  \param v : Entier à multiplier
+     *  \return Le produit u*v
      */
-    Entier karatsuba(Entier&, Entier&);
-    void karatsuba_separer(Entier&, Entier&, Entier&);
-    Entier karatsuba_recomposer(Entier&, Entier&, Entier&, int);
+    Entier karatsuba(Entier& u, Entier& v);
+
+    /*!
+     *
+     *  \brief Séparation pour karatsuba
+     *  
+     *  Sépare un Entier u en 2 Entier g et d distincts
+     *
+     *  \param u : Entier à séparer
+     *  \param g : Partie gauche de l'Entier u
+     *  \param d : Partie droite de l'Entier u
+     */
+    void karatsuba_separer(Entier& u, Entier& g, Entier& d);
+
+    /*!
+     *  \brief Recomposition pour karatsuba
+     *
+     *  Recompose un Entier a partir de 3 autres Entiers
+     *
+     *  \param g : Partie gauche de l'Entier à recomposer
+     *  \param c : Partie centrale de l'Entier à recomposer
+     *  \param d : Partie droite de l'entier à droite
+     *  \return L'entier issu de la recomposition de g, c, et d
+     */
+    Entier karatsuba_recomposer(Entier& g, Entier& c, Entier& d, int);
 
     //Incrementation
     
