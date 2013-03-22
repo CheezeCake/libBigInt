@@ -137,9 +137,7 @@ public:
      *  \return L'Entier courant
      */
     Entier& operator*=(const Entier& b);
-    //Entier &operator*=(const unsigned int);
-    //Entier& operator/=(const Entier&);
-    //Entier& operator%=(const Entier&);
+    //Entier &operator*=(const unsigned int val);
     
 
     //Incrementation
