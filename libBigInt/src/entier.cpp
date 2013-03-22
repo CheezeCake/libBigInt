@@ -353,7 +353,7 @@ Entier operator*(const Entier& a, const Entier& b)
     return produit;
 }
 
-Entier operator+(const Entier& a, const unsigned int b)
+Entier operator*(const Entier& a, const unsigned int b)
 {
     Entier ent(a);
     ent *= b;
