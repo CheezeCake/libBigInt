@@ -1,9 +1,9 @@
 /**
-   @file entier.cpp
-   @author Marc Pardo, Emmanuel Nicolet, Julien Alonso
-   @date 2013
-    
-*/
+  @file entier.cpp
+  @author Marc Pardo, Emmanuel Nicolet, Julien Alonso
+  @date 2013
+
+ */
 
 
 #include "../include/entier.hpp"
@@ -40,8 +40,8 @@ bool Entier::set(const string& nombre, unsigned int base)
 
     for (size_t i = 0; i < nombre.size(); ++i)
     {
-	*this *= base;
-	*this += nombre[i] - '0';
+        *this *= base;
+        *this += nombre[i] - '0';
     }
 
     return true;
@@ -67,37 +67,37 @@ Entier& Entier::operator+=(const Entier& b)
 
     for (size_t i = 0; i < valeur.size(); i++)
     {
-	_retenue = retenue(valeur[i], b.valeur[i], reste);
+        _retenue = retenue(valeur[i], b.valeur[i], reste);
 
-	valeur[i] = reste;
-	valeur[i] += valeur_retenue;
+        valeur[i] = reste;
+        valeur[i] += valeur_retenue;
 
-	if (_retenue)
-	    valeur_retenue = 1;
-	else
-	    valeur_retenue = 0;
+        if (_retenue)
+            valeur_retenue = 1;
+        else
+            valeur_retenue = 0;
     }
 
     if (b.valeur.size() > valeur.size())
     {
-	for (size_t i = valeur.size(); i < b.valeur.size(); i++)
-	{
-	    valeur.push_back(b.valeur[i]);
-	    if (_retenue)
-	    {
-		_retenue = retenue(valeur[i], valeur_retenue, reste);
-		valeur[i] = reste;
-	    }
-	    else
-	    {
-		_retenue = false;
-		valeur_retenue = 0;
-	    }
-	}
+        for (size_t i = valeur.size(); i < b.valeur.size(); i++)
+        {
+            valeur.push_back(b.valeur[i]);
+            if (_retenue)
+            {
+                _retenue = retenue(valeur[i], valeur_retenue, reste);
+                valeur[i] = reste;
+            }
+            else
+            {
+                _retenue = false;
+                valeur_retenue = 0;
+            }
+        }
     }
 
     if (_retenue)
-	valeur.push_back(valeur_retenue);
+        valeur.push_back(valeur_retenue);
 
     return *this;
 }
@@ -111,14 +111,14 @@ Entier& Entier::operator-=(const Entier& b)
 
     vector<unsigned int>::iterator it;
     for (it = complement.valeur.begin(); it != complement.valeur.end(); ++it)
-	*it ^= masque;
+        *it ^= masque;
 
     ++complement;
     Entier tmp(*this);
     *this += complement;
     unsigned int t = valeur.size() -1;
     if (tmp < *this)
-	valeur[t]--;
+        valeur[t]--;
     if (valeur[t] == 0) valeur.erase(valeur.end()-1);
     return *this;
 }
@@ -147,49 +147,49 @@ void Entier::karatsuba(Entier& u, Entier& v, Entier& r)
 {
     //U et V doivent être de même degré
     if (u.valeur.size() > v.valeur.size())
-	v.valeur.insert(v.valeur.end(), u.valeur.size() - v.valeur.size(), 0);
+        v.valeur.insert(v.valeur.end(), u.valeur.size() - v.valeur.size(), 0);
     else
-	u.valeur.insert(u.valeur.end(), v.valeur.size() - u.valeur.size(), 0);
+        u.valeur.insert(u.valeur.end(), v.valeur.size() - u.valeur.size(), 0);
 
     if (u.valeur.size() == 1)
     {
-	unsigned int a;
-	unsigned int b;
-	mul(u.valeur[0], v.valeur[0], a, b);
-	r.valeur.push_back(b);
-	if (a != 0)
-	    r.valeur.push_back(a);
+        unsigned int a;
+        unsigned int b;
+        mul(u.valeur[0], v.valeur[0], a, b);
+        r.valeur.push_back(b);
+        if (a != 0)
+            r.valeur.push_back(a);
     }
     else
     {
-	Entier ug;
-	Entier ud;
-	Entier vg;
-	Entier vd;
+        Entier ug;
+        Entier ud;
+        Entier vg;
+        Entier vd;
 
-	karatsuba_separer(u, ug, ud);
-	karatsuba_separer(v, vg, vd);
+        karatsuba_separer(u, ug, ud);
+        karatsuba_separer(v, vg, vd);
 
-	Entier s;
-	Entier t;
-	Entier p;
-	s = ug + ud;
-	t = vg + vd;
+        Entier s;
+        Entier t;
+        Entier p;
+        s = ug + ud;
+        t = vg + vd;
 
-	Entier g;
-	Entier d;
-	karatsuba(ug, vg, g);
-	karatsuba(ud, vd, d);
+        Entier g;
+        Entier d;
+        karatsuba(ug, vg, g);
+        karatsuba(ud, vd, d);
 
-	karatsuba(s, t, p);
-	Entier c = p - g - d;
+        karatsuba(s, t, p);
+        Entier c = p - g - d;
 
-	g.shrink_to_fit();
-	c.shrink_to_fit();
-	d.shrink_to_fit();
+        g.shrink_to_fit();
+        c.shrink_to_fit();
+        d.shrink_to_fit();
 
-	karatsuba_recomposer(g, c, d, r, u.valeur.size()/2);
-	r.shrink_to_fit();
+        karatsuba_recomposer(g, c, d, r, u.valeur.size()/2);
+        r.shrink_to_fit();
     }
 }
 
@@ -197,10 +197,10 @@ void Entier::karatsuba_separer(Entier& u, Entier& ug, Entier& ud)
 {
     int k = u.valeur.size()/2;
     for (int i = 0; i < k; i++)
-	ug.valeur.push_back(u.valeur[i]);
+        ug.valeur.push_back(u.valeur[i]);
 
     for (int i = k; i < u.valeur.size(); i++)
-	ud.valeur.push_back(u.valeur[i]);
+        ud.valeur.push_back(u.valeur[i]);
 }
 
 void Entier::karatsuba_recomposer(Entier& g, Entier& c, Entier& d, Entier& r, int k)
@@ -221,20 +221,9 @@ void Entier::shrink_to_fit()
 {
     for (int i = valeur.size()-1; i > 0; i--) // i>0 car garder premier element meme si 0
     {
-	if (valeur[i] != 0) return;
-	valeur.pop_back();
+        if (valeur[i] != 0) return;
+        valeur.pop_back();
     }
-}
-
-Entier& Entier::operator/=(const Entier& b)
-{
-
-    return *this;
-}
-
-Entier& Entier::operator%=(const Entier &b)
-{
-    return *this;
 }
 
 Entier& Entier::operator++()
@@ -259,10 +248,10 @@ int Entier::intcmp(const Entier& b) const
 
     while (rita != valeur.rend())
     {
-	if (*rita < *ritb) return -1;
-	if (*rita > *ritb) return 1;
-	++rita;
-	++ritb;
+        if (*rita < *ritb) return -1;
+        if (*rita > *ritb) return 1;
+        ++rita;
+        ++ritb;
     }
     return 0;
 }
@@ -318,25 +307,11 @@ Entier operator*(const Entier& a, const Entier& b)
     return produit;
 }
 
-Entier operator/(const Entier& a, const Entier& b)
-{
-    Entier quotient(a);
-    quotient /= b;
-    return quotient;
-}
-
-Entier operator%(const Entier& a, const Entier& b)
-{
-    Entier reste(a);
-    reste %= b;
-    return reste;
-}
-
 ostream& operator<<(ostream& flux, const Entier& val)
 {
     for (size_t i = val.valeur.size()-1; i > 0; i--)
-	flux << val.valeur[i] << '.';
-    	flux << val.valeur[0];
+        flux << val.valeur[i] << '.';
+    flux << val.valeur[0];
 
     return flux;
 }
