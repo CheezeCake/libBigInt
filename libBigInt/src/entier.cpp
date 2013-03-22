@@ -336,6 +336,7 @@ istream& operator>>(istream& flux, Entier& val)
 
 bool retenue(unsigned int a, unsigned int b, unsigned int& reste)
 {
+    const unsigned long long int BASE = 0x100000000; //2^32
     unsigned long long int c = (unsigned long long int) a + b;
     reste = c % BASE;
 
