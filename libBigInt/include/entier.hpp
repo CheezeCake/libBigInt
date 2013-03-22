@@ -300,7 +300,7 @@ private:
      *	\param retenue : adresse de la retenue de l'opération
      *	\param reste : adresse du reste de l'opération
      */
-	void mul(long long unsigned int a, long long unsigned int b, unsigned int& retenue, unsigned int& reste);
+    void mul(long long unsigned int a, long long unsigned int b, unsigned int& retenue, unsigned int& reste);
 };
 
 //operateurs
@@ -351,7 +351,7 @@ Entier operator-(const Entier& a, const Entier& b);
  *  \param b : nombre
  *	\return Le résultat de la soustraction
  */
-Entier operator-(const Entier&, const unsigned int);
+Entier operator-(const Entier& a, const unsigned int b);
 
 /*!
  *  \brief Multiplication
@@ -375,7 +375,7 @@ Entier operator*(const Entier& a, const Entier& b);
  *  \param b : nombre
  *	\return Le résultat de la multiplication
  */
-Entier operator*(const Entier&, const unsigned int);
+Entier operator*(const Entier& a, const unsigned int b);
 
 //comparaisons
 
