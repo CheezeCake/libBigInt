@@ -1,10 +1,10 @@
 /*!
-   \file calculatrice.cpp
-   \brief Calculatrice test
-   \author Marc Pardo, Emmanuel Nicolet, Julien Alonso Jimenez, Julien Missichini
-   \date Mars 2013
-    
-*/
+  \file calculatrice.cpp
+  \brief Calculatrice test
+  \author Marc Pardo, Emmanuel Nicolet, Julien Alonso Jimenez, Julien Missichini
+  \date Mars 2013
+
+ */
 
 #include <iostream>
 #include <fstream>
@@ -27,19 +27,13 @@ using namespace std;
 Entier calcul(const Entier& a, const Entier& b, unsigned char operateur)
 {
     if (operateur == '+')
-	return a + b;
-	    
+        return a + b;
+
     else if (operateur == '-')
-	return a - b;
-	
+        return a - b;
+
     else if (operateur == '*')
-	return a * b;
-	    
-    else if (operateur == '/')
-    	return a / b;
-	    
-    else (operateur == '%')
-	return a % b;	   
+        return a * b;
 }
 
 /*!
@@ -58,17 +52,17 @@ Entier calcul(const Entier& a, const Entier& b, unsigned char operateur)
 bool comparer(const Entier& a, const Entier& b, string operateur)
 {
     if(operateur == "<")
-    return a < b;
+        return a < b;
     if(operateur == ">")
-    return a > b;
+        return a > b;
     if(operateur == "<=")
-    return a <= b;
+        return a <= b;
     if(operateur == ">=")
-    return a >= b;
+        return a >= b;
     if(operateur == "=")
-    return a == b;
+        return a == b;
     if(operateur == "!=")
-    return a != b;
+        return a != b;
 }
 
 int main()
@@ -81,41 +75,41 @@ int main()
 
     do
     {
-	cout <<"Entrez une ou plusieurs expressions arithmetiques à partir d'un: "<< endl;
-	cout <<"1) clavier		2) fichier"<< endl;
-	cin>>choix;
+        cout <<"Entrez une ou plusieurs expressions arithmetiques à partir d'un: "<< endl;
+        cout <<"1) clavier		2) fichier"<< endl;
+        cin>>choix;
     }
     while(choix != 1 && choix != 2);
 
     if(choix == 1)
     {
-	cout <<"Entrez une operation :"<< endl;
-	cin >> op1;
-	cin >> operateur;
-	cin >> op2;
-	cout << endl << op1 <<' '<< operateur <<' '<< op2 <<" = "<< calcul(op1, op2, operateur) << endl;
+        cout <<"Entrez une operation :"<< endl;
+        cin >> op1;
+        cin >> operateur;
+        cin >> op2;
+        cout << endl << op1 <<' '<< operateur <<' '<< op2 <<" = "<< calcul(op1, op2, operateur) << endl;
 
     }
     else
     {
-		cout << "Entrez le nom du fichier contenant la (les) expression(s) :" << endl;
-		cin >> fichier;
-		cout <<  endl;
+        cout << "Entrez le nom du fichier contenant la (les) expression(s) :" << endl;
+        cin >> fichier;
+        cout <<  endl;
 
-		ifstream source(fichier.c_str(), ios::in);
-		if (!source) cerr << "Error";
-		else
-		{
-			while(!source.eof())
-			{
-	    	source >> op1;
-	    	source >> operateur;
-	    	source >> op2;
-	    	cout << op1 << ' ' << operateur << ' ' << op2 << " = " << calcul(op1, op2, operateur) << endl;
-			}
-		source.close();
+        ifstream source(fichier.c_str(), ios::in);
+        if (!source) cerr << "Error";
+        else
+        {
+            while(!source.eof())
+            {
+                source >> op1;
+                source >> operateur;
+                source >> op2;
+                cout << op1 << ' ' << operateur << ' ' << op2 << " = " << calcul(op1, op2, operateur) << endl;
+            }
+            source.close();
 
-		}
+        }
     }
     return 0;
 }
