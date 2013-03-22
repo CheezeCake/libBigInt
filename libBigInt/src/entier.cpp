@@ -1,6 +1,6 @@
 /**
   @file entier.cpp
-  @author Marc Pardo, Emmanuel Nicolet, Julien Alonso
+  @author Marc Pardo, Emmanuel Nicolet, Julien Alonso Jimenez
   @date 2013
 
  */
@@ -102,6 +102,13 @@ Entier& Entier::operator+=(const Entier& b)
     return *this;
 }
 
+Entier& Entier::operator+=(const unsigned int b)
+{
+    Entier ent(b);
+    *this += ent;
+    return *this;
+}
+
 Entier& Entier::operator-=(const Entier& b)
 {
     if (b == 0) return *this;
@@ -125,6 +132,13 @@ Entier& Entier::operator-=(const Entier& b)
     return *this;
 }
 
+Entier& Entier::operateur-=(const unsigned int b)
+{
+    Entier ent(b);
+    *this -= ent;
+    return *this;
+}
+
 Entier& Entier::operator*=(const Entier& b)
 {
     Entier u = *this;
@@ -133,6 +147,14 @@ Entier& Entier::operator*=(const Entier& b)
     *this = karatsuba(u, v);
 
     return *this;
+}
+
+Entier& Entier::operator*=(const unsigned int b)
+{
+    Entier ent(b);
+    *this *= ent;
+    return *this;
+    
 }
 
 void Entier::mul(long long unsigned int a, long long unsigned int b, unsigned int& retenue, unsigned int& reste)
