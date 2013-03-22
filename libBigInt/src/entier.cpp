@@ -325,6 +325,13 @@ Entier operator+(const Entier& a, const Entier& b)
     return somme;
 }
 
+Entier operator+(const Entier& a, const unsigned int b)
+{
+    Entier ent(a);
+    ent += b;
+    return ent;   
+}
+
 Entier operator-(const Entier& a, const Entier& b)
 {
     Entier soustraction(a);
@@ -332,11 +339,25 @@ Entier operator-(const Entier& a, const Entier& b)
     return soustraction;
 }
 
+Entier operator-(const Entier& a, const unsigned int b)
+{
+    Entier ent(a);
+    ent -= b;
+    return ent;   
+}
+
 Entier operator*(const Entier& a, const Entier& b)
 {
     Entier produit(a);
     produit *= b;
     return produit;
+}
+
+Entier operator+(const Entier& a, const unsigned int b)
+{
+    Entier ent(a);
+    ent *= b;
+    return ent;   
 }
 
 ostream& operator<<(ostream& flux, const Entier& val)
