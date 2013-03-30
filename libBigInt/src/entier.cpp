@@ -112,6 +112,11 @@ Entier& Entier::operator+=(const unsigned int b)
 Entier& Entier::operator-=(const Entier& b)
 {
     if (b == 0) return *this;
+    if(*this == b)
+    {
+	*this = 0;
+	return *this;
+    }
 
     Entier complement(b);
     const unsigned int masque = 0xffffffff;

@@ -1,0 +1,1090 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  ms/call  ms/call  name    
+ 12.66      0.10     0.10  1765427     0.00     0.00  std::vector<unsigned int, std::allocator<unsigned int> >::_M_insert_aux(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int const&)
+  5.07      0.14     0.04  7216761     0.00     0.00  void std::_Destroy<unsigned int*, unsigned int>(unsigned int*, unsigned int*, std::allocator<unsigned int>&)
+  4.43      0.18     0.04 19363651     0.00     0.00  std::vector<unsigned int, std::allocator<unsigned int> >::size() const
+  3.80      0.21     0.03  3138527     0.00     0.00  std::_Vector_base<unsigned int, std::allocator<unsigned int> >::~_Vector_base()
+  3.80      0.24     0.03   598589     0.00     0.00  Entier::operator+=(Entier const&)
+  3.17      0.26     0.03  4159741     0.00     0.00  unsigned int* std::__copy_move_a2<false, unsigned int*, unsigned int*>(unsigned int*, unsigned int*, unsigned int*)
+  3.17      0.29     0.03  3997718     0.00     0.00  std::_Iter_base<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, true>::_S_base(__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >)
+  3.17      0.31     0.03  3138527     0.00     0.00  std::vector<unsigned int, std::allocator<unsigned int> >::~vector()
+  2.53      0.33     0.02  7216759     0.00     0.00  std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_M_deallocate(unsigned int*, unsigned long)
+  2.53      0.35     0.02  5293217     0.00     0.00  std::vector<unsigned int, std::allocator<unsigned int> >::operator[](unsigned long)
+  2.53      0.37     0.02  5065018     0.00     0.00  __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >::base() const
+  2.53      0.39     0.02  4701133     0.00     0.00  __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >::__normal_iterator(unsigned int* const&)
+  2.53      0.41     0.02  2080118     0.00     0.00  __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >::difference_type __gnu_cxx::operator-<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > > const&, __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > > const&)
+  2.53      0.43     0.02  2079433     0.00     0.00  unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&)
+  2.53      0.45     0.02  1998954     0.00     0.00  std::vector<unsigned int, std::allocator<unsigned int> >::operator=(std::vector<unsigned int, std::allocator<unsigned int> > const&)
+  2.53      0.47     0.02  1998799     0.00     0.00  unsigned int* std::__copy_move_a2<false, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int*>(__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int*)
+  1.90      0.49     0.02  7216761     0.00     0.00  void std::_Destroy<unsigned int*>(unsigned int*, unsigned int*)
+  1.90      0.50     0.02  3997718     0.00     0.00  std::_Miter_base<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > >::iterator_type std::__miter_base<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > >(__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >)
+  1.90      0.52     0.02  3138527     0.00     0.00  std::allocator<unsigned int>::~allocator()
+  1.90      0.53     0.02  2542987     0.00     0.00  std::vector<unsigned int, std::allocator<unsigned int> >::end() const
+  1.27      0.54     0.01 14794085     0.00     0.00  std::_Niter_base<unsigned int*>::iterator_type std::__niter_base<unsigned int*>(unsigned int*)
+  1.27      0.55     0.01  8517373     0.00     0.00  __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >::base() const
+  1.27      0.56     0.01  7216761     0.00     0.00  void std::_Destroy_aux<true>::__destroy<unsigned int*>(unsigned int*, unsigned int*)
+  1.27      0.57     0.01  6158600     0.00     0.00  unsigned int* std::__copy_move<false, true, std::random_access_iterator_tag>::__copy_m<unsigned int>(unsigned int const*, unsigned int const*, unsigned int*)
+  1.27      0.58     0.01  5075496     0.00     0.00  __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >::__normal_iterator(unsigned int const* const&)
+  1.27      0.59     0.01  4159646     0.00     0.00  unsigned int* std::uninitialized_copy<unsigned int*, unsigned int*>(unsigned int*, unsigned int*, unsigned int*)
+  1.27      0.60     0.01  4158866     0.00     0.00  __gnu_cxx::__alloc_traits<std::allocator<unsigned int> >::max_size(std::allocator<unsigned int> const&)
+  1.27      0.61     0.01  4158866     0.00     0.00  std::vector<unsigned int, std::allocator<unsigned int> >::max_size() const
+  1.27      0.62     0.01  4078232     0.00     0.00  __gnu_cxx::new_allocator<unsigned int>::allocate(unsigned long, void const*)
+  1.27      0.63     0.01  4078232     0.00     0.00  std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_M_allocate(unsigned long)
+  1.27      0.64     0.01  3138527     0.00     0.00  std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_Vector_impl::_Vector_impl()
+  1.27      0.65     0.01  3138527     0.00     0.00  std::vector<unsigned int, std::allocator<unsigned int> >::vector()
+  1.27      0.66     0.01  2079433     0.00     0.00  std::vector<unsigned int, std::allocator<unsigned int> >::_M_check_len(unsigned long, char const*) const
+  1.27      0.67     0.01  1998859     0.00     0.00  unsigned int* std::__copy_move_a<false, unsigned int const*, unsigned int*>(unsigned int const*, unsigned int const*, unsigned int*)
+  1.27      0.68     0.01  1998799     0.00     0.00  unsigned int* std::uninitialized_copy<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int*>(__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int*)
+  1.27      0.69     0.01  1998799     0.00     0.00  unsigned int* std::__uninitialized_copy_a<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int*, unsigned int>(__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int*, std::allocator<unsigned int>&)
+  1.27      0.70     0.01   420189     0.00     0.00  std::vector<unsigned int, std::allocator<unsigned int> >::insert(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned long, unsigned int const&)
+  1.27      0.71     0.01   314690     0.00     0.00  __gnu_cxx::__enable_if<std::__is_scalar<unsigned int>::__value, unsigned int*>::__type std::__fill_n_a<unsigned int*, unsigned long, unsigned int>(unsigned int*, unsigned long, unsigned int const&)
+  1.27      0.72     0.01   314690     0.00     0.00  void std::__uninitialized_fill_n_a<unsigned int*, unsigned long, unsigned int, unsigned int>(unsigned int*, unsigned long, unsigned int const&, std::allocator<unsigned int>&)
+  1.27      0.73     0.01   299195     0.00     0.00  Entier::intcmp(Entier const&) const
+  1.27      0.74     0.01      201     0.05     3.91  Entier::karatsuba(Entier&, Entier&)
+  1.27      0.75     0.01       60     0.17     0.17  std::_Niter_base<__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > > >::iterator_type std::__niter_base<__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > > >(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >)
+  0.63      0.76     0.01  8319484     0.00     0.00  std::_Miter_base<unsigned int*>::iterator_type std::__miter_base<unsigned int*>(unsigned int*)
+  0.63      0.76     0.01  4078232     0.00     0.00  __gnu_cxx::new_allocator<unsigned int>::deallocate(unsigned int*, unsigned long)
+  0.63      0.77     0.01  3138527     0.00     0.00  __gnu_cxx::new_allocator<unsigned int>::~new_allocator()
+  0.63      0.77     0.01  3138527     0.00     0.00  std::allocator<unsigned int>::allocator()
+  0.63      0.78     0.01  2532509     0.00     0.00  std::vector<unsigned int, std::allocator<unsigned int> >::begin() const
+  0.63      0.78     0.01  1998799     0.00     0.00  unsigned int* std::__uninitialized_copy<true>::__uninit_copy<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int*>(__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int*)
+  0.63      0.79     0.01  1965405     0.00     0.00  std::vector<unsigned int, std::allocator<unsigned int> >::push_back(unsigned int const&)
+  0.63      0.79     0.01        2     2.50     2.50  std::vector<unsigned int, std::allocator<unsigned int> >::clear()
+  0.00      0.79     0.00 23113569     0.00     0.00  std::_Iter_base<unsigned int*, false>::_S_base(unsigned int*)
+  0.00      0.79     0.00 13689956     0.00     0.00  std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_M_get_Tp_allocator()
+  0.00      0.79     0.00  8237098     0.00     0.00  __gnu_cxx::new_allocator<unsigned int>::max_size() const
+  0.00      0.79     0.00  4159741     0.00     0.00  unsigned int* std::__copy_move_a<false, unsigned int*, unsigned int*>(unsigned int*, unsigned int*, unsigned int*)
+  0.00      0.79     0.00  4159741     0.00     0.00  unsigned int* std::copy<unsigned int*, unsigned int*>(unsigned int*, unsigned int*, unsigned int*)
+  0.00      0.79     0.00  4159646     0.00     0.00  unsigned int* std::__uninitialized_copy<true>::__uninit_copy<unsigned int*, unsigned int*>(unsigned int*, unsigned int*, unsigned int*)
+  0.00      0.79     0.00  4159646     0.00     0.00  unsigned int* std::__uninitialized_copy_a<unsigned int*, unsigned int*, unsigned int>(unsigned int*, unsigned int*, unsigned int*, std::allocator<unsigned int>&)
+  0.00      0.79     0.00  4158866     0.00     0.00  std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_M_get_Tp_allocator() const
+  0.00      0.79     0.00  4158866     0.00     0.00  unsigned int* std::__uninitialized_move_if_noexcept_a<unsigned int*, unsigned int*, std::allocator<unsigned int> >(unsigned int*, unsigned int*, unsigned int*, std::allocator<unsigned int>&)
+  0.00      0.79     0.00  3997718     0.00     0.00  std::_Iter_base<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, false>::_S_base(__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >)
+  0.00      0.79     0.00  3997718     0.00     0.00  std::_Niter_base<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > >::iterator_type std::__niter_base<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > >(__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >)
+  0.00      0.79     0.00  3138527     0.00     0.00  Entier::~Entier()
+  0.00      0.79     0.00  3138527     0.00     0.00  __gnu_cxx::new_allocator<unsigned int>::new_allocator()
+  0.00      0.79     0.00  3138527     0.00     0.00  std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_Vector_impl::~_Vector_impl()
+  0.00      0.79     0.00  3138527     0.00     0.00  std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_Vector_base()
+  0.00      0.79     0.00  2378687     0.00     0.00  std::vector<unsigned int, std::allocator<unsigned int> >::begin()
+  0.00      0.79     0.00  2297316     0.00     0.00  std::vector<unsigned int, std::allocator<unsigned int> >::end()
+  0.00      0.79     0.00  1998954     0.00     0.00  std::vector<unsigned int, std::allocator<unsigned int> >::capacity() const
+  0.00      0.79     0.00  1998799     0.00     0.00  unsigned int* std::vector<unsigned int, std::allocator<unsigned int> >::_M_allocate_and_copy<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > >(unsigned long, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >)
+  0.00      0.79     0.00  1998799     0.00     0.00  unsigned int* std::copy<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int*>(__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int*)
+  0.00      0.79     0.00  1965405     0.00     0.00  __gnu_cxx::new_allocator<unsigned int>::construct(unsigned int*, unsigned int const&)
+  0.00      0.79     0.00  1965405     0.00     0.00  void __gnu_cxx::__alloc_traits<std::allocator<unsigned int> >::construct<unsigned int>(std::allocator<unsigned int>&, unsigned int*, unsigned int const&)
+  0.00      0.79     0.00  1965405     0.00     0.00  operator new(unsigned long, void*)
+  0.00      0.79     0.00  1960147     0.00     0.00  Entier::Entier()
+  0.00      0.79     0.00  1601420     0.00     0.00  __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >::operator--()
+  0.00      0.79     0.00  1574367     0.00     0.00  std::vector<unsigned int, std::allocator<unsigned int> >::operator[](unsigned long) const
+  0.00      0.79     0.00  1149671     0.00     0.00  retenue(unsigned int, unsigned int, unsigned int&)
+  0.00      0.79     0.00  1120169     0.00     0.00  Entier::operator=(Entier const&)
+  0.00      0.79     0.00  1078248     0.00     0.00  __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >::operator*() const
+  0.00      0.79     0.00  1078248     0.00     0.00  std::reverse_iterator<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > >::operator*() const
+  0.00      0.79     0.00  1077778     0.00     0.00  std::reverse_iterator<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > >::reverse_iterator(__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >)
+  0.00      0.79     0.00  1077778     0.00     0.00  std::iterator<std::random_access_iterator_tag, unsigned int, long, unsigned int const*, unsigned int const&>::iterator()
+  0.00      0.79     0.00  1067300     0.00     0.00  std::reverse_iterator<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > >::base() const
+  0.00      0.79     0.00   878785     0.00     0.00  Entier::Entier(Entier const&)
+  0.00      0.79     0.00   700181     0.00     0.00  std::vector<unsigned int, std::allocator<unsigned int> >::_M_fill_insert(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned long, unsigned int const&)
+  0.00      0.79     0.00   559985     0.00     0.00  operator+(Entier const&, Entier const&)
+  0.00      0.79     0.00   559984     0.00     0.00  Entier::racourcir()
+  0.00      0.79     0.00   544128     0.00     0.00  std::vector<unsigned int, std::allocator<unsigned int> >::rbegin() const
+  0.00      0.79     0.00   533650     0.00     0.00  bool __gnu_cxx::operator==<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >(__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > const&, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > const&)
+  0.00      0.79     0.00   533650     0.00     0.00  std::vector<unsigned int, std::allocator<unsigned int> >::rend() const
+  0.00      0.79     0.00   533650     0.00     0.00  bool std::operator==<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > >(std::reverse_iterator<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > > const&, std::reverse_iterator<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > > const&)
+  0.00      0.79     0.00   533650     0.00     0.00  bool std::operator!=<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > >(std::reverse_iterator<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > > const&, std::reverse_iterator<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > > const&)
+  0.00      0.79     0.00   523172     0.00     0.00  std::reverse_iterator<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > >::operator++()
+  0.00      0.79     0.00   348350     0.00     0.00  __gnu_cxx::new_allocator<unsigned int>::destroy(unsigned int*)
+  0.00      0.79     0.00   348350     0.00     0.00  __gnu_cxx::__alloc_traits<std::allocator<unsigned int> >::destroy(std::allocator<unsigned int>&, unsigned int*)
+  0.00      0.79     0.00   335815     0.00     0.00  std::vector<unsigned int, std::allocator<unsigned int> >::pop_back()
+  0.00      0.79     0.00   314690     0.00     0.00  void std::__uninitialized_fill_n<true>::__uninit_fill_n<unsigned int*, unsigned long, unsigned int>(unsigned int*, unsigned long, unsigned int const&)
+  0.00      0.79     0.00   314690     0.00     0.00  void std::uninitialized_fill_n<unsigned int*, unsigned long, unsigned int>(unsigned int*, unsigned long, unsigned int const&)
+  0.00      0.79     0.00   314690     0.00     0.00  unsigned int* std::fill_n<unsigned int*, unsigned long, unsigned int>(unsigned int*, unsigned long, unsigned int const&)
+  0.00      0.79     0.00   299595     0.00     0.00  Entier::Entier(unsigned int)
+  0.00      0.79     0.00   280193     0.00     0.00  Entier::mul(unsigned long long, unsigned long long, unsigned int&, unsigned int&)
+  0.00      0.79     0.00   279993     0.00     0.00  Entier::operator-=(Entier const&)
+  0.00      0.79     0.00   279993     0.00     0.00  operator==(Entier const&, Entier const&)
+  0.00      0.79     0.00   279993     0.00     0.00  operator-(Entier const&, Entier const&)
+  0.00      0.79     0.00   279992     0.00     0.00  Entier::karatsuba_separer(Entier&, Entier&, Entier&)
+  0.00      0.79     0.00   279992     0.00     0.00  void std::vector<unsigned int, std::allocator<unsigned int> >::_M_insert_dispatch<int>(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, int, int, std::__true_type)
+  0.00      0.79     0.00   279992     0.00     0.00  void std::vector<unsigned int, std::allocator<unsigned int> >::insert<int>(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, int, int)
+  0.00      0.79     0.00   139996     0.00     0.00  Entier::karatsuba_recomposer(Entier&, Entier&, Entier&, int)
+  0.00      0.79     0.00    98420     0.00     0.00  bool __gnu_cxx::operator!=<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > > const&, __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > > const&)
+  0.00      0.79     0.00    66683     0.00     0.00  __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >::operator++()
+  0.00      0.79     0.00    66683     0.00     0.00  __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >::operator*() const
+  0.00      0.79     0.00    19402     0.00     0.00  Entier::operator+=(unsigned int)
+  0.00      0.79     0.00    19202     0.00     0.00  Entier::operator++()
+  0.00      0.79     0.00    19202     0.00     0.00  __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >::__normal_iterator()
+  0.00      0.79     0.00    19202     0.00     0.00  operator<(Entier const&, Entier const&)
+  0.00      0.79     0.00    12535     0.00     0.00  __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >::operator-(long const&) const
+  0.00      0.79     0.00    12535     0.00     0.00  __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >::operator+(long const&) const
+  0.00      0.79     0.00    12535     0.00     0.00  std::vector<unsigned int, std::allocator<unsigned int> >::erase(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >)
+  0.00      0.79     0.00      685     0.00     0.00  unsigned int* std::__uninitialized_move_a<unsigned int*, unsigned int*, std::allocator<unsigned int> >(unsigned int*, unsigned int*, unsigned int*, std::allocator<unsigned int>&)
+  0.00      0.79     0.00      685     0.00     0.00  void std::fill<unsigned int*, unsigned int>(unsigned int*, unsigned int*, unsigned int const&)
+  0.00      0.79     0.00      685     0.00     0.00  __gnu_cxx::__enable_if<std::__is_scalar<unsigned int>::__value, void>::__type std::__fill_a<unsigned int*, unsigned int>(unsigned int*, unsigned int*, unsigned int const&)
+  0.00      0.79     0.00      201     0.00     3.91  Entier::operator*=(Entier const&)
+  0.00      0.79     0.00      200     0.00     3.91  Entier::operator*=(unsigned int)
+  0.00      0.79     0.00       60     0.00     0.00  std::_Iter_base<__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, true>::_S_base(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >)
+  0.00      0.79     0.00       60     0.00     0.00  void std::_Destroy_aux<true>::__destroy<__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > > >(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >)
+  0.00      0.79     0.00       60     0.00     0.17  __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > > std::__copy_move_a2<false, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > > >(__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >)
+  0.00      0.79     0.00       60     0.00     0.17  __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > > std::copy<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > > >(__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >)
+  0.00      0.79     0.00       60     0.00     0.00  void std::_Destroy<__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > > >(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >)
+  0.00      0.79     0.00       60     0.00     0.00  void std::_Destroy<__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int>(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, std::allocator<unsigned int>&)
+  0.00      0.79     0.00        3     0.00     0.00  operator<<(std::ostream&, Entier const&)
+  0.00      0.79     0.00        2     0.00   393.22  Entier::set(std::string const&, unsigned int)
+  0.00      0.79     0.00        2     0.00     0.00  std::vector<unsigned int, std::allocator<unsigned int> >::_M_erase_at_end(unsigned int*)
+  0.00      0.79     0.00        2     0.00   393.22  operator>>(std::istream&, Entier&)
+  0.00      0.79     0.00        1     0.00     0.00  _GLOBAL__sub_I__Z6calculRK6EntierS1_h
+  0.00      0.79     0.00        1     0.00     0.00  _GLOBAL__sub_I__ZN6EntierC2Ev
+  0.00      0.79     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00      0.79     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00      0.79     0.00        1     0.00     0.00  unsigned int* std::__copy_move_backward<false, true, std::random_access_iterator_tag>::__copy_move_b<unsigned int>(unsigned int const*, unsigned int const*, unsigned int*)
+  0.00      0.79     0.00        1     0.00     0.00  unsigned int* std::copy_backward<unsigned int*, unsigned int*>(unsigned int*, unsigned int*, unsigned int*)
+  0.00      0.79     0.00        1     0.00     0.00  unsigned int* std::__copy_move_backward_a<false, unsigned int*, unsigned int*>(unsigned int*, unsigned int*, unsigned int*)
+  0.00      0.79     0.00        1     0.00     0.00  unsigned int* std::__copy_move_backward_a2<false, unsigned int*, unsigned int*>(unsigned int*, unsigned int*, unsigned int*)
+  0.00      0.79     0.00        1     0.00     3.91  operator*(Entier const&, Entier const&)
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+ 
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this 
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 2 byte(s) for 1.27% of 0.79 seconds
+
+index % time    self  children    called     name
+                                                 <spontaneous>
+[1]    100.0    0.00    0.79                 main [1]
+                0.00    0.79       2/2           operator>>(std::istream&, Entier&) [3]
+                0.00    0.00       1/1           operator*(Entier const&, Entier const&) [93]
+                0.00    0.00       1/279993      operator-(Entier const&, Entier const&) [14]
+                0.00    0.00       1/559985      operator+(Entier const&, Entier const&) [10]
+                0.00    0.00       5/3138527     Entier::~Entier() [18]
+                0.00    0.00       2/1960147     Entier::Entier() [59]
+                0.00    0.00       3/3           operator<<(std::ostream&, Entier const&) [105]
+-----------------------------------------------
+                0.00    0.79       2/2           operator>>(std::istream&, Entier&) [3]
+[2]     99.5    0.00    0.79       2         Entier::set(std::string const&, unsigned int) [2]
+                0.00    0.78     200/200         Entier::operator*=(unsigned int) [6]
+                0.01    0.00       2/2           std::vector<unsigned int, std::allocator<unsigned int> >::clear() [84]
+                0.00    0.00     200/19402       Entier::operator+=(unsigned int) [81]
+                0.00    0.00       2/1965405     std::vector<unsigned int, std::allocator<unsigned int> >::push_back(unsigned int const&) [7]
+-----------------------------------------------
+                0.00    0.79       2/2           main [1]
+[3]     99.5    0.00    0.79       2         operator>>(std::istream&, Entier&) [3]
+                0.00    0.79       2/2           Entier::set(std::string const&, unsigned int) [2]
+-----------------------------------------------
+                0.00    0.00       1/201         operator*(Entier const&, Entier const&) [93]
+                0.00    0.78     200/201         Entier::operator*=(unsigned int) [6]
+[4]     99.4    0.00    0.79     201         Entier::operator*=(Entier const&) [4]
+                0.01    0.78     201/201         Entier::karatsuba(Entier&, Entier&) [5]
+                0.00    0.00     402/878785      Entier::Entier(Entier const&) [21]
+                0.00    0.00     603/3138527     Entier::~Entier() [18]
+                0.00    0.00     201/1120169     Entier::operator=(Entier const&) [16]
+-----------------------------------------------
+                              419988             Entier::karatsuba(Entier&, Entier&) [5]
+                0.01    0.78     201/201         Entier::operator*=(Entier const&) [4]
+[5]     99.3    0.01    0.78     201+419988  Entier::karatsuba(Entier&, Entier&) [5]
+                0.00    0.13  139996/139996      Entier::karatsuba_recomposer(Entier&, Entier&, Entier&, int) [11]
+                0.00    0.13  279992/279992      Entier::karatsuba_separer(Entier&, Entier&, Entier&) [12]
+                0.00    0.12  279992/279993      operator-(Entier const&, Entier const&) [14]
+                0.00    0.10  979972/1120169     Entier::operator=(Entier const&) [16]
+                0.00    0.09 2519928/3138527     Entier::~Entier() [18]
+                0.00    0.09  279992/559985      operator+(Entier const&, Entier const&) [10]
+                0.00    0.04  297495/1965405     std::vector<unsigned int, std::allocator<unsigned int> >::push_back(unsigned int const&) [7]
+                0.01    0.03  420189/420189      std::vector<unsigned int, std::allocator<unsigned int> >::insert(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned long, unsigned int const&) [39]
+                0.00    0.01 1820149/1960147     Entier::Entier() [59]
+                0.00    0.00 2240941/19363651     std::vector<unsigned int, std::allocator<unsigned int> >::size() const [40]
+                0.00    0.00  559984/559984      Entier::racourcir() [94]
+                0.00    0.00  560386/5293217     std::vector<unsigned int, std::allocator<unsigned int> >::operator[](unsigned long) [49]
+                0.00    0.00  420189/2297316     std::vector<unsigned int, std::allocator<unsigned int> >::end() [80]
+                0.00    0.00  280193/280193      Entier::mul(unsigned long long, unsigned long long, unsigned int&, unsigned int&) [136]
+                              419988             Entier::karatsuba(Entier&, Entier&) [5]
+-----------------------------------------------
+                0.00    0.78     200/200         Entier::set(std::string const&, unsigned int) [2]
+[6]     98.9    0.00    0.78     200         Entier::operator*=(unsigned int) [6]
+                0.00    0.78     200/201         Entier::operator*=(Entier const&) [4]
+                0.00    0.00     200/299595      Entier::Entier(unsigned int) [35]
+                0.00    0.00     200/3138527     Entier::~Entier() [18]
+-----------------------------------------------
+                0.00    0.00       2/1965405     Entier::set(std::string const&, unsigned int) [2]
+                0.00    0.04  297495/1965405     Entier::karatsuba(Entier&, Entier&) [5]
+                0.00    0.04  299595/1965405     Entier::Entier(unsigned int) [35]
+                0.00    0.07  486199/1965405     Entier::operator+=(Entier const&) [15]
+                0.00    0.12  882114/1965405     Entier::karatsuba_separer(Entier&, Entier&, Entier&) [12]
+[7]     35.2    0.01    0.27 1965405         std::vector<unsigned int, std::allocator<unsigned int> >::push_back(unsigned int const&) [7]
+                0.10    0.17 1765427/1765427     std::vector<unsigned int, std::allocator<unsigned int> >::_M_insert_aux(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int const&) [8]
+                0.00    0.01 1765427/2297316     std::vector<unsigned int, std::allocator<unsigned int> >::end() [80]
+                0.00    0.00  199978/1965405     void __gnu_cxx::__alloc_traits<std::allocator<unsigned int> >::construct<unsigned int>(std::allocator<unsigned int>&, unsigned int*, unsigned int const&) [122]
+-----------------------------------------------
+                0.10    0.17 1765427/1765427     std::vector<unsigned int, std::allocator<unsigned int> >::push_back(unsigned int const&) [7]
+[8]     33.6    0.10    0.17 1765427         std::vector<unsigned int, std::allocator<unsigned int> >::_M_insert_aux(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int const&) [8]
+                0.01    0.05 1765427/2079433     std::vector<unsigned int, std::allocator<unsigned int> >::_M_check_len(unsigned long, char const*) const [26]
+                0.00    0.05 3530854/4158866     unsigned int* std::__uninitialized_move_if_noexcept_a<unsigned int*, unsigned int*, std::allocator<unsigned int> >(unsigned int*, unsigned int*, unsigned int*, std::allocator<unsigned int>&) [31]
+                0.02    0.00 1765427/2080118     __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >::difference_type __gnu_cxx::operator-<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > > const&, __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > > const&) [44]
+                0.01    0.01 1765427/7216761     void std::_Destroy<unsigned int*, unsigned int>(unsigned int*, unsigned int*, std::allocator<unsigned int>&) [27]
+                0.00    0.00 1765427/4078232     std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_M_allocate(unsigned long) [53]
+                0.00    0.01 1765427/2378687     std::vector<unsigned int, std::allocator<unsigned int> >::begin() [67]
+                0.00    0.00 1765427/7216759     std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_M_deallocate(unsigned int*, unsigned long) [42]
+                0.00    0.00 3530854/8517373     __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >::base() const [72]
+                0.00    0.00 5296281/13689956     std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_M_get_Tp_allocator() [115]
+                0.00    0.00 1765427/1965405     void __gnu_cxx::__alloc_traits<std::allocator<unsigned int> >::construct<unsigned int>(std::allocator<unsigned int>&, unsigned int*, unsigned int const&) [122]
+-----------------------------------------------
+                0.01    0.08  878785/1998954     Entier::Entier(Entier const&) [21]
+                0.01    0.11 1120169/1998954     Entier::operator=(Entier const&) [16]
+[9]     26.2    0.02    0.19 1998954         std::vector<unsigned int, std::allocator<unsigned int> >::operator=(std::vector<unsigned int, std::allocator<unsigned int> > const&) [9]
+                0.00    0.13 1998799/1998799     unsigned int* std::vector<unsigned int, std::allocator<unsigned int> >::_M_allocate_and_copy<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > >(unsigned long, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >) [13]
+                0.01    0.01 1998799/7216761     void std::_Destroy<unsigned int*, unsigned int>(unsigned int*, unsigned int*, std::allocator<unsigned int>&) [27]
+                0.01    0.00 1998859/2542987     std::vector<unsigned int, std::allocator<unsigned int> >::end() const [48]
+                0.00    0.01      60/60          __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > > std::copy<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > > >(__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >) [68]
+                0.00    0.00 1998859/2532509     std::vector<unsigned int, std::allocator<unsigned int> >::begin() const [79]
+                0.01    0.00 1998799/7216759     std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_M_deallocate(unsigned int*, unsigned long) [42]
+                0.00    0.00 1999299/19363651     std::vector<unsigned int, std::allocator<unsigned int> >::size() const [40]
+                0.00    0.00      95/4159646     unsigned int* std::__uninitialized_copy_a<unsigned int*, unsigned int*, unsigned int>(unsigned int*, unsigned int*, unsigned int*, std::allocator<unsigned int>&) [30]
+                0.00    0.00      95/4159741     unsigned int* std::copy<unsigned int*, unsigned int*>(unsigned int*, unsigned int*, unsigned int*) [33]
+                0.00    0.00      60/2378687     std::vector<unsigned int, std::allocator<unsigned int> >::begin() [67]
+                0.00    0.00      60/2297316     std::vector<unsigned int, std::allocator<unsigned int> >::end() [80]
+                0.00    0.00 1998954/1998954     std::vector<unsigned int, std::allocator<unsigned int> >::capacity() const [120]
+                0.00    0.00 1998954/13689956     std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_M_get_Tp_allocator() [115]
+                0.00    0.00      60/60          void std::_Destroy<__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int>(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, std::allocator<unsigned int>&) [143]
+-----------------------------------------------
+                0.00    0.00       1/559985      main [1]
+                0.00    0.09  279992/559985      Entier::karatsuba(Entier&, Entier&) [5]
+                0.00    0.09  279992/559985      Entier::karatsuba_recomposer(Entier&, Entier&, Entier&, int) [11]
+[10]    22.0    0.00    0.17  559985         operator+(Entier const&, Entier const&) [10]
+                0.03    0.08  559985/598589      Entier::operator+=(Entier const&) [15]
+                0.00    0.06  559985/878785      Entier::Entier(Entier const&) [21]
+-----------------------------------------------
+                0.00    0.13  139996/139996      Entier::karatsuba(Entier&, Entier&) [5]
+[11]    16.9    0.00    0.13  139996         Entier::karatsuba_recomposer(Entier&, Entier&, Entier&, int) [11]
+                0.00    0.09  279992/559985      operator+(Entier const&, Entier const&) [10]
+                0.00    0.02  279992/279992      void std::vector<unsigned int, std::allocator<unsigned int> >::insert<int>(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, int, int) [58]
+                0.00    0.01  139996/1120169     Entier::operator=(Entier const&) [16]
+                0.00    0.01  279992/3138527     Entier::~Entier() [18]
+                0.00    0.00  279992/2378687     std::vector<unsigned int, std::allocator<unsigned int> >::begin() [67]
+                0.00    0.00  139996/1960147     Entier::Entier() [59]
+-----------------------------------------------
+                0.00    0.13  279992/279992      Entier::karatsuba(Entier&, Entier&) [5]
+[12]    16.5    0.00    0.13  279992         Entier::karatsuba_separer(Entier&, Entier&, Entier&) [12]
+                0.00    0.12  882114/1965405     std::vector<unsigned int, std::allocator<unsigned int> >::push_back(unsigned int const&) [7]
+                0.00    0.00  882114/5293217     std::vector<unsigned int, std::allocator<unsigned int> >::operator[](unsigned long) [49]
+                0.00    0.00 1030032/19363651     std::vector<unsigned int, std::allocator<unsigned int> >::size() const [40]
+-----------------------------------------------
+                0.00    0.13 1998799/1998799     std::vector<unsigned int, std::allocator<unsigned int> >::operator=(std::vector<unsigned int, std::allocator<unsigned int> > const&) [9]
+[13]    15.8    0.00    0.13 1998799         unsigned int* std::vector<unsigned int, std::allocator<unsigned int> >::_M_allocate_and_copy<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > >(unsigned long, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >) [13]
+                0.01    0.11 1998799/1998799     unsigned int* std::__uninitialized_copy_a<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int*, unsigned int>(__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int*, std::allocator<unsigned int>&) [17]
+                0.00    0.00 1998799/4078232     std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_M_allocate(unsigned long) [53]
+                0.00    0.00 1998799/13689956     std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_M_get_Tp_allocator() [115]
+-----------------------------------------------
+                0.00    0.00       1/279993      main [1]
+                0.00    0.12  279992/279993      Entier::karatsuba(Entier&, Entier&) [5]
+[14]    15.7    0.00    0.12  279993         operator-(Entier const&, Entier const&) [14]
+                0.00    0.09  279993/279993      Entier::operator-=(Entier const&) [23]
+                0.00    0.03  279993/878785      Entier::Entier(Entier const&) [21]
+-----------------------------------------------
+                0.00    0.00   19202/598589      Entier::operator-=(Entier const&) [23]
+                0.00    0.00   19402/598589      Entier::operator+=(unsigned int) [81]
+                0.03    0.08  559985/598589      operator+(Entier const&, Entier const&) [10]
+[15]    15.1    0.03    0.09  598589         Entier::operator+=(Entier const&) [15]
+                0.00    0.07  486199/1965405     std::vector<unsigned int, std::allocator<unsigned int> >::push_back(unsigned int const&) [7]
+                0.01    0.00 3432976/5293217     std::vector<unsigned int, std::allocator<unsigned int> >::operator[](unsigned long) [49]
+                0.01    0.00 4018806/19363651     std::vector<unsigned int, std::allocator<unsigned int> >::size() const [40]
+                0.00    0.00 1573613/1574367     std::vector<unsigned int, std::allocator<unsigned int> >::operator[](unsigned long) const [125]
+                0.00    0.00 1149671/1149671     retenue(unsigned int, unsigned int, unsigned int&) [126]
+-----------------------------------------------
+                0.00    0.00     201/1120169     Entier::operator*=(Entier const&) [4]
+                0.00    0.01  139996/1120169     Entier::karatsuba_recomposer(Entier&, Entier&, Entier&, int) [11]
+                0.00    0.10  979972/1120169     Entier::karatsuba(Entier&, Entier&) [5]
+[16]    14.7    0.00    0.12 1120169         Entier::operator=(Entier const&) [16]
+                0.01    0.11 1120169/1998954     std::vector<unsigned int, std::allocator<unsigned int> >::operator=(std::vector<unsigned int, std::allocator<unsigned int> > const&) [9]
+-----------------------------------------------
+                0.01    0.11 1998799/1998799     unsigned int* std::vector<unsigned int, std::allocator<unsigned int> >::_M_allocate_and_copy<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > >(unsigned long, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >) [13]
+[17]    14.6    0.01    0.11 1998799         unsigned int* std::__uninitialized_copy_a<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int*, unsigned int>(__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int*, std::allocator<unsigned int>&) [17]
+                0.01    0.10 1998799/1998799     unsigned int* std::uninitialized_copy<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int*>(__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int*) [20]
+-----------------------------------------------
+                0.00    0.00       5/3138527     main [1]
+                0.00    0.00     200/3138527     Entier::operator*=(unsigned int) [6]
+                0.00    0.00     603/3138527     Entier::operator*=(Entier const&) [4]
+                0.00    0.00   19402/3138527     Entier::operator+=(unsigned int) [81]
+                0.00    0.01  279992/3138527     Entier::karatsuba_recomposer(Entier&, Entier&, Entier&, int) [11]
+                0.00    0.01  318397/3138527     Entier::operator-=(Entier const&) [23]
+                0.00    0.09 2519928/3138527     Entier::karatsuba(Entier&, Entier&) [5]
+[18]    14.4    0.00    0.11 3138527         Entier::~Entier() [18]
+                0.03    0.09 3138527/3138527     std::vector<unsigned int, std::allocator<unsigned int> >::~vector() [19]
+-----------------------------------------------
+                0.03    0.09 3138527/3138527     Entier::~Entier() [18]
+[19]    14.4    0.03    0.09 3138527         std::vector<unsigned int, std::allocator<unsigned int> >::~vector() [19]
+                0.03    0.03 3138527/3138527     std::_Vector_base<unsigned int, std::allocator<unsigned int> >::~_Vector_base() [28]
+                0.02    0.01 3138527/7216761     void std::_Destroy<unsigned int*, unsigned int>(unsigned int*, unsigned int*, std::allocator<unsigned int>&) [27]
+                0.00    0.00 3138527/13689956     std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_M_get_Tp_allocator() [115]
+-----------------------------------------------
+                0.01    0.10 1998799/1998799     unsigned int* std::__uninitialized_copy_a<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int*, unsigned int>(__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int*, std::allocator<unsigned int>&) [17]
+[20]    13.3    0.01    0.10 1998799         unsigned int* std::uninitialized_copy<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int*>(__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int*) [20]
+                0.01    0.09 1998799/1998799     unsigned int* std::__uninitialized_copy<true>::__uninit_copy<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int*>(__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int*) [22]
+-----------------------------------------------
+                0.00    0.00       1/878785      operator*(Entier const&, Entier const&) [93]
+                0.00    0.00     402/878785      Entier::operator*=(Entier const&) [4]
+                0.00    0.00   38404/878785      Entier::operator-=(Entier const&) [23]
+                0.00    0.03  279993/878785      operator-(Entier const&, Entier const&) [14]
+                0.00    0.06  559985/878785      operator+(Entier const&, Entier const&) [10]
+[21]    12.4    0.00    0.10  878785         Entier::Entier(Entier const&) [21]
+                0.01    0.08  878785/1998954     std::vector<unsigned int, std::allocator<unsigned int> >::operator=(std::vector<unsigned int, std::allocator<unsigned int> > const&) [9]
+                0.00    0.00  878785/3138527     std::vector<unsigned int, std::allocator<unsigned int> >::vector() [43]
+-----------------------------------------------
+                0.01    0.09 1998799/1998799     unsigned int* std::uninitialized_copy<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int*>(__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int*) [20]
+[22]    12.1    0.01    0.09 1998799         unsigned int* std::__uninitialized_copy<true>::__uninit_copy<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int*>(__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int*) [22]
+                0.00    0.09 1998799/1998799     unsigned int* std::copy<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int*>(__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int*) [24]
+-----------------------------------------------
+                0.00    0.09  279993/279993      operator-(Entier const&, Entier const&) [14]
+[23]    11.7    0.00    0.09  279993         Entier::operator-=(Entier const&) [23]
+                0.00    0.04  279993/299595      Entier::Entier(unsigned int) [35]
+                0.00    0.02  279993/279993      operator==(Entier const&, Entier const&) [46]
+                0.00    0.01  318397/3138527     Entier::~Entier() [18]
+                0.00    0.01   19202/19202       Entier::operator++() [82]
+                0.00    0.00   38404/878785      Entier::Entier(Entier const&) [21]
+                0.00    0.00   19202/598589      Entier::operator+=(Entier const&) [15]
+                0.00    0.00   19202/19202       operator<(Entier const&, Entier const&) [96]
+                0.00    0.00   98420/2297316     std::vector<unsigned int, std::allocator<unsigned int> >::end() [80]
+                0.00    0.00   85885/98420       bool __gnu_cxx::operator!=<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > > const&, __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > > const&) [97]
+                0.00    0.00   12535/12535       std::vector<unsigned int, std::allocator<unsigned int> >::erase(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >) [98]
+                0.00    0.00   35360/5293217     std::vector<unsigned int, std::allocator<unsigned int> >::operator[](unsigned long) [49]
+                0.00    0.00   19202/2378687     std::vector<unsigned int, std::allocator<unsigned int> >::begin() [67]
+                0.00    0.00   12535/12535       __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >::operator-(long const&) const [99]
+                0.00    0.00   19202/19363651     std::vector<unsigned int, std::allocator<unsigned int> >::size() const [40]
+                0.00    0.00   66683/66683       __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >::operator*() const [138]
+                0.00    0.00   66683/66683       __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >::operator++() [137]
+                0.00    0.00   19202/19202       __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >::__normal_iterator() [139]
+-----------------------------------------------
+                0.00    0.09 1998799/1998799     unsigned int* std::__uninitialized_copy<true>::__uninit_copy<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int*>(__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int*) [22]
+[24]    11.4    0.00    0.09 1998799         unsigned int* std::copy<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int*>(__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int*) [24]
+                0.02    0.06 1998799/1998799     unsigned int* std::__copy_move_a2<false, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int*>(__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int*) [25]
+                0.02    0.00 3997598/3997718     std::_Miter_base<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > >::iterator_type std::__miter_base<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > >(__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >) [60]
+-----------------------------------------------
+                0.02    0.06 1998799/1998799     unsigned int* std::copy<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int*>(__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int*) [24]
+[25]     9.5    0.02    0.06 1998799         unsigned int* std::__copy_move_a2<false, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int*>(__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int*) [25]
+                0.00    0.04 3997598/3997718     std::_Niter_base<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > >::iterator_type std::__niter_base<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > >(__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >) [37]
+                0.01    0.00 1998799/1998859     unsigned int* std::__copy_move_a<false, unsigned int const*, unsigned int*>(unsigned int const*, unsigned int const*, unsigned int*) [63]
+                0.00    0.00 1998799/14794085     std::_Niter_base<unsigned int*>::iterator_type std::__niter_base<unsigned int*>(unsigned int*) [71]
+-----------------------------------------------
+                0.00    0.01  314006/2079433     std::vector<unsigned int, std::allocator<unsigned int> >::_M_fill_insert(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned long, unsigned int const&) [32]
+                0.01    0.05 1765427/2079433     std::vector<unsigned int, std::allocator<unsigned int> >::_M_insert_aux(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int const&) [8]
+[26]     8.2    0.01    0.06 2079433         std::vector<unsigned int, std::allocator<unsigned int> >::_M_check_len(unsigned long, char const*) const [26]
+                0.01    0.01 4158866/4158866     std::vector<unsigned int, std::allocator<unsigned int> >::max_size() const [52]
+                0.02    0.00 2079433/2079433     unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&) [54]
+                0.02    0.00 8317732/19363651     std::vector<unsigned int, std::allocator<unsigned int> >::size() const [40]
+-----------------------------------------------
+                0.00    0.00       2/7216761     std::vector<unsigned int, std::allocator<unsigned int> >::_M_erase_at_end(unsigned int*) [104]
+                0.00    0.00  314006/7216761     std::vector<unsigned int, std::allocator<unsigned int> >::_M_fill_insert(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned long, unsigned int const&) [32]
+                0.01    0.01 1765427/7216761     std::vector<unsigned int, std::allocator<unsigned int> >::_M_insert_aux(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int const&) [8]
+                0.01    0.01 1998799/7216761     std::vector<unsigned int, std::allocator<unsigned int> >::operator=(std::vector<unsigned int, std::allocator<unsigned int> > const&) [9]
+                0.02    0.01 3138527/7216761     std::vector<unsigned int, std::allocator<unsigned int> >::~vector() [19]
+[27]     8.2    0.04    0.03 7216761         void std::_Destroy<unsigned int*, unsigned int>(unsigned int*, unsigned int*, std::allocator<unsigned int>&) [27]
+                0.02    0.01 7216761/7216761     void std::_Destroy<unsigned int*>(unsigned int*, unsigned int*) [41]
+-----------------------------------------------
+                0.03    0.03 3138527/3138527     std::vector<unsigned int, std::allocator<unsigned int> >::~vector() [19]
+[28]     7.7    0.03    0.03 3138527         std::_Vector_base<unsigned int, std::allocator<unsigned int> >::~_Vector_base() [28]
+                0.00    0.02 3138527/3138527     std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_Vector_impl::~_Vector_impl() [56]
+                0.01    0.00 3138527/7216759     std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_M_deallocate(unsigned int*, unsigned long) [42]
+-----------------------------------------------
+                0.01    0.05 4159646/4159646     unsigned int* std::__uninitialized_copy_a<unsigned int*, unsigned int*, unsigned int>(unsigned int*, unsigned int*, unsigned int*, std::allocator<unsigned int>&) [30]
+[29]     7.0    0.01    0.05 4159646         unsigned int* std::uninitialized_copy<unsigned int*, unsigned int*>(unsigned int*, unsigned int*, unsigned int*) [29]
+                0.00    0.05 4159646/4159646     unsigned int* std::__uninitialized_copy<true>::__uninit_copy<unsigned int*, unsigned int*>(unsigned int*, unsigned int*, unsigned int*) [34]
+-----------------------------------------------
+                0.00    0.00      95/4159646     std::vector<unsigned int, std::allocator<unsigned int> >::operator=(std::vector<unsigned int, std::allocator<unsigned int> > const&) [9]
+                0.00    0.00     685/4159646     unsigned int* std::__uninitialized_move_a<unsigned int*, unsigned int*, std::allocator<unsigned int> >(unsigned int*, unsigned int*, unsigned int*, std::allocator<unsigned int>&) [101]
+                0.00    0.06 4158866/4159646     unsigned int* std::__uninitialized_move_if_noexcept_a<unsigned int*, unsigned int*, std::allocator<unsigned int> >(unsigned int*, unsigned int*, unsigned int*, std::allocator<unsigned int>&) [31]
+[30]     7.0    0.00    0.06 4159646         unsigned int* std::__uninitialized_copy_a<unsigned int*, unsigned int*, unsigned int>(unsigned int*, unsigned int*, unsigned int*, std::allocator<unsigned int>&) [30]
+                0.01    0.05 4159646/4159646     unsigned int* std::uninitialized_copy<unsigned int*, unsigned int*>(unsigned int*, unsigned int*, unsigned int*) [29]
+-----------------------------------------------
+                0.00    0.01  628012/4158866     std::vector<unsigned int, std::allocator<unsigned int> >::_M_fill_insert(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned long, unsigned int const&) [32]
+                0.00    0.05 3530854/4158866     std::vector<unsigned int, std::allocator<unsigned int> >::_M_insert_aux(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int const&) [8]
+[31]     7.0    0.00    0.06 4158866         unsigned int* std::__uninitialized_move_if_noexcept_a<unsigned int*, unsigned int*, std::allocator<unsigned int> >(unsigned int*, unsigned int*, unsigned int*, std::allocator<unsigned int>&) [31]
+                0.00    0.06 4158866/4159646     unsigned int* std::__uninitialized_copy_a<unsigned int*, unsigned int*, unsigned int>(unsigned int*, unsigned int*, unsigned int*, std::allocator<unsigned int>&) [30]
+-----------------------------------------------
+                0.00    0.02  279992/700181      void std::vector<unsigned int, std::allocator<unsigned int> >::_M_insert_dispatch<int>(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, int, int, std::__true_type) [57]
+                0.00    0.03  420189/700181      std::vector<unsigned int, std::allocator<unsigned int> >::insert(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned long, unsigned int const&) [39]
+[32]     6.3    0.00    0.05  700181         std::vector<unsigned int, std::allocator<unsigned int> >::_M_fill_insert(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned long, unsigned int const&) [32]
+                0.01    0.01  314690/314690      void std::__uninitialized_fill_n_a<unsigned int*, unsigned long, unsigned int, unsigned int>(unsigned int*, unsigned long, unsigned int const&, std::allocator<unsigned int>&) [47]
+                0.00    0.01  314006/2079433     std::vector<unsigned int, std::allocator<unsigned int> >::_M_check_len(unsigned long, char const*) const [26]
+                0.00    0.01  628012/4158866     unsigned int* std::__uninitialized_move_if_noexcept_a<unsigned int*, unsigned int*, std::allocator<unsigned int> >(unsigned int*, unsigned int*, unsigned int*, std::allocator<unsigned int>&) [31]
+                0.00    0.00  314691/2080118     __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >::difference_type __gnu_cxx::operator-<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > > const&, __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > > const&) [44]
+                0.00    0.00  314006/7216761     void std::_Destroy<unsigned int*, unsigned int>(unsigned int*, unsigned int*, std::allocator<unsigned int>&) [27]
+                0.00    0.00  314006/4078232     std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_M_allocate(unsigned long) [53]
+                0.00    0.00  314006/2378687     std::vector<unsigned int, std::allocator<unsigned int> >::begin() [67]
+                0.00    0.00  314006/7216759     std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_M_deallocate(unsigned int*, unsigned long) [42]
+                0.00    0.00  629383/8517373     __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >::base() const [72]
+                0.00    0.00     685/685         unsigned int* std::__uninitialized_move_a<unsigned int*, unsigned int*, std::allocator<unsigned int> >(unsigned int*, unsigned int*, unsigned int*, std::allocator<unsigned int>&) [101]
+                0.00    0.00     685/2297316     std::vector<unsigned int, std::allocator<unsigned int> >::end() [80]
+                0.00    0.00     685/685         void std::fill<unsigned int*, unsigned int>(unsigned int*, unsigned int*, unsigned int const&) [102]
+                0.00    0.00       1/1           unsigned int* std::copy_backward<unsigned int*, unsigned int*>(unsigned int*, unsigned int*, unsigned int*) [106]
+                0.00    0.00 1257393/13689956     std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_M_get_Tp_allocator() [115]
+-----------------------------------------------
+                0.00    0.00      95/4159741     std::vector<unsigned int, std::allocator<unsigned int> >::operator=(std::vector<unsigned int, std::allocator<unsigned int> > const&) [9]
+                0.00    0.05 4159646/4159741     unsigned int* std::__uninitialized_copy<true>::__uninit_copy<unsigned int*, unsigned int*>(unsigned int*, unsigned int*, unsigned int*) [34]
+[33]     5.7    0.00    0.05 4159741         unsigned int* std::copy<unsigned int*, unsigned int*>(unsigned int*, unsigned int*, unsigned int*) [33]
+                0.03    0.02 4159741/4159741     unsigned int* std::__copy_move_a2<false, unsigned int*, unsigned int*>(unsigned int*, unsigned int*, unsigned int*) [38]
+                0.01    0.00 8319482/8319484     std::_Miter_base<unsigned int*>::iterator_type std::__miter_base<unsigned int*>(unsigned int*) [85]
+-----------------------------------------------
+                0.00    0.05 4159646/4159646     unsigned int* std::uninitialized_copy<unsigned int*, unsigned int*>(unsigned int*, unsigned int*, unsigned int*) [29]
+[34]     5.7    0.00    0.05 4159646         unsigned int* std::__uninitialized_copy<true>::__uninit_copy<unsigned int*, unsigned int*>(unsigned int*, unsigned int*, unsigned int*) [34]
+                0.00    0.05 4159646/4159741     unsigned int* std::copy<unsigned int*, unsigned int*>(unsigned int*, unsigned int*, unsigned int*) [33]
+-----------------------------------------------
+                0.00    0.00     200/299595      Entier::operator*=(unsigned int) [6]
+                0.00    0.00   19402/299595      Entier::operator+=(unsigned int) [81]
+                0.00    0.04  279993/299595      Entier::operator-=(Entier const&) [23]
+[35]     5.7    0.00    0.04  299595         Entier::Entier(unsigned int) [35]
+                0.00    0.04  299595/1965405     std::vector<unsigned int, std::allocator<unsigned int> >::push_back(unsigned int const&) [7]
+                0.00    0.00  299595/3138527     std::vector<unsigned int, std::allocator<unsigned int> >::vector() [43]
+-----------------------------------------------
+                0.03    0.02 3997718/3997718     std::_Niter_base<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > >::iterator_type std::__niter_base<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > >(__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >) [37]
+[36]     5.2    0.03    0.02 3997718         std::_Iter_base<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, true>::_S_base(__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >) [36]
+                0.02    0.00 3997718/5065018     __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >::base() const [50]
+-----------------------------------------------
+                0.00    0.00     120/3997718     __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > > std::__copy_move_a2<false, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > > >(__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >) [69]
+                0.00    0.04 3997598/3997718     unsigned int* std::__copy_move_a2<false, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int*>(__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int*) [25]
+[37]     5.2    0.00    0.04 3997718         std::_Niter_base<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > >::iterator_type std::__niter_base<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > >(__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >) [37]
+                0.03    0.02 3997718/3997718     std::_Iter_base<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, true>::_S_base(__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >) [36]
+-----------------------------------------------
+                0.03    0.02 4159741/4159741     unsigned int* std::copy<unsigned int*, unsigned int*>(unsigned int*, unsigned int*, unsigned int*) [33]
+[38]     5.1    0.03    0.02 4159741         unsigned int* std::__copy_move_a2<false, unsigned int*, unsigned int*>(unsigned int*, unsigned int*, unsigned int*) [38]
+                0.01    0.00 12479223/14794085     std::_Niter_base<unsigned int*>::iterator_type std::__niter_base<unsigned int*>(unsigned int*) [71]
+                0.00    0.01 4159741/4159741     unsigned int* std::__copy_move_a<false, unsigned int*, unsigned int*>(unsigned int*, unsigned int*, unsigned int*) [83]
+-----------------------------------------------
+                0.01    0.03  420189/420189      Entier::karatsuba(Entier&, Entier&) [5]
+[39]     5.0    0.01    0.03  420189         std::vector<unsigned int, std::allocator<unsigned int> >::insert(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned long, unsigned int const&) [39]
+                0.00    0.03  420189/700181      std::vector<unsigned int, std::allocator<unsigned int> >::_M_fill_insert(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned long, unsigned int const&) [32]
+-----------------------------------------------
+                0.00    0.00       3/19363651     operator<<(std::ostream&, Entier const&) [105]
+                0.00    0.00   19202/19363651     Entier::operator-=(Entier const&) [23]
+                0.00    0.00  559984/19363651     Entier::racourcir() [94]
+                0.00    0.00 1030032/19363651     Entier::karatsuba_separer(Entier&, Entier&, Entier&) [12]
+                0.00    0.00 1177652/19363651     Entier::intcmp(Entier const&) const [45]
+                0.00    0.00 1999299/19363651     std::vector<unsigned int, std::allocator<unsigned int> >::operator=(std::vector<unsigned int, std::allocator<unsigned int> > const&) [9]
+                0.00    0.00 2240941/19363651     Entier::karatsuba(Entier&, Entier&) [5]
+                0.01    0.00 4018806/19363651     Entier::operator+=(Entier const&) [15]
+                0.02    0.00 8317732/19363651     std::vector<unsigned int, std::allocator<unsigned int> >::_M_check_len(unsigned long, char const*) const [26]
+[40]     4.4    0.04    0.00 19363651         std::vector<unsigned int, std::allocator<unsigned int> >::size() const [40]
+-----------------------------------------------
+                0.02    0.01 7216761/7216761     void std::_Destroy<unsigned int*, unsigned int>(unsigned int*, unsigned int*, std::allocator<unsigned int>&) [27]
+[41]     3.2    0.02    0.01 7216761         void std::_Destroy<unsigned int*>(unsigned int*, unsigned int*) [41]
+                0.01    0.00 7216761/7216761     void std::_Destroy_aux<true>::__destroy<unsigned int*>(unsigned int*, unsigned int*) [73]
+-----------------------------------------------
+                0.00    0.00  314006/7216759     std::vector<unsigned int, std::allocator<unsigned int> >::_M_fill_insert(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned long, unsigned int const&) [32]
+                0.00    0.00 1765427/7216759     std::vector<unsigned int, std::allocator<unsigned int> >::_M_insert_aux(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int const&) [8]
+                0.01    0.00 1998799/7216759     std::vector<unsigned int, std::allocator<unsigned int> >::operator=(std::vector<unsigned int, std::allocator<unsigned int> > const&) [9]
+                0.01    0.00 3138527/7216759     std::_Vector_base<unsigned int, std::allocator<unsigned int> >::~_Vector_base() [28]
+[42]     3.2    0.02    0.01 7216759         std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_M_deallocate(unsigned int*, unsigned long) [42]
+                0.01    0.00 4078232/4078232     __gnu_cxx::new_allocator<unsigned int>::deallocate(unsigned int*, unsigned long) [86]
+-----------------------------------------------
+                0.00    0.00  299595/3138527     Entier::Entier(unsigned int) [35]
+                0.00    0.00  878785/3138527     Entier::Entier(Entier const&) [21]
+                0.01    0.01 1960147/3138527     Entier::Entier() [59]
+[43]     3.2    0.01    0.02 3138527         std::vector<unsigned int, std::allocator<unsigned int> >::vector() [43]
+                0.00    0.02 3138527/3138527     std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_Vector_base() [62]
+-----------------------------------------------
+                0.00    0.00  314691/2080118     std::vector<unsigned int, std::allocator<unsigned int> >::_M_fill_insert(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned long, unsigned int const&) [32]
+                0.02    0.00 1765427/2080118     std::vector<unsigned int, std::allocator<unsigned int> >::_M_insert_aux(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int const&) [8]
+[44]     3.1    0.02    0.00 2080118         __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >::difference_type __gnu_cxx::operator-<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > > const&, __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > > const&) [44]
+                0.00    0.00 4160236/8517373     __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >::base() const [72]
+-----------------------------------------------
+                0.00    0.00   19202/299195      operator<(Entier const&, Entier const&) [96]
+                0.01    0.01  279993/299195      operator==(Entier const&, Entier const&) [46]
+[45]     2.9    0.01    0.01  299195         Entier::intcmp(Entier const&) const [45]
+                0.00    0.00  544128/544128      std::vector<unsigned int, std::allocator<unsigned int> >::rbegin() const [89]
+                0.00    0.00  533650/533650      bool std::operator!=<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > >(std::reverse_iterator<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > > const&, std::reverse_iterator<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > > const&) [92]
+                0.00    0.00 1177652/19363651     std::vector<unsigned int, std::allocator<unsigned int> >::size() const [40]
+                0.00    0.00  533650/533650      std::vector<unsigned int, std::allocator<unsigned int> >::rend() const [95]
+                0.00    0.00 1078248/1078248     std::reverse_iterator<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > >::operator*() const [128]
+                0.00    0.00  523172/523172      std::reverse_iterator<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > >::operator++() [132]
+-----------------------------------------------
+                0.00    0.02  279993/279993      Entier::operator-=(Entier const&) [23]
+[46]     2.7    0.00    0.02  279993         operator==(Entier const&, Entier const&) [46]
+                0.01    0.01  279993/299195      Entier::intcmp(Entier const&) const [45]
+-----------------------------------------------
+                0.01    0.01  314690/314690      std::vector<unsigned int, std::allocator<unsigned int> >::_M_fill_insert(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned long, unsigned int const&) [32]
+[47]     2.6    0.01    0.01  314690         void std::__uninitialized_fill_n_a<unsigned int*, unsigned long, unsigned int, unsigned int>(unsigned int*, unsigned long, unsigned int const&, std::allocator<unsigned int>&) [47]
+                0.00    0.01  314690/314690      void std::uninitialized_fill_n<unsigned int*, unsigned long, unsigned int>(unsigned int*, unsigned long, unsigned int const&) [65]
+-----------------------------------------------
+                0.00    0.00  544128/2542987     std::vector<unsigned int, std::allocator<unsigned int> >::rbegin() const [89]
+                0.01    0.00 1998859/2542987     std::vector<unsigned int, std::allocator<unsigned int> >::operator=(std::vector<unsigned int, std::allocator<unsigned int> > const&) [9]
+[48]     2.5    0.02    0.01 2542987         std::vector<unsigned int, std::allocator<unsigned int> >::end() const [48]
+                0.01    0.00 2542987/5075496     __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >::__normal_iterator(unsigned int const* const&) [75]
+-----------------------------------------------
+                0.00    0.00   35360/5293217     Entier::operator-=(Entier const&) [23]
+                0.00    0.00  382381/5293217     Entier::racourcir() [94]
+                0.00    0.00  560386/5293217     Entier::karatsuba(Entier&, Entier&) [5]
+                0.00    0.00  882114/5293217     Entier::karatsuba_separer(Entier&, Entier&, Entier&) [12]
+                0.01    0.00 3432976/5293217     Entier::operator+=(Entier const&) [15]
+[49]     2.5    0.02    0.00 5293217         std::vector<unsigned int, std::allocator<unsigned int> >::operator[](unsigned long) [49]
+-----------------------------------------------
+                0.00    0.00 1067300/5065018     bool __gnu_cxx::operator==<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >(__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > const&, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > const&) [90]
+                0.02    0.00 3997718/5065018     std::_Iter_base<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, true>::_S_base(__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >) [36]
+[50]     2.5    0.02    0.00 5065018         __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >::base() const [50]
+-----------------------------------------------
+                0.00    0.00      60/4701133     __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > > std::__copy_move_a2<false, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > > >(__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >) [69]
+                0.00    0.00   12535/4701133     __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >::operator-(long const&) const [99]
+                0.00    0.00   12535/4701133     __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >::operator+(long const&) const [100]
+                0.01    0.00 2297316/4701133     std::vector<unsigned int, std::allocator<unsigned int> >::end() [80]
+                0.01    0.00 2378687/4701133     std::vector<unsigned int, std::allocator<unsigned int> >::begin() [67]
+[51]     2.5    0.02    0.00 4701133         __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >::__normal_iterator(unsigned int* const&) [51]
+-----------------------------------------------
+                0.01    0.01 4158866/4158866     std::vector<unsigned int, std::allocator<unsigned int> >::_M_check_len(unsigned long, char const*) const [26]
+[52]     2.5    0.01    0.01 4158866         std::vector<unsigned int, std::allocator<unsigned int> >::max_size() const [52]
+                0.01    0.00 4158866/4158866     __gnu_cxx::__alloc_traits<std::allocator<unsigned int> >::max_size(std::allocator<unsigned int> const&) [76]
+                0.00    0.00 4158866/4158866     std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_M_get_Tp_allocator() const [117]
+-----------------------------------------------
+                0.00    0.00  314006/4078232     std::vector<unsigned int, std::allocator<unsigned int> >::_M_fill_insert(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned long, unsigned int const&) [32]
+                0.00    0.00 1765427/4078232     std::vector<unsigned int, std::allocator<unsigned int> >::_M_insert_aux(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int const&) [8]
+                0.00    0.00 1998799/4078232     unsigned int* std::vector<unsigned int, std::allocator<unsigned int> >::_M_allocate_and_copy<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > >(unsigned long, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >) [13]
+[53]     2.5    0.01    0.01 4078232         std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_M_allocate(unsigned long) [53]
+                0.01    0.00 4078232/4078232     __gnu_cxx::new_allocator<unsigned int>::allocate(unsigned long, void const*) [77]
+-----------------------------------------------
+                0.02    0.00 2079433/2079433     std::vector<unsigned int, std::allocator<unsigned int> >::_M_check_len(unsigned long, char const*) const [26]
+[54]     2.5    0.02    0.00 2079433         unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&) [54]
+-----------------------------------------------
+                0.02    0.01 3138527/3138527     std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_Vector_impl::~_Vector_impl() [56]
+[55]     2.5    0.02    0.01 3138527         std::allocator<unsigned int>::~allocator() [55]
+                0.01    0.00 3138527/3138527     __gnu_cxx::new_allocator<unsigned int>::~new_allocator() [88]
+-----------------------------------------------
+                0.00    0.02 3138527/3138527     std::_Vector_base<unsigned int, std::allocator<unsigned int> >::~_Vector_base() [28]
+[56]     2.5    0.00    0.02 3138527         std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_Vector_impl::~_Vector_impl() [56]
+                0.02    0.01 3138527/3138527     std::allocator<unsigned int>::~allocator() [55]
+-----------------------------------------------
+                0.00    0.02  279992/279992      void std::vector<unsigned int, std::allocator<unsigned int> >::insert<int>(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, int, int) [58]
+[57]     2.5    0.00    0.02  279992         void std::vector<unsigned int, std::allocator<unsigned int> >::_M_insert_dispatch<int>(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, int, int, std::__true_type) [57]
+                0.00    0.02  279992/700181      std::vector<unsigned int, std::allocator<unsigned int> >::_M_fill_insert(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned long, unsigned int const&) [32]
+-----------------------------------------------
+                0.00    0.02  279992/279992      Entier::karatsuba_recomposer(Entier&, Entier&, Entier&, int) [11]
+[58]     2.5    0.00    0.02  279992         void std::vector<unsigned int, std::allocator<unsigned int> >::insert<int>(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, int, int) [58]
+                0.00    0.02  279992/279992      void std::vector<unsigned int, std::allocator<unsigned int> >::_M_insert_dispatch<int>(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, int, int, std::__true_type) [57]
+-----------------------------------------------
+                0.00    0.00       2/1960147     main [1]
+                0.00    0.00  139996/1960147     Entier::karatsuba_recomposer(Entier&, Entier&, Entier&, int) [11]
+                0.00    0.01 1820149/1960147     Entier::karatsuba(Entier&, Entier&) [5]
+[59]     2.0    0.00    0.02 1960147         Entier::Entier() [59]
+                0.01    0.01 1960147/3138527     std::vector<unsigned int, std::allocator<unsigned int> >::vector() [43]
+-----------------------------------------------
+                0.00    0.00     120/3997718     __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > > std::copy<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > > >(__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >) [68]
+                0.02    0.00 3997598/3997718     unsigned int* std::copy<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int*>(__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int*) [24]
+[60]     1.9    0.02    0.00 3997718         std::_Miter_base<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > >::iterator_type std::__miter_base<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > >(__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >) [60]
+                0.00    0.00 3997718/3997718     std::_Iter_base<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, false>::_S_base(__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >) [118]
+-----------------------------------------------
+                0.01    0.01 3138527/3138527     std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_Vector_base() [62]
+[61]     1.9    0.01    0.01 3138527         std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_Vector_impl::_Vector_impl() [61]
+                0.01    0.00 3138527/3138527     std::allocator<unsigned int>::allocator() [87]
+-----------------------------------------------
+                0.00    0.02 3138527/3138527     std::vector<unsigned int, std::allocator<unsigned int> >::vector() [43]
+[62]     1.9    0.00    0.02 3138527         std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_Vector_base() [62]
+                0.01    0.01 3138527/3138527     std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_Vector_impl::_Vector_impl() [61]
+-----------------------------------------------
+                0.00    0.00      60/1998859     __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > > std::__copy_move_a2<false, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > > >(__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >) [69]
+                0.01    0.00 1998799/1998859     unsigned int* std::__copy_move_a2<false, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int*>(__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int*) [25]
+[63]     1.7    0.01    0.00 1998859         unsigned int* std::__copy_move_a<false, unsigned int const*, unsigned int*>(unsigned int const*, unsigned int const*, unsigned int*) [63]
+                0.00    0.00 1998859/6158600     unsigned int* std::__copy_move<false, true, std::random_access_iterator_tag>::__copy_m<unsigned int>(unsigned int const*, unsigned int const*, unsigned int*) [74]
+-----------------------------------------------
+                0.00    0.01  314690/314690      void std::uninitialized_fill_n<unsigned int*, unsigned long, unsigned int>(unsigned int*, unsigned long, unsigned int const&) [65]
+[64]     1.3    0.00    0.01  314690         void std::__uninitialized_fill_n<true>::__uninit_fill_n<unsigned int*, unsigned long, unsigned int>(unsigned int*, unsigned long, unsigned int const&) [64]
+                0.00    0.01  314690/314690      unsigned int* std::fill_n<unsigned int*, unsigned long, unsigned int>(unsigned int*, unsigned long, unsigned int const&) [66]
+-----------------------------------------------
+                0.00    0.01  314690/314690      void std::__uninitialized_fill_n_a<unsigned int*, unsigned long, unsigned int, unsigned int>(unsigned int*, unsigned long, unsigned int const&, std::allocator<unsigned int>&) [47]
+[65]     1.3    0.00    0.01  314690         void std::uninitialized_fill_n<unsigned int*, unsigned long, unsigned int>(unsigned int*, unsigned long, unsigned int const&) [65]
+                0.00    0.01  314690/314690      void std::__uninitialized_fill_n<true>::__uninit_fill_n<unsigned int*, unsigned long, unsigned int>(unsigned int*, unsigned long, unsigned int const&) [64]
+-----------------------------------------------
+                0.00    0.01  314690/314690      void std::__uninitialized_fill_n<true>::__uninit_fill_n<unsigned int*, unsigned long, unsigned int>(unsigned int*, unsigned long, unsigned int const&) [64]
+[66]     1.3    0.00    0.01  314690         unsigned int* std::fill_n<unsigned int*, unsigned long, unsigned int>(unsigned int*, unsigned long, unsigned int const&) [66]
+                0.01    0.00  314690/314690      __gnu_cxx::__enable_if<std::__is_scalar<unsigned int>::__value, unsigned int*>::__type std::__fill_n_a<unsigned int*, unsigned long, unsigned int>(unsigned int*, unsigned long, unsigned int const&) [78]
+                0.00    0.00  314690/14794085     std::_Niter_base<unsigned int*>::iterator_type std::__niter_base<unsigned int*>(unsigned int*) [71]
+-----------------------------------------------
+                0.00    0.00      60/2378687     std::vector<unsigned int, std::allocator<unsigned int> >::operator=(std::vector<unsigned int, std::allocator<unsigned int> > const&) [9]
+                0.00    0.00   19202/2378687     Entier::operator-=(Entier const&) [23]
+                0.00    0.00  279992/2378687     Entier::karatsuba_recomposer(Entier&, Entier&, Entier&, int) [11]
+                0.00    0.00  314006/2378687     std::vector<unsigned int, std::allocator<unsigned int> >::_M_fill_insert(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned long, unsigned int const&) [32]
+                0.00    0.01 1765427/2378687     std::vector<unsigned int, std::allocator<unsigned int> >::_M_insert_aux(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int const&) [8]
+[67]     1.3    0.00    0.01 2378687         std::vector<unsigned int, std::allocator<unsigned int> >::begin() [67]
+                0.01    0.00 2378687/4701133     __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >::__normal_iterator(unsigned int* const&) [51]
+-----------------------------------------------
+                0.00    0.01      60/60          std::vector<unsigned int, std::allocator<unsigned int> >::operator=(std::vector<unsigned int, std::allocator<unsigned int> > const&) [9]
+[68]     1.3    0.00    0.01      60         __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > > std::copy<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > > >(__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >) [68]
+                0.00    0.01      60/60          __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > > std::__copy_move_a2<false, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > > >(__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >) [69]
+                0.00    0.00     120/3997718     std::_Miter_base<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > >::iterator_type std::__miter_base<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > >(__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >) [60]
+-----------------------------------------------
+                0.00    0.01      60/60          __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > > std::copy<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > > >(__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >) [68]
+[69]     1.3    0.00    0.01      60         __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > > std::__copy_move_a2<false, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > > >(__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >) [69]
+                0.01    0.00      60/60          std::_Niter_base<__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > > >::iterator_type std::__niter_base<__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > > >(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >) [70]
+                0.00    0.00     120/3997718     std::_Niter_base<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > >::iterator_type std::__niter_base<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > >(__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >) [37]
+                0.00    0.00      60/1998859     unsigned int* std::__copy_move_a<false, unsigned int const*, unsigned int*>(unsigned int const*, unsigned int const*, unsigned int*) [63]
+                0.00    0.00      60/4701133     __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >::__normal_iterator(unsigned int* const&) [51]
+-----------------------------------------------
+                0.01    0.00      60/60          __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > > std::__copy_move_a2<false, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > > >(__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >) [69]
+[70]     1.3    0.01    0.00      60         std::_Niter_base<__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > > >::iterator_type std::__niter_base<__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > > >(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >) [70]
+                0.00    0.00      60/60          std::_Iter_base<__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, true>::_S_base(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >) [103]
+-----------------------------------------------
+                0.00    0.00       3/14794085     unsigned int* std::__copy_move_backward_a2<false, unsigned int*, unsigned int*>(unsigned int*, unsigned int*, unsigned int*) [107]
+                0.00    0.00    1370/14794085     void std::fill<unsigned int*, unsigned int>(unsigned int*, unsigned int*, unsigned int const&) [102]
+                0.00    0.00  314690/14794085     unsigned int* std::fill_n<unsigned int*, unsigned long, unsigned int>(unsigned int*, unsigned long, unsigned int const&) [66]
+                0.00    0.00 1998799/14794085     unsigned int* std::__copy_move_a2<false, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int*>(__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int*) [25]
+                0.01    0.00 12479223/14794085     unsigned int* std::__copy_move_a2<false, unsigned int*, unsigned int*>(unsigned int*, unsigned int*, unsigned int*) [38]
+[71]     1.3    0.01    0.00 14794085         std::_Niter_base<unsigned int*>::iterator_type std::__niter_base<unsigned int*>(unsigned int*) [71]
+                0.00    0.00 14794085/23113569     std::_Iter_base<unsigned int*, false>::_S_base(unsigned int*) [114]
+-----------------------------------------------
+                0.00    0.00      60/8517373     std::_Iter_base<__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, true>::_S_base(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >) [103]
+                0.00    0.00  196840/8517373     bool __gnu_cxx::operator!=<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > > const&, __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > > const&) [97]
+                0.00    0.00  629383/8517373     std::vector<unsigned int, std::allocator<unsigned int> >::_M_fill_insert(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned long, unsigned int const&) [32]
+                0.00    0.00 3530854/8517373     std::vector<unsigned int, std::allocator<unsigned int> >::_M_insert_aux(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int const&) [8]
+                0.00    0.00 4160236/8517373     __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >::difference_type __gnu_cxx::operator-<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > > const&, __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > > const&) [44]
+[72]     1.3    0.01    0.00 8517373         __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >::base() const [72]
+-----------------------------------------------
+                0.01    0.00 7216761/7216761     void std::_Destroy<unsigned int*>(unsigned int*, unsigned int*) [41]
+[73]     1.3    0.01    0.00 7216761         void std::_Destroy_aux<true>::__destroy<unsigned int*>(unsigned int*, unsigned int*) [73]
+-----------------------------------------------
+                0.00    0.00 1998859/6158600     unsigned int* std::__copy_move_a<false, unsigned int const*, unsigned int*>(unsigned int const*, unsigned int const*, unsigned int*) [63]
+                0.01    0.00 4159741/6158600     unsigned int* std::__copy_move_a<false, unsigned int*, unsigned int*>(unsigned int*, unsigned int*, unsigned int*) [83]
+[74]     1.3    0.01    0.00 6158600         unsigned int* std::__copy_move<false, true, std::random_access_iterator_tag>::__copy_m<unsigned int>(unsigned int const*, unsigned int const*, unsigned int*) [74]
+-----------------------------------------------
+                0.00    0.00 2532509/5075496     std::vector<unsigned int, std::allocator<unsigned int> >::begin() const [79]
+                0.01    0.00 2542987/5075496     std::vector<unsigned int, std::allocator<unsigned int> >::end() const [48]
+[75]     1.3    0.01    0.00 5075496         __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >::__normal_iterator(unsigned int const* const&) [75]
+-----------------------------------------------
+                0.01    0.00 4158866/4158866     std::vector<unsigned int, std::allocator<unsigned int> >::max_size() const [52]
+[76]     1.3    0.01    0.00 4158866         __gnu_cxx::__alloc_traits<std::allocator<unsigned int> >::max_size(std::allocator<unsigned int> const&) [76]
+                0.00    0.00 4158866/8237098     __gnu_cxx::new_allocator<unsigned int>::max_size() const [116]
+-----------------------------------------------
+                0.01    0.00 4078232/4078232     std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_M_allocate(unsigned long) [53]
+[77]     1.3    0.01    0.00 4078232         __gnu_cxx::new_allocator<unsigned int>::allocate(unsigned long, void const*) [77]
+                0.00    0.00 4078232/8237098     __gnu_cxx::new_allocator<unsigned int>::max_size() const [116]
+-----------------------------------------------
+                0.01    0.00  314690/314690      unsigned int* std::fill_n<unsigned int*, unsigned long, unsigned int>(unsigned int*, unsigned long, unsigned int const&) [66]
+[78]     1.3    0.01    0.00  314690         __gnu_cxx::__enable_if<std::__is_scalar<unsigned int>::__value, unsigned int*>::__type std::__fill_n_a<unsigned int*, unsigned long, unsigned int>(unsigned int*, unsigned long, unsigned int const&) [78]
+-----------------------------------------------
+                0.00    0.00  533650/2532509     std::vector<unsigned int, std::allocator<unsigned int> >::rend() const [95]
+                0.00    0.00 1998859/2532509     std::vector<unsigned int, std::allocator<unsigned int> >::operator=(std::vector<unsigned int, std::allocator<unsigned int> > const&) [9]
+[79]     1.3    0.01    0.00 2532509         std::vector<unsigned int, std::allocator<unsigned int> >::begin() const [79]
+                0.00    0.00 2532509/5075496     __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >::__normal_iterator(unsigned int const* const&) [75]
+-----------------------------------------------
+                0.00    0.00      60/2297316     std::vector<unsigned int, std::allocator<unsigned int> >::operator=(std::vector<unsigned int, std::allocator<unsigned int> > const&) [9]
+                0.00    0.00     685/2297316     std::vector<unsigned int, std::allocator<unsigned int> >::_M_fill_insert(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned long, unsigned int const&) [32]
+                0.00    0.00   12535/2297316     std::vector<unsigned int, std::allocator<unsigned int> >::erase(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >) [98]
+                0.00    0.00   98420/2297316     Entier::operator-=(Entier const&) [23]
+                0.00    0.00  420189/2297316     Entier::karatsuba(Entier&, Entier&) [5]
+                0.00    0.01 1765427/2297316     std::vector<unsigned int, std::allocator<unsigned int> >::push_back(unsigned int const&) [7]
+[80]     1.2    0.00    0.01 2297316         std::vector<unsigned int, std::allocator<unsigned int> >::end() [80]
+                0.01    0.00 2297316/4701133     __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >::__normal_iterator(unsigned int* const&) [51]
+-----------------------------------------------
+                0.00    0.00     200/19402       Entier::set(std::string const&, unsigned int) [2]
+                0.00    0.01   19202/19402       Entier::operator++() [82]
+[81]     0.9    0.00    0.01   19402         Entier::operator+=(unsigned int) [81]
+                0.00    0.00   19402/598589      Entier::operator+=(Entier const&) [15]
+                0.00    0.00   19402/299595      Entier::Entier(unsigned int) [35]
+                0.00    0.00   19402/3138527     Entier::~Entier() [18]
+-----------------------------------------------
+                0.00    0.01   19202/19202       Entier::operator-=(Entier const&) [23]
+[82]     0.9    0.00    0.01   19202         Entier::operator++() [82]
+                0.00    0.01   19202/19402       Entier::operator+=(unsigned int) [81]
+-----------------------------------------------
+                0.00    0.01 4159741/4159741     unsigned int* std::__copy_move_a2<false, unsigned int*, unsigned int*>(unsigned int*, unsigned int*, unsigned int*) [38]
+[83]     0.9    0.00    0.01 4159741         unsigned int* std::__copy_move_a<false, unsigned int*, unsigned int*>(unsigned int*, unsigned int*, unsigned int*) [83]
+                0.01    0.00 4159741/6158600     unsigned int* std::__copy_move<false, true, std::random_access_iterator_tag>::__copy_m<unsigned int>(unsigned int const*, unsigned int const*, unsigned int*) [74]
+-----------------------------------------------
+                0.01    0.00       2/2           Entier::set(std::string const&, unsigned int) [2]
+[84]     0.6    0.01    0.00       2         std::vector<unsigned int, std::allocator<unsigned int> >::clear() [84]
+                0.00    0.00       2/2           std::vector<unsigned int, std::allocator<unsigned int> >::_M_erase_at_end(unsigned int*) [104]
+-----------------------------------------------
+                0.00    0.00       2/8319484     unsigned int* std::copy_backward<unsigned int*, unsigned int*>(unsigned int*, unsigned int*, unsigned int*) [106]
+                0.01    0.00 8319482/8319484     unsigned int* std::copy<unsigned int*, unsigned int*>(unsigned int*, unsigned int*, unsigned int*) [33]
+[85]     0.6    0.01    0.00 8319484         std::_Miter_base<unsigned int*>::iterator_type std::__miter_base<unsigned int*>(unsigned int*) [85]
+                0.00    0.00 8319484/23113569     std::_Iter_base<unsigned int*, false>::_S_base(unsigned int*) [114]
+-----------------------------------------------
+                0.01    0.00 4078232/4078232     std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_M_deallocate(unsigned int*, unsigned long) [42]
+[86]     0.6    0.01    0.00 4078232         __gnu_cxx::new_allocator<unsigned int>::deallocate(unsigned int*, unsigned long) [86]
+-----------------------------------------------
+                0.01    0.00 3138527/3138527     std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_Vector_impl::_Vector_impl() [61]
+[87]     0.6    0.01    0.00 3138527         std::allocator<unsigned int>::allocator() [87]
+                0.00    0.00 3138527/3138527     __gnu_cxx::new_allocator<unsigned int>::new_allocator() [119]
+-----------------------------------------------
+                0.01    0.00 3138527/3138527     std::allocator<unsigned int>::~allocator() [55]
+[88]     0.6    0.01    0.00 3138527         __gnu_cxx::new_allocator<unsigned int>::~new_allocator() [88]
+-----------------------------------------------
+                0.00    0.00  544128/544128      Entier::intcmp(Entier const&) const [45]
+[89]     0.5    0.00    0.00  544128         std::vector<unsigned int, std::allocator<unsigned int> >::rbegin() const [89]
+                0.00    0.00  544128/2542987     std::vector<unsigned int, std::allocator<unsigned int> >::end() const [48]
+                0.00    0.00  544128/1077778     std::reverse_iterator<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > >::reverse_iterator(__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >) [129]
+-----------------------------------------------
+                0.00    0.00  533650/533650      bool std::operator==<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > >(std::reverse_iterator<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > > const&, std::reverse_iterator<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > > const&) [91]
+[90]     0.5    0.00    0.00  533650         bool __gnu_cxx::operator==<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >(__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > const&, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > const&) [90]
+                0.00    0.00 1067300/5065018     __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >::base() const [50]
+-----------------------------------------------
+                0.00    0.00  533650/533650      bool std::operator!=<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > >(std::reverse_iterator<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > > const&, std::reverse_iterator<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > > const&) [92]
+[91]     0.5    0.00    0.00  533650         bool std::operator==<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > >(std::reverse_iterator<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > > const&, std::reverse_iterator<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > > const&) [91]
+                0.00    0.00  533650/533650      bool __gnu_cxx::operator==<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >(__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > const&, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > const&) [90]
+                0.00    0.00 1067300/1067300     std::reverse_iterator<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > >::base() const [131]
+-----------------------------------------------
+                0.00    0.00  533650/533650      Entier::intcmp(Entier const&) const [45]
+[92]     0.5    0.00    0.00  533650         bool std::operator!=<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > >(std::reverse_iterator<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > > const&, std::reverse_iterator<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > > const&) [92]
+                0.00    0.00  533650/533650      bool std::operator==<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > >(std::reverse_iterator<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > > const&, std::reverse_iterator<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > > const&) [91]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[93]     0.5    0.00    0.00       1         operator*(Entier const&, Entier const&) [93]
+                0.00    0.00       1/201         Entier::operator*=(Entier const&) [4]
+                0.00    0.00       1/878785      Entier::Entier(Entier const&) [21]
+-----------------------------------------------
+                0.00    0.00  559984/559984      Entier::karatsuba(Entier&, Entier&) [5]
+[94]     0.3    0.00    0.00  559984         Entier::racourcir() [94]
+                0.00    0.00  382381/5293217     std::vector<unsigned int, std::allocator<unsigned int> >::operator[](unsigned long) [49]
+                0.00    0.00  559984/19363651     std::vector<unsigned int, std::allocator<unsigned int> >::size() const [40]
+                0.00    0.00  335815/335815      std::vector<unsigned int, std::allocator<unsigned int> >::pop_back() [135]
+-----------------------------------------------
+                0.00    0.00  533650/533650      Entier::intcmp(Entier const&) const [45]
+[95]     0.3    0.00    0.00  533650         std::vector<unsigned int, std::allocator<unsigned int> >::rend() const [95]
+                0.00    0.00  533650/2532509     std::vector<unsigned int, std::allocator<unsigned int> >::begin() const [79]
+                0.00    0.00  533650/1077778     std::reverse_iterator<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > >::reverse_iterator(__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >) [129]
+-----------------------------------------------
+                0.00    0.00   19202/19202       Entier::operator-=(Entier const&) [23]
+[96]     0.2    0.00    0.00   19202         operator<(Entier const&, Entier const&) [96]
+                0.00    0.00   19202/299195      Entier::intcmp(Entier const&) const [45]
+-----------------------------------------------
+                0.00    0.00   12535/98420       std::vector<unsigned int, std::allocator<unsigned int> >::erase(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >) [98]
+                0.00    0.00   85885/98420       Entier::operator-=(Entier const&) [23]
+[97]     0.0    0.00    0.00   98420         bool __gnu_cxx::operator!=<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > > const&, __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > > const&) [97]
+                0.00    0.00  196840/8517373     __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >::base() const [72]
+-----------------------------------------------
+                0.00    0.00   12535/12535       Entier::operator-=(Entier const&) [23]
+[98]     0.0    0.00    0.00   12535         std::vector<unsigned int, std::allocator<unsigned int> >::erase(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >) [98]
+                0.00    0.00   12535/2297316     std::vector<unsigned int, std::allocator<unsigned int> >::end() [80]
+                0.00    0.00   12535/12535       __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >::operator+(long const&) const [100]
+                0.00    0.00   12535/98420       bool __gnu_cxx::operator!=<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > > const&, __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > > const&) [97]
+                0.00    0.00   12535/348350      __gnu_cxx::__alloc_traits<std::allocator<unsigned int> >::destroy(std::allocator<unsigned int>&, unsigned int*) [134]
+-----------------------------------------------
+                0.00    0.00   12535/12535       Entier::operator-=(Entier const&) [23]
+[99]     0.0    0.00    0.00   12535         __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >::operator-(long const&) const [99]
+                0.00    0.00   12535/4701133     __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >::__normal_iterator(unsigned int* const&) [51]
+-----------------------------------------------
+                0.00    0.00   12535/12535       std::vector<unsigned int, std::allocator<unsigned int> >::erase(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >) [98]
+[100]    0.0    0.00    0.00   12535         __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >::operator+(long const&) const [100]
+                0.00    0.00   12535/4701133     __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >::__normal_iterator(unsigned int* const&) [51]
+-----------------------------------------------
+                0.00    0.00     685/685         std::vector<unsigned int, std::allocator<unsigned int> >::_M_fill_insert(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned long, unsigned int const&) [32]
+[101]    0.0    0.00    0.00     685         unsigned int* std::__uninitialized_move_a<unsigned int*, unsigned int*, std::allocator<unsigned int> >(unsigned int*, unsigned int*, unsigned int*, std::allocator<unsigned int>&) [101]
+                0.00    0.00     685/4159646     unsigned int* std::__uninitialized_copy_a<unsigned int*, unsigned int*, unsigned int>(unsigned int*, unsigned int*, unsigned int*, std::allocator<unsigned int>&) [30]
+-----------------------------------------------
+                0.00    0.00     685/685         std::vector<unsigned int, std::allocator<unsigned int> >::_M_fill_insert(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned long, unsigned int const&) [32]
+[102]    0.0    0.00    0.00     685         void std::fill<unsigned int*, unsigned int>(unsigned int*, unsigned int*, unsigned int const&) [102]
+                0.00    0.00    1370/14794085     std::_Niter_base<unsigned int*>::iterator_type std::__niter_base<unsigned int*>(unsigned int*) [71]
+                0.00    0.00     685/685         __gnu_cxx::__enable_if<std::__is_scalar<unsigned int>::__value, void>::__type std::__fill_a<unsigned int*, unsigned int>(unsigned int*, unsigned int*, unsigned int const&) [140]
+-----------------------------------------------
+                0.00    0.00      60/60          std::_Niter_base<__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > > >::iterator_type std::__niter_base<__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > > >(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >) [70]
+[103]    0.0    0.00    0.00      60         std::_Iter_base<__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, true>::_S_base(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >) [103]
+                0.00    0.00      60/8517373     __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >::base() const [72]
+-----------------------------------------------
+                0.00    0.00       2/2           std::vector<unsigned int, std::allocator<unsigned int> >::clear() [84]
+[104]    0.0    0.00    0.00       2         std::vector<unsigned int, std::allocator<unsigned int> >::_M_erase_at_end(unsigned int*) [104]
+                0.00    0.00       2/7216761     void std::_Destroy<unsigned int*, unsigned int>(unsigned int*, unsigned int*, std::allocator<unsigned int>&) [27]
+                0.00    0.00       2/13689956     std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_M_get_Tp_allocator() [115]
+-----------------------------------------------
+                0.00    0.00       3/3           main [1]
+[105]    0.0    0.00    0.00       3         operator<<(std::ostream&, Entier const&) [105]
+                0.00    0.00       3/19363651     std::vector<unsigned int, std::allocator<unsigned int> >::size() const [40]
+                0.00    0.00     754/1574367     std::vector<unsigned int, std::allocator<unsigned int> >::operator[](unsigned long) const [125]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<unsigned int, std::allocator<unsigned int> >::_M_fill_insert(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned long, unsigned int const&) [32]
+[106]    0.0    0.00    0.00       1         unsigned int* std::copy_backward<unsigned int*, unsigned int*>(unsigned int*, unsigned int*, unsigned int*) [106]
+                0.00    0.00       1/1           unsigned int* std::__copy_move_backward_a2<false, unsigned int*, unsigned int*>(unsigned int*, unsigned int*, unsigned int*) [107]
+                0.00    0.00       2/8319484     std::_Miter_base<unsigned int*>::iterator_type std::__miter_base<unsigned int*>(unsigned int*) [85]
+-----------------------------------------------
+                0.00    0.00       1/1           unsigned int* std::copy_backward<unsigned int*, unsigned int*>(unsigned int*, unsigned int*, unsigned int*) [106]
+[107]    0.0    0.00    0.00       1         unsigned int* std::__copy_move_backward_a2<false, unsigned int*, unsigned int*>(unsigned int*, unsigned int*, unsigned int*) [107]
+                0.00    0.00       3/14794085     std::_Niter_base<unsigned int*>::iterator_type std::__niter_base<unsigned int*>(unsigned int*) [71]
+                0.00    0.00       1/1           unsigned int* std::__copy_move_backward_a<false, unsigned int*, unsigned int*>(unsigned int*, unsigned int*, unsigned int*) [149]
+-----------------------------------------------
+                0.00    0.00 8319484/23113569     std::_Miter_base<unsigned int*>::iterator_type std::__miter_base<unsigned int*>(unsigned int*) [85]
+                0.00    0.00 14794085/23113569     std::_Niter_base<unsigned int*>::iterator_type std::__niter_base<unsigned int*>(unsigned int*) [71]
+[114]    0.0    0.00    0.00 23113569         std::_Iter_base<unsigned int*, false>::_S_base(unsigned int*) [114]
+-----------------------------------------------
+                0.00    0.00       2/13689956     std::vector<unsigned int, std::allocator<unsigned int> >::_M_erase_at_end(unsigned int*) [104]
+                0.00    0.00 1257393/13689956     std::vector<unsigned int, std::allocator<unsigned int> >::_M_fill_insert(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned long, unsigned int const&) [32]
+                0.00    0.00 1998799/13689956     unsigned int* std::vector<unsigned int, std::allocator<unsigned int> >::_M_allocate_and_copy<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > >(unsigned long, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >) [13]
+                0.00    0.00 1998954/13689956     std::vector<unsigned int, std::allocator<unsigned int> >::operator=(std::vector<unsigned int, std::allocator<unsigned int> > const&) [9]
+                0.00    0.00 3138527/13689956     std::vector<unsigned int, std::allocator<unsigned int> >::~vector() [19]
+                0.00    0.00 5296281/13689956     std::vector<unsigned int, std::allocator<unsigned int> >::_M_insert_aux(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int const&) [8]
+[115]    0.0    0.00    0.00 13689956         std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_M_get_Tp_allocator() [115]
+-----------------------------------------------
+                0.00    0.00 4078232/8237098     __gnu_cxx::new_allocator<unsigned int>::allocate(unsigned long, void const*) [77]
+                0.00    0.00 4158866/8237098     __gnu_cxx::__alloc_traits<std::allocator<unsigned int> >::max_size(std::allocator<unsigned int> const&) [76]
+[116]    0.0    0.00    0.00 8237098         __gnu_cxx::new_allocator<unsigned int>::max_size() const [116]
+-----------------------------------------------
+                0.00    0.00 4158866/4158866     std::vector<unsigned int, std::allocator<unsigned int> >::max_size() const [52]
+[117]    0.0    0.00    0.00 4158866         std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_M_get_Tp_allocator() const [117]
+-----------------------------------------------
+                0.00    0.00 3997718/3997718     std::_Miter_base<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > >::iterator_type std::__miter_base<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > >(__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >) [60]
+[118]    0.0    0.00    0.00 3997718         std::_Iter_base<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, false>::_S_base(__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >) [118]
+-----------------------------------------------
+                0.00    0.00 3138527/3138527     std::allocator<unsigned int>::allocator() [87]
+[119]    0.0    0.00    0.00 3138527         __gnu_cxx::new_allocator<unsigned int>::new_allocator() [119]
+-----------------------------------------------
+                0.00    0.00 1998954/1998954     std::vector<unsigned int, std::allocator<unsigned int> >::operator=(std::vector<unsigned int, std::allocator<unsigned int> > const&) [9]
+[120]    0.0    0.00    0.00 1998954         std::vector<unsigned int, std::allocator<unsigned int> >::capacity() const [120]
+-----------------------------------------------
+                0.00    0.00 1965405/1965405     void __gnu_cxx::__alloc_traits<std::allocator<unsigned int> >::construct<unsigned int>(std::allocator<unsigned int>&, unsigned int*, unsigned int const&) [122]
+[121]    0.0    0.00    0.00 1965405         __gnu_cxx::new_allocator<unsigned int>::construct(unsigned int*, unsigned int const&) [121]
+                0.00    0.00 1965405/1965405     operator new(unsigned long, void*) [123]
+-----------------------------------------------
+                0.00    0.00  199978/1965405     std::vector<unsigned int, std::allocator<unsigned int> >::push_back(unsigned int const&) [7]
+                0.00    0.00 1765427/1965405     std::vector<unsigned int, std::allocator<unsigned int> >::_M_insert_aux(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int const&) [8]
+[122]    0.0    0.00    0.00 1965405         void __gnu_cxx::__alloc_traits<std::allocator<unsigned int> >::construct<unsigned int>(std::allocator<unsigned int>&, unsigned int*, unsigned int const&) [122]
+                0.00    0.00 1965405/1965405     __gnu_cxx::new_allocator<unsigned int>::construct(unsigned int*, unsigned int const&) [121]
+-----------------------------------------------
+                0.00    0.00 1965405/1965405     __gnu_cxx::new_allocator<unsigned int>::construct(unsigned int*, unsigned int const&) [121]
+[123]    0.0    0.00    0.00 1965405         operator new(unsigned long, void*) [123]
+-----------------------------------------------
+                0.00    0.00  523172/1601420     std::reverse_iterator<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > >::operator++() [132]
+                0.00    0.00 1078248/1601420     std::reverse_iterator<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > >::operator*() const [128]
+[124]    0.0    0.00    0.00 1601420         __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >::operator--() [124]
+-----------------------------------------------
+                0.00    0.00     754/1574367     operator<<(std::ostream&, Entier const&) [105]
+                0.00    0.00 1573613/1574367     Entier::operator+=(Entier const&) [15]
+[125]    0.0    0.00    0.00 1574367         std::vector<unsigned int, std::allocator<unsigned int> >::operator[](unsigned long) const [125]
+-----------------------------------------------
+                0.00    0.00 1149671/1149671     Entier::operator+=(Entier const&) [15]
+[126]    0.0    0.00    0.00 1149671         retenue(unsigned int, unsigned int, unsigned int&) [126]
+-----------------------------------------------
+                0.00    0.00 1078248/1078248     std::reverse_iterator<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > >::operator*() const [128]
+[127]    0.0    0.00    0.00 1078248         __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >::operator*() const [127]
+-----------------------------------------------
+                0.00    0.00 1078248/1078248     Entier::intcmp(Entier const&) const [45]
+[128]    0.0    0.00    0.00 1078248         std::reverse_iterator<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > >::operator*() const [128]
+                0.00    0.00 1078248/1601420     __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >::operator--() [124]
+                0.00    0.00 1078248/1078248     __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >::operator*() const [127]
+-----------------------------------------------
+                0.00    0.00  533650/1077778     std::vector<unsigned int, std::allocator<unsigned int> >::rend() const [95]
+                0.00    0.00  544128/1077778     std::vector<unsigned int, std::allocator<unsigned int> >::rbegin() const [89]
+[129]    0.0    0.00    0.00 1077778         std::reverse_iterator<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > >::reverse_iterator(__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >) [129]
+                0.00    0.00 1077778/1077778     std::iterator<std::random_access_iterator_tag, unsigned int, long, unsigned int const*, unsigned int const&>::iterator() [130]
+-----------------------------------------------
+                0.00    0.00 1077778/1077778     std::reverse_iterator<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > >::reverse_iterator(__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >) [129]
+[130]    0.0    0.00    0.00 1077778         std::iterator<std::random_access_iterator_tag, unsigned int, long, unsigned int const*, unsigned int const&>::iterator() [130]
+-----------------------------------------------
+                0.00    0.00 1067300/1067300     bool std::operator==<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > >(std::reverse_iterator<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > > const&, std::reverse_iterator<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > > const&) [91]
+[131]    0.0    0.00    0.00 1067300         std::reverse_iterator<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > >::base() const [131]
+-----------------------------------------------
+                0.00    0.00  523172/523172      Entier::intcmp(Entier const&) const [45]
+[132]    0.0    0.00    0.00  523172         std::reverse_iterator<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > >::operator++() [132]
+                0.00    0.00  523172/1601420     __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >::operator--() [124]
+-----------------------------------------------
+                0.00    0.00  348350/348350      __gnu_cxx::__alloc_traits<std::allocator<unsigned int> >::destroy(std::allocator<unsigned int>&, unsigned int*) [134]
+[133]    0.0    0.00    0.00  348350         __gnu_cxx::new_allocator<unsigned int>::destroy(unsigned int*) [133]
+-----------------------------------------------
+                0.00    0.00   12535/348350      std::vector<unsigned int, std::allocator<unsigned int> >::erase(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >) [98]
+                0.00    0.00  335815/348350      std::vector<unsigned int, std::allocator<unsigned int> >::pop_back() [135]
+[134]    0.0    0.00    0.00  348350         __gnu_cxx::__alloc_traits<std::allocator<unsigned int> >::destroy(std::allocator<unsigned int>&, unsigned int*) [134]
+                0.00    0.00  348350/348350      __gnu_cxx::new_allocator<unsigned int>::destroy(unsigned int*) [133]
+-----------------------------------------------
+                0.00    0.00  335815/335815      Entier::racourcir() [94]
+[135]    0.0    0.00    0.00  335815         std::vector<unsigned int, std::allocator<unsigned int> >::pop_back() [135]
+                0.00    0.00  335815/348350      __gnu_cxx::__alloc_traits<std::allocator<unsigned int> >::destroy(std::allocator<unsigned int>&, unsigned int*) [134]
+-----------------------------------------------
+                0.00    0.00  280193/280193      Entier::karatsuba(Entier&, Entier&) [5]
+[136]    0.0    0.00    0.00  280193         Entier::mul(unsigned long long, unsigned long long, unsigned int&, unsigned int&) [136]
+-----------------------------------------------
+                0.00    0.00   66683/66683       Entier::operator-=(Entier const&) [23]
+[137]    0.0    0.00    0.00   66683         __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >::operator++() [137]
+-----------------------------------------------
+                0.00    0.00   66683/66683       Entier::operator-=(Entier const&) [23]
+[138]    0.0    0.00    0.00   66683         __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >::operator*() const [138]
+-----------------------------------------------
+                0.00    0.00   19202/19202       Entier::operator-=(Entier const&) [23]
+[139]    0.0    0.00    0.00   19202         __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >::__normal_iterator() [139]
+-----------------------------------------------
+                0.00    0.00     685/685         void std::fill<unsigned int*, unsigned int>(unsigned int*, unsigned int*, unsigned int const&) [102]
+[140]    0.0    0.00    0.00     685         __gnu_cxx::__enable_if<std::__is_scalar<unsigned int>::__value, void>::__type std::__fill_a<unsigned int*, unsigned int>(unsigned int*, unsigned int*, unsigned int const&) [140]
+-----------------------------------------------
+                0.00    0.00      60/60          void std::_Destroy<__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > > >(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >) [142]
+[141]    0.0    0.00    0.00      60         void std::_Destroy_aux<true>::__destroy<__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > > >(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >) [141]
+-----------------------------------------------
+                0.00    0.00      60/60          void std::_Destroy<__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int>(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, std::allocator<unsigned int>&) [143]
+[142]    0.0    0.00    0.00      60         void std::_Destroy<__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > > >(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >) [142]
+                0.00    0.00      60/60          void std::_Destroy_aux<true>::__destroy<__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > > >(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >) [141]
+-----------------------------------------------
+                0.00    0.00      60/60          std::vector<unsigned int, std::allocator<unsigned int> >::operator=(std::vector<unsigned int, std::allocator<unsigned int> > const&) [9]
+[143]    0.0    0.00    0.00      60         void std::_Destroy<__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int>(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, std::allocator<unsigned int>&) [143]
+                0.00    0.00      60/60          void std::_Destroy<__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > > >(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >) [142]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [173]
+[144]    0.0    0.00    0.00       1         _GLOBAL__sub_I__Z6calculRK6EntierS1_h [144]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [146]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [173]
+[145]    0.0    0.00    0.00       1         _GLOBAL__sub_I__ZN6EntierC2Ev [145]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [147]
+-----------------------------------------------
+                0.00    0.00       1/1           _GLOBAL__sub_I__Z6calculRK6EntierS1_h [144]
+[146]    0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [146]
+-----------------------------------------------
+                0.00    0.00       1/1           _GLOBAL__sub_I__ZN6EntierC2Ev [145]
+[147]    0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [147]
+-----------------------------------------------
+                0.00    0.00       1/1           unsigned int* std::__copy_move_backward_a<false, unsigned int*, unsigned int*>(unsigned int*, unsigned int*, unsigned int*) [149]
+[148]    0.0    0.00    0.00       1         unsigned int* std::__copy_move_backward<false, true, std::random_access_iterator_tag>::__copy_move_b<unsigned int>(unsigned int const*, unsigned int const*, unsigned int*) [148]
+-----------------------------------------------
+                0.00    0.00       1/1           unsigned int* std::__copy_move_backward_a2<false, unsigned int*, unsigned int*>(unsigned int*, unsigned int*, unsigned int*) [107]
+[149]    0.0    0.00    0.00       1         unsigned int* std::__copy_move_backward_a<false, unsigned int*, unsigned int*>(unsigned int*, unsigned int*, unsigned int*) [149]
+                0.00    0.00       1/1           unsigned int* std::__copy_move_backward<false, true, std::random_access_iterator_tag>::__copy_move_b<unsigned int>(unsigned int const*, unsigned int const*, unsigned int*) [148]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function is in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+
+Index by function name
+
+ [144] _GLOBAL__sub_I__Z6calculRK6EntierS1_h [131] std::reverse_iterator<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > >::base() const [9] std::vector<unsigned int, std::allocator<unsigned int> >::operator=(std::vector<unsigned int, std::allocator<unsigned int> > const&)
+ [145] _GLOBAL__sub_I__ZN6EntierC2Ev [128] std::reverse_iterator<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > >::operator*() const [49] std::vector<unsigned int, std::allocator<unsigned int> >::operator[](unsigned long)
+ [146] __static_initialization_and_destruction_0(int, int) [26] std::vector<unsigned int, std::allocator<unsigned int> >::_M_check_len(unsigned long, char const*) const [130] std::iterator<std::random_access_iterator_tag, unsigned int, long, unsigned int const*, unsigned int const&>::iterator()
+ [147] __static_initialization_and_destruction_0(int, int) [48] std::vector<unsigned int, std::allocator<unsigned int> >::end() const [78] __gnu_cxx::__enable_if<std::__is_scalar<unsigned int>::__value, unsigned int*>::__type std::__fill_n_a<unsigned int*, unsigned long, unsigned int>(unsigned int*, unsigned long, unsigned int const&)
+ [126] retenue(unsigned int, unsigned int, unsigned int&) [95] std::vector<unsigned int, std::allocator<unsigned int> >::rend() const [60] std::_Miter_base<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > >::iterator_type std::__miter_base<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > >(__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >)
+  [12] Entier::karatsuba_separer(Entier&, Entier&, Entier&) [40] std::vector<unsigned int, std::allocator<unsigned int> >::size() const [85] std::_Miter_base<unsigned int*>::iterator_type std::__miter_base<unsigned int*>(unsigned int*)
+  [11] Entier::karatsuba_recomposer(Entier&, Entier&, Entier&, int) [79] std::vector<unsigned int, std::allocator<unsigned int> >::begin() const [37] std::_Niter_base<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > >::iterator_type std::__niter_base<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > >(__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >)
+ [136] Entier::mul(unsigned long long, unsigned long long, unsigned int&, unsigned int&) [89] std::vector<unsigned int, std::allocator<unsigned int> >::rbegin() const [70] std::_Niter_base<__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > > >::iterator_type std::__niter_base<__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > > >(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >)
+   [2] Entier::set(std::string const&, unsigned int) [120] std::vector<unsigned int, std::allocator<unsigned int> >::capacity() const [71] std::_Niter_base<unsigned int*>::iterator_type std::__niter_base<unsigned int*>(unsigned int*)
+   [5] Entier::karatsuba(Entier&, Entier&) [52] std::vector<unsigned int, std::allocator<unsigned int> >::max_size() const [63] unsigned int* std::__copy_move_a<false, unsigned int const*, unsigned int*>(unsigned int const*, unsigned int const*, unsigned int*)
+  [94] Entier::racourcir()   [125] std::vector<unsigned int, std::allocator<unsigned int> >::operator[](unsigned long) const [83] unsigned int* std::__copy_move_a<false, unsigned int*, unsigned int*>(unsigned int*, unsigned int*, unsigned int*)
+  [21] Entier::Entier(Entier const&) [87] std::allocator<unsigned int>::allocator() [106] unsigned int* std::copy_backward<unsigned int*, unsigned int*>(unsigned int*, unsigned int*, unsigned int*)
+  [35] Entier::Entier(unsigned int) [55] std::allocator<unsigned int>::~allocator() [69] __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > > std::__copy_move_a2<false, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > > >(__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >)
+  [59] Entier::Entier()      [118] std::_Iter_base<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, false>::_S_base(__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >) [25] unsigned int* std::__copy_move_a2<false, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int*>(__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int*)
+  [18] Entier::~Entier()      [36] std::_Iter_base<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, true>::_S_base(__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >) [38] unsigned int* std::__copy_move_a2<false, unsigned int*, unsigned int*>(unsigned int*, unsigned int*, unsigned int*)
+  [16] Entier::operator=(Entier const&) [103] std::_Iter_base<__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, true>::_S_base(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >) [20] unsigned int* std::uninitialized_copy<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int*>(__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int*)
+  [23] Entier::operator-=(Entier const&) [114] std::_Iter_base<unsigned int*, false>::_S_base(unsigned int*) [29] unsigned int* std::uninitialized_copy<unsigned int*, unsigned int*>(unsigned int*, unsigned int*, unsigned int*)
+   [4] Entier::operator*=(Entier const&) [74] unsigned int* std::__copy_move<false, true, std::random_access_iterator_tag>::__copy_m<unsigned int>(unsigned int const*, unsigned int const*, unsigned int*) [65] void std::uninitialized_fill_n<unsigned int*, unsigned long, unsigned int>(unsigned int*, unsigned long, unsigned int const&)
+   [6] Entier::operator*=(unsigned int) [141] void std::_Destroy_aux<true>::__destroy<__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > > >(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >) [149] unsigned int* std::__copy_move_backward_a<false, unsigned int*, unsigned int*>(unsigned int*, unsigned int*, unsigned int*)
+  [15] Entier::operator+=(Entier const&) [73] void std::_Destroy_aux<true>::__destroy<unsigned int*>(unsigned int*, unsigned int*) [17] unsigned int* std::__uninitialized_copy_a<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int*, unsigned int>(__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int*, std::allocator<unsigned int>&)
+  [81] Entier::operator+=(unsigned int) [53] std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_M_allocate(unsigned long) [30] unsigned int* std::__uninitialized_copy_a<unsigned int*, unsigned int*, unsigned int>(unsigned int*, unsigned int*, unsigned int*, std::allocator<unsigned int>&)
+  [82] Entier::operator++()   [61] std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_Vector_impl::_Vector_impl() [101] unsigned int* std::__uninitialized_move_a<unsigned int*, unsigned int*, std::allocator<unsigned int> >(unsigned int*, unsigned int*, unsigned int*, std::allocator<unsigned int>&)
+  [86] __gnu_cxx::new_allocator<unsigned int>::deallocate(unsigned int*, unsigned long) [56] std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_Vector_impl::~_Vector_impl() [107] unsigned int* std::__copy_move_backward_a2<false, unsigned int*, unsigned int*>(unsigned int*, unsigned int*, unsigned int*)
+ [133] __gnu_cxx::new_allocator<unsigned int>::destroy(unsigned int*) [42] std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_M_deallocate(unsigned int*, unsigned long) [47] void std::__uninitialized_fill_n_a<unsigned int*, unsigned long, unsigned int, unsigned int>(unsigned int*, unsigned long, unsigned int const&, std::allocator<unsigned int>&)
+  [77] __gnu_cxx::new_allocator<unsigned int>::allocate(unsigned long, void const*) [115] std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_M_get_Tp_allocator() [31] unsigned int* std::__uninitialized_move_if_noexcept_a<unsigned int*, unsigned int*, std::allocator<unsigned int> >(unsigned int*, unsigned int*, unsigned int*, std::allocator<unsigned int>&)
+ [121] __gnu_cxx::new_allocator<unsigned int>::construct(unsigned int*, unsigned int const&) [62] std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_Vector_base() [54] unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&)
+ [119] __gnu_cxx::new_allocator<unsigned int>::new_allocator() [28] std::_Vector_base<unsigned int, std::allocator<unsigned int> >::~_Vector_base() [68] __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > > std::copy<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > > >(__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >)
+  [88] __gnu_cxx::new_allocator<unsigned int>::~new_allocator() [129] std::reverse_iterator<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > >::reverse_iterator(__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >) [24] unsigned int* std::copy<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int*>(__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int*)
+ [134] __gnu_cxx::__alloc_traits<std::allocator<unsigned int> >::destroy(std::allocator<unsigned int>&, unsigned int*) [132] std::reverse_iterator<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > >::operator++() [33] unsigned int* std::copy<unsigned int*, unsigned int*>(unsigned int*, unsigned int*, unsigned int*)
+  [76] __gnu_cxx::__alloc_traits<std::allocator<unsigned int> >::max_size(std::allocator<unsigned int> const&) [148] unsigned int* std::__copy_move_backward<false, true, std::random_access_iterator_tag>::__copy_move_b<unsigned int>(unsigned int const*, unsigned int const*, unsigned int*) [102] void std::fill<unsigned int*, unsigned int>(unsigned int*, unsigned int*, unsigned int const&)
+ [122] void __gnu_cxx::__alloc_traits<std::allocator<unsigned int> >::construct<unsigned int>(std::allocator<unsigned int>&, unsigned int*, unsigned int const&) [22] unsigned int* std::__uninitialized_copy<true>::__uninit_copy<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int*>(__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int*) [66] unsigned int* std::fill_n<unsigned int*, unsigned long, unsigned int>(unsigned int*, unsigned long, unsigned int const&)
+  [75] __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >::__normal_iterator(unsigned int const* const&) [34] unsigned int* std::__uninitialized_copy<true>::__uninit_copy<unsigned int*, unsigned int*>(unsigned int*, unsigned int*, unsigned int*) [142] void std::_Destroy<__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > > >(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >)
+ [124] __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >::operator--() [64] void std::__uninitialized_fill_n<true>::__uninit_fill_n<unsigned int*, unsigned long, unsigned int>(unsigned int*, unsigned long, unsigned int const&) [143] void std::_Destroy<__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int>(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, std::allocator<unsigned int>&)
+  [51] __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >::__normal_iterator(unsigned int* const&) [8] std::vector<unsigned int, std::allocator<unsigned int> >::_M_insert_aux(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int const&) [41] void std::_Destroy<unsigned int*>(unsigned int*, unsigned int*)
+ [139] __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >::__normal_iterator() [32] std::vector<unsigned int, std::allocator<unsigned int> >::_M_fill_insert(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned long, unsigned int const&) [27] void std::_Destroy<unsigned int*, unsigned int>(unsigned int*, unsigned int*, std::allocator<unsigned int>&)
+ [137] __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >::operator++() [104] std::vector<unsigned int, std::allocator<unsigned int> >::_M_erase_at_end(unsigned int*) [140] __gnu_cxx::__enable_if<std::__is_scalar<unsigned int>::__value, void>::__type std::__fill_a<unsigned int*, unsigned int>(unsigned int*, unsigned int*, unsigned int const&)
+  [90] bool __gnu_cxx::operator==<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >(__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > const&, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > const&) [57] void std::vector<unsigned int, std::allocator<unsigned int> >::_M_insert_dispatch<int>(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, int, int, std::__true_type) [91] bool std::operator==<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > >(std::reverse_iterator<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > > const&, std::reverse_iterator<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > > const&)
+  [44] __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >::difference_type __gnu_cxx::operator-<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > > const&, __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > > const&) [13] unsigned int* std::vector<unsigned int, std::allocator<unsigned int> >::_M_allocate_and_copy<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > >(unsigned long, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >) [92] bool std::operator!=<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > >(std::reverse_iterator<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > > const&, std::reverse_iterator<__gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > > > const&)
+  [97] bool __gnu_cxx::operator!=<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > > const&, __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > > const&) [80] std::vector<unsigned int, std::allocator<unsigned int> >::end() [46] operator==(Entier const&, Entier const&)
+  [45] Entier::intcmp(Entier const&) const [67] std::vector<unsigned int, std::allocator<unsigned int> >::begin() [105] operator<<(std::ostream&, Entier const&)
+ [116] __gnu_cxx::new_allocator<unsigned int>::max_size() const [84] std::vector<unsigned int, std::allocator<unsigned int> >::clear() [96] operator<(Entier const&, Entier const&)
+  [50] __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >::base() const [98] std::vector<unsigned int, std::allocator<unsigned int> >::erase(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >) [14] operator-(Entier const&, Entier const&)
+ [127] __gnu_cxx::__normal_iterator<unsigned int const*, std::vector<unsigned int, std::allocator<unsigned int> > >::operator*() const [39] std::vector<unsigned int, std::allocator<unsigned int> >::insert(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned long, unsigned int const&) [93] operator*(Entier const&, Entier const&)
+  [72] __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >::base() const [58] void std::vector<unsigned int, std::allocator<unsigned int> >::insert<int>(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, int, int) [123] operator new(unsigned long, void*)
+ [138] __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >::operator*() const [135] std::vector<unsigned int, std::allocator<unsigned int> >::pop_back() [10] operator+(Entier const&, Entier const&)
+  [99] __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >::operator-(long const&) const [7] std::vector<unsigned int, std::allocator<unsigned int> >::push_back(unsigned int const&) [3] operator>>(std::istream&, Entier&)
+ [100] __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >::operator+(long const&) const [43] std::vector<unsigned int, std::allocator<unsigned int> >::vector()
+ [117] std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_M_get_Tp_allocator() const [19] std::vector<unsigned int, std::allocator<unsigned int> >::~vector()

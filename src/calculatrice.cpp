@@ -65,13 +65,39 @@ bool comparer(const Entier& a, const Entier& b, string operateur)
         return a != b;
 }
 
-int main()
+int main(int argc, char *argv[])
 {
     unsigned int choix;
     Entier op1;
     Entier op2;
     unsigned char operateur;
     string fichier;
+
+    if(argc == 2)
+    {
+	ifstream source(argv[1], ios::in);
+	if(!source)	cerr << "Error";
+	else
+	{
+	    cout << "OK\n";
+	    source >> op1;
+	    source >> op2;
+	   // cout << op1 + op2 << '\n';
+	    cout << op1 - op2 << '\n';
+	   // cout << op1 * op2 << endl;
+	}
+	return 0;
+    }
+
+    if(argc == 4)
+    {
+	op1 = string(argv[1]);
+	operateur = *argv[2];
+	op2 = string(argv[3]);
+	cout << calcul(op1, op2, operateur) << endl;
+
+	return 0;
+    }
 
     do
     {
